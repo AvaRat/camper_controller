@@ -1,10 +1,11 @@
 ## IDF Component Manager Manifest File
 dependencies:
+  espressif/esp_io_expander_tca95xx_16bit: "^1.0.1"
   espressif/button: "^3.3.1"
   espressif/esp-idf-cxx: "^1.0.2-beta"
   ## Required IDF version
   idf:
-    version: ">=4.1.0"
+    version: ">=5.1.4"
   # # Put list of dependencies here
   # # For components maintained by Espressif:
   # component: "~1.0.0"

@@ -16,7 +16,7 @@ using namespace std;
 
 class BTS_Driver{
     public:
-    BTS_Driver(uint8_t _diagnostics_pin, uint8_t _diagnostics_enable_pin, uint8_t _output_enable_pin);
+    BTS_Driver(uint8_t _diagnostics_enable_pin, uint8_t _output_enable_pin);
     void enable();
     void disable();
     void toggle();
@@ -25,7 +25,6 @@ class BTS_Driver{
     
 
     private:
-    uint8_t diagnostics_pin;
     GPIO_Output diagnostics_enable_gpio;
     GPIO_Output output_enable_gpio;
     bool ch_enable;
