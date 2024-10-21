@@ -5,13 +5,13 @@
 #include "gpio_cxx.hpp"
 #include "esp_log.h"
 #include "soc/soc_caps.h"
-#include "esp_adc/adc_oneshot.h"
 
 #include "power_switch/BTS_power_switch.hpp"
 #include "control_panel/control_panel.hpp"
 
 #include "camper_control/camper_control.hpp"
-#include "gpio_extended.h"
+#include "gpio/gpio_extended.hpp"
+#include "gpio/multiplexer.hpp"
 #include "config.h"
 
 
@@ -51,57 +51,32 @@ static esp_err_t i2c_master_init(void)
 }
 #endif
 
-float get_avg_adc(adc_oneshot_unit_handle_t adc1_handle){
-    int raw_adc;
-    int sum = 0;
-    for(int i=0; i<100; i++){
-        ESP_ERROR_CHECK(adc_oneshot_read(adc1_handle, ADC_CHANNEL, &raw_adc));
-        sum += raw_adc;
-        sleep(0.01);
-    }
 
-    float result = sum / 100;
-    return result;
-};
 
 extern "C" {
     void app_main(void)
     {
         i2c_master_init();
+        esp_io_expander_handle_t io_expander = NULL;
+        ESP_ERROR_CHECK(esp_io_expander_new_i2c_tca95xx_16bit(I2C_NUM_0, TCA_I2C_ADDRESS, &io_expander));
 
-    adc_oneshot_unit_handle_t adc1_handle;
-    adc_oneshot_unit_init_cfg_t init_config1;
-    init_config1.unit_id = ADC_UNIT;
-    init_config1.clk_src = ADC_RTC_CLK_SRC_DEFAULT; // use default clock
-    
-    ESP_ERROR_CHECK(adc_oneshot_new_unit(&init_config1, &adc1_handle));
+        ExtendedGPIO_Output s0(&io_expander, IO_EXPANDER_PIN_NUM_0, "s0");
+        ExtendedGPIO_Output s1(&io_expander, IO_EXPANDER_PIN_NUM_1, "s1");
+        ExtendedGPIO_Output s2(&io_expander, IO_EXPANDER_PIN_NUM_2, "s2");
+        ExtendedGPIO_Output s3(&io_expander, IO_EXPANDER_PIN_NUM_3, "s3");
 
-    BTS_Driver ch1_drv = BTS_Driver(14, 27);
-    esp_io_expander_handle_t io_expander = NULL;
-    ESP_ERROR_CHECK(esp_io_expander_new_i2c_tca95xx_16bit(I2C_NUM_0, TCA_I2C_ADDRESS, &io_expander));
+        ExtendedGPIO_Output ch1(&io_expander, IO_EXPANDER_PIN_NUM_11, "s3");
 
-    ExtendedGPIO_Output e_gpio(23, "LED_1");
-    ExtendedGPIO_Output(&io_expander, IO_EXPANDER_PIN_NUM_0, "LED_2");
+        AnalogMultiplexer mux(ADC_UNIT_2, ADC_CHANNEL_3, &s0, &s1, &s2, &s3);
+        WaterSensor water_sensor_1(&mux, {0,1,2});
 
-   // AnalogMultiplexer mux(&gpio_space, 50, 51, 52, 53);
-
-
-    //-------------ADC1 Config---------------//
-    adc_oneshot_chan_cfg_t config;
-    config.bitwidth = ADC_BITWIDTH_DEFAULT;
-    config.atten = ADC_ATTEN_DB_12;
-
-    ESP_ERROR_CHECK(adc_oneshot_config_channel(adc1_handle, ADC_CHANNEL, &config));
-    int channel_num = 0;
-    float awg_adc = 0;
         while(1){
-          //  mux.enableChannel(channel_num++);
-            if(channel_num == 5)
-                channel_num = 0;
-            sleep(0.1);
-            awg_adc = get_avg_adc(adc1_handle);
-            cout << "ADC AVG: " << awg_adc << endl;
-            sleep(2);
+            cout << "water lvl: " << water_sensor_1.get_current_level() <<"%" << endl;
+           ch1.set_high();
+            sleep(5);
+            ch1.set_low();
+            sleep(1);
+            cout << "next" << endl;
         }
     }
 }

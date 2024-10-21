@@ -4,29 +4,28 @@
 using namespace std;
 using namespace idf;
 
-ExtendedGPIO_Output::ExtendedGPIO_Output(uint32_t io_num, string name)
-    : num(io_num), name(name), expander_handle(nullptr)
-{
-    standard_gpio = new GPIO_Output(GPIONum(io_num));
-};
 
-ExtendedGPIO_Output::ExtendedGPIO_Output(esp_io_expander_handle_t *expander_handle, esp_io_expander_pin_num_t expander_pin, string name)
-    : num(0), name(name), standard_gpio(nullptr), expander_handle(expander_handle)
-{
-    esp_io_expander_set_dir(*expander_handle,  expander_pin, IO_EXPANDER_OUTPUT);
-};
+WaterSensor::WaterSensor(AnalogMultiplexer *_mux, vector<uint32_t> _channels)
+    : analog_channels(_channels), mux(_mux) {
+        resolution = _channels.size();
+    }
 
-void ExtendedGPIO_Output::set_high(){
-    if(standard_gpio == nullptr){
-        ESP_ERROR_CHECK(esp_io_expander_set_level(*expander_handle,  num, 1));
-    }else
-        standard_gpio->set_high();
-}
-
-void ExtendedGPIO_Output::set_low(){
-    if(standard_gpio == nullptr){
-        ESP_ERROR_CHECK(esp_io_expander_set_level(*expander_handle,  num, 0));
-    }else
-        standard_gpio->set_low();
+float WaterSensor::get_current_level(){
+/* simple mechanism to count percentage of pins under water.
+    1 pin in water -> lowest water lvl
+    2 pins in water -> seccond lovest lvl
+    all pins in water -> water tank is "full"
+*/
+    uint32_t pins_under_water = 0;
+    for(uint32_t channel: analog_channels)
+    {
+      //  cout << "channel " << channel << " enable" << endl;
+        float raw_adc = mux->enable_and_analog_read(channel);
+        if(raw_adc >= adc_threshold){
+            pins_under_water++;
+        }
+    }
+    this->last_reading = (uint32_t) 100 * ((float)pins_under_water / (float)resolution); 
+    return this->last_reading;
 }
 

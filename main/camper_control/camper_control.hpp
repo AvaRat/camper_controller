@@ -1,11 +1,12 @@
 #include <iostream>
 #include <map>
 #include <string>
-#include <memory>
+#include <vector>
 
 #include "esp_log.h"
 #include "gpio_cxx.hpp"
-#include "esp_io_expander.h"
+
+#include "gpio/multiplexer.hpp"
 
 
 using namespace std;
@@ -19,29 +20,18 @@ class CamperControl{
     map<string, uint32_t> prameters;
 };
 
-
-class ExtendedGPIO_Output{
-    public: 
-    ExtendedGPIO_Output(uint32_t io_num, string name);
-    ExtendedGPIO_Output(esp_io_expander_handle_t *expander_handle, esp_io_expander_pin_num_t expander_pin_num, string name);
-    void set_high();
-    void set_low();
-
-    private:
-    uint32_t num;
-    string name;
-
-    GPIO_Output *standard_gpio;
-    esp_io_expander_handle_t *expander_handle;
-};
-
 class WaterSensor{
     public:
-    WaterSensor();
+    WaterSensor(AnalogMultiplexer *_mux, vector<uint32_t> _channels);
     float get_current_level();
 
     private:
-    uint32_t last_reading;
+    uint32_t last_reading = 0; //percent %
+    uint32_t adc_threshold = 200; // raw adc read 
+    uint32_t resolution; // 3 waters levels are available (FULL, )
+    vector<uint32_t> analog_channels;
+    AnalogMultiplexer *mux;
+
 };
 
 class TemperatureSensor{
