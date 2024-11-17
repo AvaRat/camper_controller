@@ -1,0 +1,6 @@
+
+
+export triple=aarch64-rpi3-linux-gnu
+export variant_triple=arch64-rpi3-linux-gnu
+cmake -S . -B build-$variant_triple --toolchain /home/marcel/Code/cross-compile/x-tools/$triple/$variant_triple.toolchain.cmake
+cmake --build build-$variant_triple -j
