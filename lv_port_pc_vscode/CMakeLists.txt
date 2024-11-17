@@ -96,7 +96,14 @@ else()
         ${PROJECT_SOURCE_DIR}/main/src/camper_ui/assets/alternator_64.c
         ${PROJECT_SOURCE_DIR}/main/src/camper_ui/assets/inverter_64.c
         ${PROJECT_SOURCE_DIR}/main/src/camper_ui/assets/battery_64.c
-
+        ${PROJECT_SOURCE_DIR}/main/src/camper_ui/assets/icon_top_lights_64.c
+        ${PROJECT_SOURCE_DIR}/main/src/camper_ui/assets/icon_pump_64.c
+        ${PROJECT_SOURCE_DIR}/main/src/camper_ui/assets/icon_ac_power_64.c
+        ${PROJECT_SOURCE_DIR}/main/src/camper_ui/assets/icon_audio_64.c
+        ${PROJECT_SOURCE_DIR}/main/src/camper_ui/assets/icon_water_64.c
+        ${PROJECT_SOURCE_DIR}/main/src/camper_ui/assets/temp_inside_campervan_100.c
+        ${PROJECT_SOURCE_DIR}/main/src/camper_ui/assets/temp_inside_campervan_64.c
+        ${PROJECT_SOURCE_DIR}/main/src/camper_ui/assets/temp_outside_campervan_64.c
         )
 endif()
 

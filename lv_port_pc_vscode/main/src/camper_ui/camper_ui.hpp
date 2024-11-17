@@ -35,12 +35,12 @@ static lv_obj_t * tabview;
 
 static void camper_ui_create()
 {
-    font_large = LV_FONT_DEFAULT;
+
+    init_subjects();
+    font_large = &lv_font_montserrat_22;
     font_normal = LV_FONT_DEFAULT;
     lv_style_init(&camper_style_title);
     lv_style_set_text_font(&camper_style_title, font_large);
-    font_large = LV_FONT_DEFAULT;
-
 #if LV_USE_THEME_DEFAULT
     lv_theme_default_init(NULL, lv_palette_main(LV_PALETTE_BLUE), lv_palette_main(LV_PALETTE_RED), LV_THEME_DEFAULT_DARK,
                           font_normal);
