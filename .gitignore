@@ -2,6 +2,9 @@
 *.o
 *.pyc
 
+*/build/*
+*/bin/*
+
 # gtags
 GTAGS
 GRTAGS
