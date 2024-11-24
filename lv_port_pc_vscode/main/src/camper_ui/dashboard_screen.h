@@ -108,6 +108,20 @@ void create_dashboard_screen(lv_obj_t *parent)
     lv_obj_set_grid_cell(btn_main, LV_GRID_ALIGN_CENTER, 0, 1,
                          LV_GRID_ALIGN_CENTER, 2, 1);
 
+    lv_obj_t *heater_btn = lv_obj_create(btn_grid_cont);
+    lv_obj_set_size(heater_btn, BTN_SIZE, BTN_SIZE);
+    lv_obj_remove_flag(heater_btn, LV_OBJ_FLAG_SCROLLABLE);
+    create_icon_button(heater_btn, obj, &HeaterSwitch);
+    lv_obj_set_grid_cell(heater_btn, LV_GRID_ALIGN_CENTER, 1, 1,
+                         LV_GRID_ALIGN_CENTER, 1, 1);
+
+    lv_obj_t *fridge_btn = lv_obj_create(btn_grid_cont);
+    lv_obj_set_size(fridge_btn, BTN_SIZE, BTN_SIZE);
+    lv_obj_remove_flag(fridge_btn, LV_OBJ_FLAG_SCROLLABLE);
+    create_icon_button(fridge_btn, obj, &FridgeSwitch);
+    lv_obj_set_grid_cell(fridge_btn, LV_GRID_ALIGN_CENTER, 1, 1,
+                         LV_GRID_ALIGN_CENTER, 2, 1);
+
 
 
     /*Cell to 1;1 but 2 column wide (span = 2).Set width and height to stretched.*/

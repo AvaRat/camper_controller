@@ -104,6 +104,8 @@ else()
         ${PROJECT_SOURCE_DIR}/main/src/camper_ui/assets/temp_inside_campervan_100.c
         ${PROJECT_SOURCE_DIR}/main/src/camper_ui/assets/temp_inside_campervan_64.c
         ${PROJECT_SOURCE_DIR}/main/src/camper_ui/assets/temp_outside_campervan_64.c
+        ${PROJECT_SOURCE_DIR}/main/src/camper_ui/assets/heater_64.c
+        ${PROJECT_SOURCE_DIR}/main/src/camper_ui/assets/fridge_64.c
         )
 endif()
 

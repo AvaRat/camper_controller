@@ -104,7 +104,6 @@ static void event_handler(lv_event_t * e)
         lv_obj_set_state(obj, LV_STATE_USER_1, pwr_sw->state);
 
         snprintf(txt, 50, "%s state: %s\n PowerSwitch->state %d", (char*) (pwr_sw->btn_text), btn_switched_on ? "On" : "Off", pwr_sw->state);
-        LV_LOG_USER(txt);
     }
 
 }

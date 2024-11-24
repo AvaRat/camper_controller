@@ -81,11 +81,17 @@ LV_IMAGE_DECLARE(icon_pump_64);
 LV_IMAGE_DECLARE(icon_ac_power_64);
 LV_IMAGE_DECLARE(temp_outside_campervan_64);
 LV_IMAGE_DECLARE(temp_inside_campervan_64);
+LV_IMAGE_DECLARE(heater_64);
+LV_IMAGE_DECLARE(fridge_64);
 
 static PowerSwitch_t MainSwitch = {1, "Mains", &pwr_icon_64, 20, 0, 0};
-static PowerSwitch_t LightSwitch = {0, "Lights", &icon_top_lights_64, 5, 1, 100};
+static PowerSwitch_t LightSwitch = {1, "Lights", &icon_top_lights_64, 5, 1, 100};
 static PowerSwitch_t WaterPumpSwitch = {0, "Pump", &icon_pump_64, 5, 0, 0};
 static PowerSwitch_t InverterSwitch = {0, "Inverter", &icon_ac_power_64, 5, 0, 0};
+static PowerSwitch_t HeaterSwitch = {0, "Heater", &heater_64, 5, 0, 0};
+static PowerSwitch_t FridgeSwitch = {1, "Fridge", &fridge_64, 5, 0, 0};
+
+
 //static PowerSwitch_t AudioSwitch = {0, "Inverter", &icon_audio_64, 1, 0, 0};
 
 
