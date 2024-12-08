@@ -36,8 +36,8 @@ pico_sdk_init()
 # Add executable. Default name is the project name, version 0.1
 
 add_executable(main
-        main.c
-        ina3221/ina3221.c
+        main.cpp
+        ina3221/INA3221.cpp
         )
 
 # pull in common dependencies and additional i2c hardware support
