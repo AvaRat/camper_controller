@@ -1,4 +1,5 @@
 dependencies:
+  espressif/libpng: "^1.6.39~1"
   espressif/esp_lcd_touch_gt911: "^1.1.1"
   espressif/esp_lvgl_port: "^2.4.3"
   idf: ">=5.1"

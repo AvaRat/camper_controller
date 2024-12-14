@@ -19,7 +19,7 @@ extern "C" {
 //#include "electric_screen.h"
 #include "dashboard_screen.h"
 #include "common.h"
-#include "tests.h"
+#include "ui_tests.h"
 //#include "animation_custom_tryouts.h"
 
 
