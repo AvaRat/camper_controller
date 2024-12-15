@@ -67,7 +67,7 @@ static void create_lights_brightness_popup(PowerSwitch_t *pwr_switch){
     /*Create a label below the slider*/
     brightness_slider_label = lv_label_create(msg_cont);
 
-    lv_label_set_text_fmt(brightness_slider_label, "%d pc", pwr_switch->pwm_percent);
+    lv_label_set_text_fmt(brightness_slider_label, "%d%%", pwr_switch->pwm_percent);
 
    // lv_obj_align_to(slider, mbox, LV_ALIGN_CENTER, 0, 0);
     lv_obj_align_to(brightness_slider_label, slider, LV_ALIGN_OUT_BOTTOM_MID, 0, 10);
@@ -114,7 +114,7 @@ static void create_icon_button(lv_obj_t *parent, lv_obj_t *icon_obj, PowerSwitch
     lv_style_set_bg_opa(&style_pr, LV_OPA_20);
 
     icon_obj = lv_image_create(parent);
-    lv_image_set_src(icon_obj, power_switch->btn_image);
+    lv_image_set_src(icon_obj, power_switch->btn_image_path);
 
     //setting user data
     lv_obj_set_user_data(parent, power_switch);

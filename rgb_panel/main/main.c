@@ -12,8 +12,7 @@
 
 void app_main(void)
 {
-
+    init_spiffs();
     init_sd_card();
     camper_app_ui();
-
 }

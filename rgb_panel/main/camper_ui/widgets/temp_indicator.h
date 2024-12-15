@@ -26,7 +26,7 @@ extern "C" {
     -humidity in & out
 */
 
-void temp_indicator_create(lv_obj_t *parent,  lv_subject_t *int_subject, const lv_image_dsc_t *icon)
+void temp_indicator_create(lv_obj_t *parent,  lv_subject_t *int_subject, const char *icon_path)
 {
  //   lv_subject_init_int(&temp_in_subject, 0);
 
@@ -34,7 +34,7 @@ void temp_indicator_create(lv_obj_t *parent,  lv_subject_t *int_subject, const l
     lv_obj_t *label;
 
     img_obj = lv_image_create(parent);
-    lv_image_set_src(img_obj, icon);
+    lv_image_set_src(img_obj, icon_path);
     lv_obj_align(img_obj, LV_ALIGN_LEFT_MID, 0, 0);
 // ------------------------------------------------------------------------------
     label = lv_label_create(parent);

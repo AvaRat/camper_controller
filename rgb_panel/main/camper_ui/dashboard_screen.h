@@ -45,7 +45,7 @@ void create_dashboard_screen(lv_obj_t *parent)
     lv_obj_set_size(obj, 150, 100);
     lv_obj_set_grid_cell(obj, LV_GRID_ALIGN_CENTER, 0, 1,
                          LV_GRID_ALIGN_CENTER, 0, 1);
-    temp_indicator_create(obj, &temp_in_subject, &temp_inside_campervan_64);
+    temp_indicator_create(obj, &temp_in_subject, ICONS_MOUNT_POINT"temp_inside_campervan_64.png");
 
     /*Cell to 1;0 and align to to the start (left) horizontally and center vertically too */
 
@@ -54,7 +54,7 @@ void create_dashboard_screen(lv_obj_t *parent)
     lv_obj_set_size(obj, 150, 100);
     lv_obj_set_grid_cell(obj, LV_GRID_ALIGN_CENTER, 1, 1,
                          LV_GRID_ALIGN_CENTER, 0, 1);
-    temp_indicator_create(obj, &temp_out_subject, &temp_outside_campervan_64);
+    temp_indicator_create(obj, &temp_out_subject, ICONS_MOUNT_POINT"temp_outside_campervan_64.png");
     /*
     LV_IMAGE_DECLARE(temp_inside_campervan_64);
     img_obj = lv_image_create(obj);
@@ -115,7 +115,12 @@ void create_dashboard_screen(lv_obj_t *parent)
     lv_obj_set_grid_cell(heater_btn, LV_GRID_ALIGN_CENTER, 1, 1,
                          LV_GRID_ALIGN_CENTER, 1, 1);
 
-
+    lv_obj_t *fridge_btn = lv_obj_create(btn_grid_cont);
+    lv_obj_set_size(fridge_btn, BTN_SIZE, BTN_SIZE);
+    lv_obj_remove_flag(fridge_btn, LV_OBJ_FLAG_SCROLLABLE);
+    create_icon_button(fridge_btn, obj, &FridgeSwitch);
+    lv_obj_set_grid_cell(fridge_btn, LV_GRID_ALIGN_CENTER, 1, 1,
+                         LV_GRID_ALIGN_CENTER, 2, 1);
 
     /*Cell to 1;1 but 2 column wide (span = 2).Set width and height to stretched.*/
     lv_obj_t * water_tank_cell = lv_obj_create(grid_cont);
@@ -133,15 +138,6 @@ void create_dashboard_screen(lv_obj_t *parent)
 
     battery_indicator_create(obj);
     lv_obj_remove_flag(obj, LV_OBJ_FLAG_SCROLLABLE);
-
-//static lv_subject_t temp_out_subject, temp_in_subject;
-    /*Create a slider in the center of the display*/
-    // lv_obj_t * slider = lv_slider_create(obj);
-    // lv_obj_set_size(slider, 100, 20);
-    // lv_obj_center(slider);
-
-    // lv_slider_bind_value(slider, &temp_in_subject);
-
 
 }
 

@@ -17,8 +17,8 @@ extern "C" {
 
 
 #define MAX_CURRENT 50
-#define CANVAS_WIDTH  426
-#define CANVAS_HEIGHT  220
+#define CANVAS_WIDTH  200
+#define CANVAS_HEIGHT  120
 
 
 
