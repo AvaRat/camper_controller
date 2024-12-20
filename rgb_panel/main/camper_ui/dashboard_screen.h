@@ -55,16 +55,6 @@ void create_dashboard_screen(lv_obj_t *parent)
     lv_obj_set_grid_cell(obj, LV_GRID_ALIGN_CENTER, 1, 1,
                          LV_GRID_ALIGN_CENTER, 0, 1);
     temp_indicator_create(obj, &temp_out_subject, ICONS_MOUNT_POINT"temp_outside_campervan_64.png");
-    /*
-    LV_IMAGE_DECLARE(temp_inside_campervan_64);
-    img_obj = lv_image_create(obj);
-    lv_image_set_src(img_obj, &temp_inside_campervan_64);
-
-    label = lv_label_create(obj);
-    lv_label_set_text(label, "20 C");
-    lv_obj_set_style_pad_left(label, 10, LV_PART_MAIN);
-    lv_obj_align_to(label, img_obj, LV_ALIGN_OUT_RIGHT_MID, 0, 0);
-    */
 
 
     //Power Switches grid

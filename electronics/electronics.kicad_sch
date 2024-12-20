@@ -1,0 +1,297 @@
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "eeb1234c-eae0-4ac6-a30d-2a978d66d889")
+	(paper "A4")
+	(lib_symbols)
+	(rectangle
+		(start 191.516 78.74)
+		(end 227.076 100.33)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type color)
+			(color 255 223 139 0.4)
+		)
+		(uuid 32250dd0-8b28-4438-a40c-55b7af948fec)
+	)
+	(rectangle
+		(start 21.082 19.304)
+		(end 181.61 140.97)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type color)
+			(color 255 64 49 0.36)
+		)
+		(uuid 3862b10d-e8d5-4060-9c1b-b53319f58206)
+	)
+	(rectangle
+		(start 20.32 145.288)
+		(end 59.69 188.468)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 9994f2f5-4c34-4483-9f50-f72f1973f084)
+	)
+	(rectangle
+		(start 191.516 19.812)
+		(end 262.636 73.152)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type color)
+			(color 255 223 139 0.4)
+		)
+		(uuid df1caf54-a1e9-40f8-b515-9b416f1636b1)
+	)
+	(rectangle
+		(start 73.406 145.542)
+		(end 119.888 187.452)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid dfbc53cb-8fee-472f-8157-ae956faf68f5)
+	)
+	(text "User Interface"
+		(exclude_from_sim no)
+		(at 227.076 23.876 0)
+		(effects
+			(font
+				(size 3.048 3.048)
+				(thickness 0.6096)
+				(bold yes)
+			)
+		)
+		(uuid "19873b8b-6d6b-4aa3-b3e6-83df44f7a1e8")
+	)
+	(text "Central Control Unit"
+		(exclude_from_sim no)
+		(at 99.06 24.13 0)
+		(effects
+			(font
+				(size 3.048 3.048)
+				(thickness 0.6096)
+				(bold yes)
+			)
+		)
+		(uuid "3e4bfcec-a86a-46c5-9bd7-f5fccd85959f")
+	)
+	(text "Temp Sensors"
+		(exclude_from_sim no)
+		(at 40.64 149.86 0)
+		(effects
+			(font
+				(size 3.048 3.048)
+				(thickness 0.6096)
+				(bold yes)
+			)
+		)
+		(uuid "628a8e34-669b-40f0-a1ea-411ba248e8ba")
+	)
+	(text "Water Lvl Sensors"
+		(exclude_from_sim no)
+		(at 96.52 149.86 0)
+		(effects
+			(font
+				(size 3.048 3.048)
+				(thickness 0.6096)
+				(bold yes)
+			)
+		)
+		(uuid "c21586e2-e9a3-4fe8-a114-1bcd74d6d68f")
+	)
+	(text "Aux UI"
+		(exclude_from_sim no)
+		(at 210.82 82.55 0)
+		(effects
+			(font
+				(size 3.048 3.048)
+				(thickness 0.6096)
+				(bold yes)
+			)
+		)
+		(uuid "f63c7ad2-53ba-4b45-8367-8a0cf3ed07d7")
+	)
+	(sheet
+		(at 63.5 39.37)
+		(size 66.04 35.56)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 255 231 58 1.0000)
+		)
+		(uuid "04c402f1-b99a-4823-99a0-0c7312782f29")
+		(property "Sheetname" "centra_control_unit"
+			(at 63.5 38.6584 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "centra_control_unit.kicad_sch"
+			(at 63.5 75.5146 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "electronics"
+				(path "/eeb1234c-eae0-4ac6-a30d-2a978d66d889"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 213.36 40.64)
+		(size 33.02 24.13)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 255 231 58 1.0000)
+		)
+		(uuid "175fd3c3-68c1-4b4d-9bb6-3e1c2844a746")
+		(property "Sheetname" "touch_user_interface"
+			(at 213.36 39.9284 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "touch_user_interface.kicad_sch"
+			(at 213.36 65.3546 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "electronics"
+				(path "/eeb1234c-eae0-4ac6-a30d-2a978d66d889"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 77.47 161.29)
+		(size 30.48 19.05)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 255 231 58 1.0000)
+		)
+		(uuid "4e10a58b-e97c-411d-a166-d2f84238dc25")
+		(property "Sheetname" "water_sensor"
+			(at 77.47 160.5784 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "water_sensor.kicad_sch"
+			(at 77.47 180.9246 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "electronics"
+				(path "/eeb1234c-eae0-4ac6-a30d-2a978d66d889"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 203.2 128.27)
+		(size 12.7 12.7)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "da888cb1-ed89-4b09-bf89-340f462f0940")
+		(property "Sheetname" "high_power"
+			(at 203.2 127.5584 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "high_power.kicad_sch"
+			(at 203.2 141.5546 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "exclude" ""
+			(at 203.2 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "electronics"
+				(path "/eeb1234c-eae0-4ac6-a30d-2a978d66d889"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+)
