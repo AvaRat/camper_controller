@@ -1,0 +1,135 @@
+(footprint "ATO_fuse_holder"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0.5 -2 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "3e45d366-9b8a-4fc9-b65f-76d21af0d4e2")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "ATO_fuse_holder"
+		(at 0 1 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "9835f5b1-d693-4597-94d0-fff7753840f6")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "28456fef-260f-4ab8-ab5b-a46ad85e1622")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "c725af71-5ebe-4c90-a549-fac60532d7b4")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "5b5fd306-5e04-4930-ac33-ddc9e798e6d8")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(fp_rect
+		(start -10 -2.5)
+		(end 10 2.5)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill none)
+		(layer "F.SilkS")
+		(uuid "5cec5771-8da5-40ba-9723-96d58fe38482")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 2.5 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "c81062cc-4c90-4700-a182-3b5b375eabb5")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole circle
+		(at -7.1 0)
+		(size 3.5 3.5)
+		(drill 2.7)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "1b4a25ea-36a5-4a8c-b79c-52168752a4a7")
+	)
+	(pad "1" thru_hole circle
+		(at -2.1 0)
+		(size 3.5 3.5)
+		(drill 2.7)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "a1997b91-e020-45b7-a3cf-a25cb5adf1a2")
+	)
+	(pad "2" thru_hole circle
+		(at 2.1 0)
+		(size 3.5 3.5)
+		(drill 2.7)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "30ab0bc2-8f28-45cd-a1d5-60d0023b3440")
+	)
+	(pad "2" thru_hole circle
+		(at 7.1 0)
+		(size 3.5 3.5)
+		(drill 2.7)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "7c842a04-343d-4e39-94b4-e796d6b7bee5")
+	)
+	(model "C:/Users/Marcel-Legion/3D-Models/SmartCamper/ATO-fuse-holder v0.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 0 0)
+		)
+	)
+)

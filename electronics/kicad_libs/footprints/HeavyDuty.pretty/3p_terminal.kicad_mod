@@ -1,0 +1,152 @@
+(footprint "3p_terminal"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 -0.5 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "772241b2-9acb-42c1-bff2-3f26877f3a80")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "3p_terminal"
+		(at 0 1 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "edefb088-e62b-4440-9e5f-f889a99023a7")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "681b4ef9-c84f-403b-b039-ffc7ec498015")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "09083a08-5605-47b4-9278-356560b8c9b6")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "d6d8ec30-f8d0-4d38-813b-e310fa25c32c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_rect
+		(start -15.24 -7)
+		(end 15.24 7.5)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill none)
+		(layer "F.SilkS")
+		(uuid "c872c403-a424-4e1b-a796-05b10d712028")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 2.5 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "9a6c564d-f401-4069-9694-d50845df9043")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole circle
+		(at -10.16 -5.08)
+		(size 3 3)
+		(drill 2.35)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "4a1db625-087b-49f5-80a6-6a4e1d492d79")
+	)
+	(pad "1" thru_hole circle
+		(at -10.16 5.08)
+		(size 3 3)
+		(drill 2.35)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "d2fe9c2f-93ef-4e2d-9356-1e78fa200a48")
+	)
+	(pad "2" thru_hole circle
+		(at 0 -5.08)
+		(size 3 3)
+		(drill 2.35)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "cb2d26fd-02d6-4e7b-bd30-e51d363383a1")
+	)
+	(pad "2" thru_hole circle
+		(at 0 5.08)
+		(size 3 3)
+		(drill 2.35)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "749f0dbb-ce81-4e8a-9f5f-464ad21fd7f8")
+	)
+	(pad "3" thru_hole circle
+		(at 10.16 -5.08)
+		(size 3 3)
+		(drill 2.35)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "6a8e15cc-d5c2-4d37-b1cd-fa24beb396fc")
+	)
+	(pad "3" thru_hole circle
+		(at 10.16 5.08)
+		(size 3 3)
+		(drill 2.35)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "b18f2761-8f6f-415a-b001-8e087a1182a9")
+	)
+	(model "C:/Users/Marcel-Legion/3D-Models/SmartCamper/3p-10-conn v2.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 0 180)
+		)
+	)
+)

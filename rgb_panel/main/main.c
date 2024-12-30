@@ -7,6 +7,7 @@
 #include "camper_ui/camper_app_ui.h"
 #include "stdio.h"
 #include "esp_common.h"
+#include "hss.hpp"
 
 
 

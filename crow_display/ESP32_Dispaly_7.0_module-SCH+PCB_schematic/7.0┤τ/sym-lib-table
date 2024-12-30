@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 0)
+  (lib (name "CrowPanel ESP32 Display-7.0-inch-V3.0-20240420-eagle-import")(type "KiCad")(uri "${KIPRJMOD}/CrowPanel ESP32 Display-7.0-inch-V3.0-20240420-eagle-import.kicad_sym")(options "")(descr ""))
+)

@@ -5,6 +5,36 @@
 	(uuid "eeb1234c-eae0-4ac6-a30d-2a978d66d889")
 	(paper "A4")
 	(lib_symbols)
+	(wire
+		(pts
+			(xy 88.9 54.61) (xy 101.6 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a566c041-5c0b-450c-965e-f3e52956c028")
+	)
+	(wire
+		(pts
+			(xy 88.9 63.5) (xy 101.6 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "da15c053-e07a-483b-8f55-e46c9741bc5c")
+	)
+	(wire
+		(pts
+			(xy 88.9 67.31) (xy 101.6 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dbbd2c6f-f33b-4f60-90e1-3e68c1c6832b")
+	)
 	(rectangle
 		(start 191.516 78.74)
 		(end 227.076 100.33)
@@ -129,8 +159,8 @@
 		(uuid "f63c7ad2-53ba-4b45-8367-8a0cf3ed07d7")
 	)
 	(sheet
-		(at 63.5 39.37)
-		(size 66.04 35.56)
+		(at 101.6 50.8)
+		(size 25.4 25.4)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -140,8 +170,8 @@
 			(color 255 231 58 1.0000)
 		)
 		(uuid "04c402f1-b99a-4823-99a0-0c7312782f29")
-		(property "Sheetname" "centra_control_unit"
-			(at 63.5 38.6584 0)
+		(property "Sheetname" "central_control_unit"
+			(at 101.6 50.0884 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -150,13 +180,53 @@
 			)
 		)
 		(property "Sheetfile" "centra_control_unit.kicad_sch"
-			(at 63.5 75.5146 0)
+			(at 101.6 76.7846 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
 			)
+		)
+		(pin "+BATT" input
+			(at 101.6 54.61 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "a2c637e0-b578-4d23-8392-acd431cd06f4")
+		)
+		(pin "SCL" passive
+			(at 101.6 67.31 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "ce28059b-6c49-4424-8356-cf1ae651b5dc")
+		)
+		(pin "SDA" passive
+			(at 101.6 63.5 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "7ed4fee2-7831-4b85-a631-c80db88d92db")
+		)
+		(pin "WS_COM" passive
+			(at 127 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "f1ba32ad-8d2a-4d07-8439-f10cf10902fc")
 		)
 		(instances
 			(project "electronics"
@@ -234,6 +304,16 @@
 				(justify left top)
 			)
 		)
+		(pin "COM" passive
+			(at 107.95 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "69b434df-b10f-4605-96ca-065b779d49b0")
+		)
 		(instances
 			(project "electronics"
 				(path "/eeb1234c-eae0-4ac6-a30d-2a978d66d889"
@@ -243,8 +323,8 @@
 		)
 	)
 	(sheet
-		(at 203.2 128.27)
-		(size 12.7 12.7)
+		(at 63.5 50.8)
+		(size 25.4 25.4)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -255,7 +335,7 @@
 		)
 		(uuid "da888cb1-ed89-4b09-bf89-340f462f0940")
 		(property "Sheetname" "high_power"
-			(at 203.2 127.5584 0)
+			(at 63.5 50.0884 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -264,7 +344,7 @@
 			)
 		)
 		(property "Sheetfile" "high_power.kicad_sch"
-			(at 203.2 141.5546 0)
+			(at 63.5 76.7846 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -273,13 +353,43 @@
 			)
 		)
 		(property "exclude" ""
-			(at 203.2 128.27 0)
+			(at 63.5 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
+		)
+		(pin "SDA" bidirectional
+			(at 88.9 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "0f1bb682-a221-4266-bc74-6be2fed535c3")
+		)
+		(pin "SCL" bidirectional
+			(at 88.9 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "79f03671-86c1-49f7-9516-d5866b2bffba")
+		)
+		(pin "+BATT" output
+			(at 88.9 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "582c8c36-ca17-404c-905d-56b7d047a53a")
 		)
 		(instances
 			(project "electronics"
