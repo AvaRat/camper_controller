@@ -4,6 +4,11 @@
 	(generator_version "8.0")
 	(uuid "7c0e126d-14d5-401e-a628-ab87f8b37d20")
 	(paper "A4")
+	(title_block
+		(title "camper_controller_ccu")
+		(date "2024-12-30")
+		(company "MK Electronics")
+	)
 	(lib_symbols
 		(symbol "74xx:CD74HC4067SM"
 			(exclude_from_sim no)
@@ -13734,10 +13739,10 @@
 			)
 		)
 		(pin "2"
-			(uuid "8d5373fb-5f88-4cd0-9530-8e583f1644c7")
+			(uuid "8d5373fb-5f88-4cd0-9530-8e583f1644c8")
 		)
 		(pin "1"
-			(uuid "21f9da7a-bf63-4a29-ba5c-f84ba0e53284")
+			(uuid "21f9da7a-bf63-4a29-ba5c-f84ba0e53285")
 		)
 		(pin "4"
 			(uuid "3b76f433-028f-46c5-bc01-1cee1c88d5cd")
@@ -13746,7 +13751,7 @@
 			(uuid "36da99bf-5e2c-4175-90d1-74e9af191f31")
 		)
 		(pin "3"
-			(uuid "3812e466-e650-4ad0-b241-e6dc9a8977ab")
+			(uuid "3812e466-e650-4ad0-b241-e6dc9a8977ac")
 		)
 		(pin "1"
 			(uuid "c70ce1d4-11bb-4d25-9e9a-c95aedde84db")
@@ -13891,22 +13896,22 @@
 			)
 		)
 		(pin "2"
-			(uuid "8d5373fb-5f88-4cd0-9530-8e583f1644c7")
+			(uuid "8d5373fb-5f88-4cd0-9530-8e583f1644c9")
 		)
 		(pin "1"
-			(uuid "21f9da7a-bf63-4a29-ba5c-f84ba0e53284")
+			(uuid "21f9da7a-bf63-4a29-ba5c-f84ba0e53286")
 		)
 		(pin "4"
-			(uuid "459c1a0b-a3e6-48e8-86d7-cb1bef94e0de")
+			(uuid "459c1a0b-a3e6-48e8-86d7-cb1bef94e0df")
 		)
 		(pin "5"
-			(uuid "acbacac8-97c4-4366-b698-4dbdb0a33870")
+			(uuid "acbacac8-97c4-4366-b698-4dbdb0a33871")
 		)
 		(pin "3"
-			(uuid "3812e466-e650-4ad0-b241-e6dc9a8977ab")
+			(uuid "3812e466-e650-4ad0-b241-e6dc9a8977ad")
 		)
 		(pin "1"
-			(uuid "9bf30030-6212-403c-9edc-c776a211d06d")
+			(uuid "9bf30030-6212-403c-9edc-c776a211d06e")
 		)
 		(instances
 			(project ""
