@@ -48,7 +48,7 @@
         "silk_text_thickness": 0.1,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.0
+          "min_clearance": 0.5
         }
       },
       "diff_pair_dimensions": [
@@ -673,6 +673,14 @@
     [
       "da888cb1-ed89-4b09-bf89-340f462f0940",
       "high_power"
+    ],
+    [
+      "db402c11-67cf-4dfe-9417-f1498eee71b8",
+      "230V"
+    ],
+    [
+      "59aad372-c2d2-429c-8a8d-969e1cac44e0",
+      "LED_control"
     ]
   ],
   "text_variables": {}

@@ -1,4 +1,4 @@
-23655972030106298
+23659445785323529
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -57835,6 +57835,20 @@ ATO_fuse_holder
 2
 HeavyDuty
 MSRSF_shunt_resistor
+
+
+0
+4
+4
+HeavyDuty
+PG-HSOF-8
+
+
+0
+59
+6
+HeavyDuty
+PRE29-same-sky
 
 
 0
