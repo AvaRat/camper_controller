@@ -33,7 +33,6 @@ namespace hss
 class Hss
 {
     public:
-
                             Hss(GPIOPAL *den, GPIOPAL *in, ADCPAL *is, TimerPAL *timer, BtxVariants_t *btxVariant);
                             Hss(GPIOPAL *den, GPIOPAL *in0, GPIOPAL *in1, GPIOPAL *dsel, ADCPAL *is, TimerPAL *timer, BtxVariants_t *btxVariant);
                             ~Hss();

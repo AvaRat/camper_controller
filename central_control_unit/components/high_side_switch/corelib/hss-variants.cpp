@@ -122,7 +122,8 @@ BtxVariants_t BTS7006 = {
     .kilis = 17700,
     .iisFault = 0.0044,
     .iisOl = 0.0018,
-    .iisEn = 0.000002
+    .iisEn = 0.000002,
+    .iisO = 0.0  
 };
 
 /**

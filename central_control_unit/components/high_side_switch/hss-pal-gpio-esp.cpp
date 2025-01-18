@@ -17,7 +17,6 @@ using namespace hss;
  * @details  This function is setting the basics for a GPIO. It allows to set the pin number,
  *           mode of the pin and the logic level.
  * @param[in]   pin     Number of the desired pin
- * @param[in]   mode    Defines the mode of the pin (INPUT, OUTPUT, etc.) always OUTPUT
  * @param[in]   logic   Defines the logic level of the pin
  */
 GPIOEsp::GPIOEsp(uint32_t pin, VLogic_t _logic): gpio(GPIO_Output(GPIONum(pin))), logic(_logic)

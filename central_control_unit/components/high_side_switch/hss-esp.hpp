@@ -1,6 +1,6 @@
 /**
  * @file        hss-arduEsp.hpp
- * @brief       High side switch ArduEsp class
+ * @brief       High side switch Esp class
  * @copyright   Copyright (c) 2021 Infineon Technologies AG
  *
  * SPDX-License-Identifier: MIT
@@ -25,9 +25,9 @@ namespace hss
 class HssEsp : public Hss
 {
     public:
-        HssEsp(uint8_t in, uint8_t is, BtxVariants_t * btxVariant);
-        HssEsp(uint32_t den, uint32_t in, uint32_t is, BtxVariants_t * btxVariant);
-        HssEsp(uint8_t den, uint8_t in0, uint8_t in1, uint8_t dsel, uint8_t is, BtxVariants_t * btxVariant);
+        //HssEsp(uint8_t in, uint8_t is, BtxVariants_t * btxVariant);
+        HssEsp(uint8_t den, uint8_t in, uint8_t is, BtxVariants_t * btxVariant);
+        //HssEsp(uint8_t den, uint8_t in0, uint8_t in1, uint8_t dsel, uint8_t is, BtxVariants_t * btxVariant);
         ~HssEsp();
 };
 

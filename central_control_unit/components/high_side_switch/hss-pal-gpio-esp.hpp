@@ -25,13 +25,13 @@ class GPIOEsp: virtual public hss::GPIOPAL
 {
 private:
     idf::GPIO_Output gpio;
-    VLogic_t logic;
+    hss::GPIOPAL::VLogic_t logic;
 
 public:
 
     static constexpr uint8_t  unusedPin = 0xFFU;    /**< Unused pin */
 
-    GPIOEsp(uint32_t pin, VLogic_t logic);
+    GPIOEsp(uint32_t pin, hss::GPIOPAL::VLogic_t logic);
     ~GPIOEsp();
     hss::Error_t     init();
     hss::Error_t     deinit();
