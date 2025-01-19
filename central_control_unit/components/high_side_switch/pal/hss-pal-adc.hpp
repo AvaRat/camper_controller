@@ -58,12 +58,6 @@ class ADCPAL
          */
         virtual uint16_t    ADCRead() = 0;
 
-        /**
-         * @brief       Write a desired analog value
-         * @param[in]   value       Desired analog value
-         * @return High-side switch error code
-         */
-        virtual Error_t     ADCWrite(uint8_t value) = 0;
 
 };
 

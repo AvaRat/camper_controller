@@ -10,9 +10,18 @@
 #define HSS_PAL_ADC_Esp_HPP
 
 #include "hss-pal-adc.hpp"
+#include <esp_io_expander.h>
 
 namespace hss
 {
+
+typedef struct
+{
+    uint8_t s0;
+    uint8_t s1;
+    uint8_t s2;
+    uint8_t s3;
+}mux_config_t;
 
 /**
  * @addtogroup EspPal
@@ -31,7 +40,7 @@ class ADCEsp : virtual public ADCPAL
 
     public:
 
-                    ADCEsp();
+                    ADCEsp(esp_io_expander_handle_t handle, mux_config_t conf);
                     ADCEsp(uint8_t pin);
                     ~ADCEsp();
         Error_t     init();

@@ -8,6 +8,7 @@
 
 #include "hss-pal-timer-esp.hpp"
 
+using namespace std;
 using namespace hss;
 
 /**
@@ -98,6 +99,7 @@ Error_t TimerEsp::stop()
 Error_t TimerEsp::delayMilli(uint32_t timeout)
 {
    // delay(timeout);
+    this_thread::sleep_for(chrono::milliseconds(timeout));
     return OK;
 }
 
@@ -111,6 +113,7 @@ Error_t TimerEsp::delayMilli(uint32_t timeout)
 Error_t TimerEsp::delayMicro(uint32_t timeout)
 {
     //delayMicroseconds(timeout);
+    this_thread::sleep_for(chrono::microseconds(timeout));
     return OK;
 }
 

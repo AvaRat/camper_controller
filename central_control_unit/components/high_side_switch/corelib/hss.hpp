@@ -19,6 +19,8 @@
 #include "hss-variants.hpp"
 #include "hss-filter.hpp"
 
+#include <esp_log.h>
+
 namespace hss
 {
 

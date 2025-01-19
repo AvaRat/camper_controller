@@ -13,6 +13,8 @@
 #include "hss-pal-gpio-esp.hpp"
 #include "hss-pal-adc-esp.hpp"
 #include "hss-pal-timer-esp.hpp"
+#include "hss-pal-gpio-esp.hpp"
+
 
 
 namespace hss

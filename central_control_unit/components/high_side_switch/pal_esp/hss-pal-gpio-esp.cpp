@@ -13,7 +13,7 @@ using namespace idf;
 using namespace hss;
 
 /**
- * @brief    Constructor of the  GPIO class for arduEsp
+ * @brief    Constructor of the  GPIO class for Esp
  * @details  This function is setting the basics for a GPIO. It allows to set the pin number,
  *           mode of the pin and the logic level.
  * @param[in]   pin     Number of the desired pin

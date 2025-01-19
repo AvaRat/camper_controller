@@ -23,11 +23,18 @@
 #include "esp_log.h"
 #include <gpio_cxx.hpp>
 #include "i2c_cxx.hpp"
+#include "cd74hc_mux.hpp"
+
+#include "soc/soc_caps.h"
+#include "esp_adc/adc_oneshot.h"
+#include "esp_adc/adc_cali.h"
+#include "esp_adc/adc_cali_scheme.h"
 
 
 #include <ws.hpp>
 
-#include "hss-esp.hpp"
+//#include "hss-esp.hpp"
+#include "hss-esp-expander.hpp"
 
 static const char *TAG = "main";
 
@@ -37,7 +44,9 @@ using namespace idf;
 
 using namespace hss;
 
-const auto test_sleep_time = seconds{2};
+const auto test_sleep_time = seconds{3};
+const auto ms50 = milliseconds(50);
+const auto sec2 = milliseconds(2000);
 
 
 //#include <driver/i2c_master.h>
@@ -45,29 +54,56 @@ const auto test_sleep_time = seconds{2};
 #define I2C_MASTER_SCL_IO           SCL_GPIO(22)      /*!< GPIO number used for I2C master clock */
 #define I2C_MASTER_SDA_IO           SDA_GPIO(21)      /*!< GPIO number used for I2C master data  */
 
-// void i2c_init()
-// {
-// i2c_master_bus_config_t i2c_mst_config = {
-//     .clk_source = I2C_CLK_SRC_DEFAULT,
-//     .i2c_port = TEST_I2C_PORT,
-//     .scl_io_num = I2C_MASTER_SCL_IO,
-//     .sda_io_num = I2C_MASTER_SDA_IO,
-//     .glitch_ignore_cnt = 7,
-//     .flags.enable_internal_pullup = true,
-// };
 
-// i2c_master_bus_handle_t bus_handle;
-// ESP_ERROR_CHECK(i2c_new_master_bus(&i2c_mst_config, &bus_handle));
 
-// i2c_device_config_t dev_cfg = {
-//     .dev_addr_length = I2C_ADDR_BIT_LEN_7,
-//     .device_address = 0x58,
-//     .scl_speed_hz = 100000,
-// };
 
-// i2c_master_dev_handle_t dev_handle;
-// ESP_ERROR_CHECK(i2c_master_bus_add_device(bus_handle, &dev_cfg, &dev_handle));
-// }
+void adc_init(adc_oneshot_unit_handle_t *handle, adc_channel_t adc_channel)
+{
+    // ADC2 CH2
+
+    adc_oneshot_unit_init_cfg_t init_config1 = {
+        .unit_id = ADC_UNIT_2,
+        .ulp_mode = ADC_ULP_MODE_DISABLE,
+    };
+    ESP_ERROR_CHECK(adc_oneshot_new_unit(&init_config1, handle));
+
+    //-------------ADC1 Config---------------//
+    adc_oneshot_chan_cfg_t config = {
+        .atten = ADC_ATTEN_DB_12,
+        .bitwidth = ADC_BITWIDTH_DEFAULT,
+    };
+    ESP_ERROR_CHECK(adc_oneshot_config_channel(*handle, adc_channel, &config));
+}
+
+void test_mux()
+{
+    shared_ptr<I2CMaster> master(new I2CMaster(I2CNumber::I2C0(),
+                I2C_MASTER_SCL_IO,
+                I2C_MASTER_SDA_IO,
+                Frequency(400000)));
+    ESP_LOGI(TAG, "I2C initialized successfully");
+    esp_io_expander_handle_t io_expander = NULL;
+    esp_err_t status;
+    
+    status = esp_io_expander_new_i2c_tca95xx_16bit(I2C_NUM_0, ESP_IO_EXPANDER_I2C_TCA9555_ADDRESS_010, &io_expander);
+    //esp_io_expander_reset(io_expander);
+    if(status != ESP_OK)
+    {
+        ESP_LOGE(TAG, "Failed to initialize tca expander");
+        return;
+    }
+
+    Cd74HCMux mux( io_expander, IO_EXPANDER_PIN_NUM_0, IO_EXPANDER_PIN_NUM_1, IO_EXPANDER_PIN_NUM_2, IO_EXPANDER_PIN_NUM_3);   
+
+    while(1)
+    {
+        for (uint8_t i = 0; i < 16; ++i) 
+        {
+            mux.enable_channel(i);      
+            this_thread::sleep_for(sec2); 
+        }
+    }
+}
 
 void hss_test_thread(){
 
@@ -76,39 +112,75 @@ void hss_test_thread(){
                 I2C_MASTER_SDA_IO,
                 Frequency(400000)));
     esp_io_expander_handle_t io_expander = NULL;
+    esp_err_t status;
     
-    ESP_ERROR_CHECK(esp_io_expander_new_i2c_tca95xx_16bit(I2C_NUM_0, ESP_IO_EXPANDER_I2C_TCA9555_ADDRESS_010, &io_expander));
-    ESP_ERROR_CHECK(esp_io_expander_set_dir(io_expander, IO_EXPANDER_PIN_NUM_15, IO_EXPANDER_OUTPUT));
-    ESP_ERROR_CHECK(esp_io_expander_set_level(io_expander, IO_EXPANDER_PIN_NUM_15 , 1));
+    status = esp_io_expander_new_i2c_tca95xx_16bit(I2C_NUM_0, ESP_IO_EXPANDER_I2C_TCA9555_ADDRESS_010, &io_expander);
+    //esp_io_expander_reset(io_expander);
+    if(status != ESP_OK)
+    {
+        ESP_LOGE(TAG, "Failed to initialize tca expander");
+        return;
+    }
+     
+    adc_oneshot_unit_handle_t adc_handle;
+    adc_channel_t adc_channel = ADC_CHANNEL_2;
+    adc_init(&adc_handle, adc_channel);
 
+    Cd74HCMux mux( io_expander, IO_EXPANDER_PIN_NUM_0, IO_EXPANDER_PIN_NUM_1, IO_EXPANDER_PIN_NUM_2, IO_EXPANDER_PIN_NUM_3);   
+
+    //TODO put this into #DEFINEs
+    uint8_t ch1_diag_mux_pin = 8;
+    uint8_t ch5_diag_mux_pin = 12;
+
+    HssEspExpander hss1(io_expander, IO_EXPANDER_PIN_NUM_10, IO_EXPANDER_PIN_NUM_15, 
+        &mux, ch1_diag_mux_pin, adc_handle, adc_channel, 
+        &hss::BTS7006);
+    HssEspExpander hss5(io_expander, IO_EXPANDER_PIN_NUM_6, IO_EXPANDER_PIN_NUM_11, 
+        &mux, ch5_diag_mux_pin, adc_handle, adc_channel,
+        &hss::BTS7006);
+
+
+    hss1.init();
+    hss5.init();
+    hss1.enable();
+    hss5.enable();
+
+    hss1.enableDiag();
+    hss5.enableDiag();
+
+    hss1.disable();
+    this_thread::sleep_for(chrono::milliseconds(500));  
+    hss1.enable();
+
+    int adc_raw = 0;
+    int voltage = 0;
     bool state = 0;
+    uint16_t r_sense = 1410;
 
     while(1)
     {
-        ESP_LOGI(TAG, "toggling io-espander pin 17 ");
-        esp_io_expander_set_level(io_expander, IO_EXPANDER_PIN_NUM_15 , state);
-        state = !state;
-        this_thread::sleep_for(test_sleep_time);
+        float sense_current = hss5.readIs(r_sense);
+        int diag_status = hss5.diagRead(sense_current);
+        ESP_LOGI(TAG, "sensed current: %f", sense_current);
+        ESP_LOGI(TAG, "HSS5 diag msg: %d", diag_status);
 
+        hss5.print_diag(diag_status);
+        this_thread::sleep_for(test_sleep_time);  
+
+
+        sense_current = hss1.readIs(r_sense);
+        diag_status = hss1.diagRead(sense_current);
+        ESP_LOGI(TAG, "sensed current: %f", sense_current);
+        ESP_LOGI(TAG, "HSS1 diag msg: %d", diag_status);
+
+        hss1.print_diag(diag_status);
+        this_thread::sleep_for(test_sleep_time);  
+
+        // hss5.disable();
+        // this_thread::sleep_for(chrono::milliseconds(500));  
+        // hss5.enable();
 
     }
-}
-
-void test_func()
-{
-            // creating master bus
-    shared_ptr<I2CMaster> master(new I2CMaster(I2CNumber::I2C0(),
-                I2C_MASTER_SCL_IO,
-                I2C_MASTER_SDA_IO,
-                Frequency(400000)));
-    ESP_LOGI(TAG, "I2C initialized successfully");
-    esp_io_expander_handle_t io_expander = NULL;
-    esp_io_expander_new_i2c_tca95xx_16bit(I2C_NUM_0, ESP_IO_EXPANDER_I2C_TCA9539_ADDRESS_00, &io_expander);
-    esp_io_expander_set_dir(io_expander, IO_EXPANDER_PIN_NUM_17, IO_EXPANDER_OUTPUT);
-    esp_io_expander_set_level(io_expander, IO_EXPANDER_PIN_NUM_17 , 1);
-    HssEsp hss1(0, 1, 2, &hss::BTS7006);
-    hss1.enable();
-
 }
 
 
@@ -134,7 +206,7 @@ void print_thread_info(const char *extra = nullptr)
 void thread_func_inherited()
 {
     while (true) {
-        print_thread_info("This is the INHERITING thread with the same parameters as our parent, including name. ");
+        //print_thread_info("This is the INHERITING thread with the same parameters as our parent, including name. ");
         std::this_thread::sleep_for(sleep_time);
     }
 }
@@ -153,7 +225,7 @@ void spawn_another_thread()
 void thread_func_any_core()
 {
     while (true) {
-        print_thread_info("This thread (with the default name) may run on any core.");
+        //print_thread_info("This thread (with the default name) may run on any core.");
         std::this_thread::sleep_for(sleep_time);
     }
 }
@@ -186,8 +258,7 @@ extern "C" void app_main(void)
     // Create a thread on core 1.
     cfg = create_config("HSS Thread 2", 1, 3 * 2048, 5);
     esp_pthread_set_cfg(&cfg);
-
-    //test_func();
+    //std::thread thread_2(hss_test_thread);
     std::thread thread_2(hss_test_thread);
 
     // Let the main task do something too

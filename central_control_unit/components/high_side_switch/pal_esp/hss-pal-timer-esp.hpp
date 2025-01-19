@@ -9,6 +9,10 @@
 #ifndef HSS_PAL_TIMER_Esp_HPP_
 #define HSS_PAL_TIMER_Esp_HPP_
 
+
+#include <thread>
+#include <chrono>
+
 #include "hss-pal-timer.hpp"
 
 namespace hss

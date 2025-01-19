@@ -27,6 +27,8 @@ HssEsp::HssEsp(uint8_t den, uint8_t in, uint8_t is, BtxVariants_t * btxVariant)
 {}
 
 
+
+
 /**
  * @brief Destructor of the ArduEsp High-Side-Switch
  *

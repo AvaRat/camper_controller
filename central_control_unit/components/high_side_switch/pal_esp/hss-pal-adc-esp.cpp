@@ -14,8 +14,12 @@ using namespace hss;
 /**
  * @brief Default constructor of the ADC class for Esp
  */
-ADCEsp::ADCEsp()
+ADCEsp::ADCEsp(esp_io_expander_handle_t handle, mux_config_t conf): pin(0)
 {
+    conf.s0 = 90;
+    uint8_t c = handle->config.io_count;
+    mux_config_t co = conf;
+    co.s0 = c;
     // adc_oneshot_unit_handle_t adc1_handle;
     // adc_oneshot_unit_init_cfg_t init_config1;
     // init_config1.unit_id = ADC_UNIT_1;
