@@ -1,0 +1,27 @@
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "86d3cdee-5dd8-41ef-ab2c-98677f6b6305")
+	(paper "A4")
+	(lib_symbols)
+	(text_box "use transistors to create binary  signal from water rods."
+		(exclude_from_sim no)
+		(at 30.48 22.86 0)
+		(size 68.58 52.07)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "b227b2c4-6ec8-46a2-aa16-c96a1b6fe36c")
+	)
+)

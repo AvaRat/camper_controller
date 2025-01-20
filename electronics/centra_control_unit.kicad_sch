@@ -9676,7 +9676,7 @@
 			(uuid "e5b422d4-bd03-4aef-91dd-ddecd0e39ea1")
 		)
 		(instances
-			(project ""
+			(project "electronics"
 				(path "/eeb1234c-eae0-4ac6-a30d-2a978d66d889/04c402f1-b99a-4823-99a0-0c7312782f29"
 					(reference "R1")
 					(unit 1)
@@ -10065,7 +10065,7 @@
 			(uuid "5a7b352a-e66e-4bd6-891b-0e53577fae6e")
 		)
 		(instances
-			(project ""
+			(project "electronics"
 				(path "/eeb1234c-eae0-4ac6-a30d-2a978d66d889/04c402f1-b99a-4823-99a0-0c7312782f29"
 					(reference "#PWR05")
 					(unit 1)
@@ -10531,7 +10531,7 @@
 			(uuid "9bf30030-6212-403c-9edc-c776a211d06d")
 		)
 		(instances
-			(project ""
+			(project "electronics"
 				(path "/eeb1234c-eae0-4ac6-a30d-2a978d66d889/04c402f1-b99a-4823-99a0-0c7312782f29"
 					(reference "Q2")
 					(unit 1)
@@ -10846,7 +10846,7 @@
 			(uuid "412f8ce2-e175-4a5d-baf2-64d9b3048ecf")
 		)
 		(instances
-			(project ""
+			(project "electronics"
 				(path "/eeb1234c-eae0-4ac6-a30d-2a978d66d889/04c402f1-b99a-4823-99a0-0c7312782f29"
 					(reference "J1")
 					(unit 1)
@@ -10981,7 +10981,7 @@
 			(uuid "67867ab3-388a-4545-a3ef-726f5da96f52")
 		)
 		(instances
-			(project ""
+			(project "electronics"
 				(path "/eeb1234c-eae0-4ac6-a30d-2a978d66d889/04c402f1-b99a-4823-99a0-0c7312782f29"
 					(reference "#PWR011")
 					(unit 1)
@@ -11386,7 +11386,7 @@
 			(uuid "be8eefed-3e4a-4cd7-8df0-11d28f5a0708")
 		)
 		(instances
-			(project ""
+			(project "electronics"
 				(path "/eeb1234c-eae0-4ac6-a30d-2a978d66d889/04c402f1-b99a-4823-99a0-0c7312782f29"
 					(reference "#PWR018")
 					(unit 1)
@@ -11828,7 +11828,7 @@
 			(uuid "fbc5018c-9fd9-46cb-a3dd-d0f2cb995285")
 		)
 		(instances
-			(project ""
+			(project "electronics"
 				(path "/eeb1234c-eae0-4ac6-a30d-2a978d66d889/04c402f1-b99a-4823-99a0-0c7312782f29"
 					(reference "U3")
 					(unit 1)
@@ -12474,7 +12474,7 @@
 			(uuid "54cbf168-eee2-4ccc-8261-bbaf56efe415")
 		)
 		(instances
-			(project ""
+			(project "electronics"
 				(path "/eeb1234c-eae0-4ac6-a30d-2a978d66d889/04c402f1-b99a-4823-99a0-0c7312782f29"
 					(reference "C2")
 					(unit 1)
@@ -12733,7 +12733,7 @@
 			(uuid "a1a98f76-d02e-44cf-8eba-786fd6e7ea6f")
 		)
 		(instances
-			(project ""
+			(project "electronics"
 				(path "/eeb1234c-eae0-4ac6-a30d-2a978d66d889/04c402f1-b99a-4823-99a0-0c7312782f29"
 					(reference "U4")
 					(unit 1)
@@ -13334,7 +13334,7 @@
 			(uuid "86bb28b6-423b-4e22-aff1-2731ea115e5a")
 		)
 		(instances
-			(project ""
+			(project "electronics"
 				(path "/eeb1234c-eae0-4ac6-a30d-2a978d66d889/04c402f1-b99a-4823-99a0-0c7312782f29"
 					(reference "#PWR017")
 					(unit 1)
@@ -13829,7 +13829,7 @@
 			(uuid "f713e22b-2c42-4762-b611-dbc5a805986e")
 		)
 		(instances
-			(project ""
+			(project "electronics"
 				(path "/eeb1234c-eae0-4ac6-a30d-2a978d66d889/04c402f1-b99a-4823-99a0-0c7312782f29"
 					(reference "U1")
 					(unit 1)
@@ -13914,7 +13914,7 @@
 			(uuid "9bf30030-6212-403c-9edc-c776a211d06e")
 		)
 		(instances
-			(project ""
+			(project "electronics"
 				(path "/eeb1234c-eae0-4ac6-a30d-2a978d66d889/04c402f1-b99a-4823-99a0-0c7312782f29"
 					(reference "Q2")
 					(unit 2)
@@ -13985,6 +13985,44 @@
 				(path "/eeb1234c-eae0-4ac6-a30d-2a978d66d889/04c402f1-b99a-4823-99a0-0c7312782f29"
 					(reference "R_IN2")
 					(unit 1)
+				)
+			)
+		)
+	)
+	(sheet
+		(at 151.13 19.05)
+		(size 21.59 13.97)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "62ac4720-8956-4507-8c0c-da88eca754a0")
+		(property "Sheetname" "water_sensors_logic"
+			(at 151.13 18.3384 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "water_sensors_logic.kicad_sch"
+			(at 151.13 33.6046 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "electronics"
+				(path "/eeb1234c-eae0-4ac6-a30d-2a978d66d889/04c402f1-b99a-4823-99a0-0c7312782f29"
+					(page "6")
 				)
 			)
 		)

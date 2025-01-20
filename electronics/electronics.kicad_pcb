@@ -17578,6 +17578,25 @@
 		(layer "Edge.Cuts")
 		(uuid "9009bbe4-d16a-44b2-b7a0-00ba16691186")
 	)
+	(gr_text_box "2 osobne masy.  jedna u  góry, jedna na dole płytki. INA niżej, żeby jej nie grzało wraz z shuntR\n"
+		(start 149.5 78.75)
+		(end 184 99)
+		(layer "F.Cu")
+		(uuid "aa37fb6e-9682-4e99-a9a4-4c06bc08bbfd")
+		(effects
+			(font
+				(size 1.5 1.5)
+				(thickness 0.3)
+				(bold yes)
+			)
+			(justify left top)
+		)
+		(border yes)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+	)
 	(via
 		(at 67.5 47.5)
 		(size 0.6)

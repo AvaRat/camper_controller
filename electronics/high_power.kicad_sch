@@ -3333,7 +3333,7 @@
 		)
 		(uuid cc76b4cb-82fb-402a-b5d5-682828d83dcf)
 	)
-	(text_box "For bolts use Bellaville washers or similar\n\nhttps://electronics.stackexchange.com/questions/649672/aluminum-bus-bars-connection-to-pcb\n\nbusbar fixing to PCB: https://www.mouser.pl/ProductDetail/PEM/KF2-M5-ET?qs=l4Gc20tDgJJBILUPfp%252BXpw%3D%3D\nscrew-like stud: PEM HFHB-M5-15X\n"
+	(text_box "For bolts use Bellaville washers or similar\n\nhttps://electronics.stackexchange.com/questions/649672/aluminum-bus-bars-connection-to-pcb\n\nbusbar fixing to PCB: https://www.mouser.pl/ProductDetail/PEM/KF2-M5-ET?qs=l4Gc20tDgJJBILUPfp%252BXpw%3D%3D\nscrew-like stud: PEM HFHB-M5-15X\n\nconnector options: https://www.lcsc.com/datasheet/lcsc_datasheet_2303311800_Cixi-Kefa-Elec-KF78CM-13-0-6P_C964690.pdf\nhttps://www.lcsc.com/product-detail/PCB-Welding-Terminal_SAMZO-91186400M5_C32710810.html\n"
 		(exclude_from_sim no)
 		(at 203.2 25.4 0)
 		(size 76.2 50.8)
@@ -4053,7 +4053,7 @@
 			(uuid "1d5744a7-a391-48a4-8ca7-5e5444a13bd7")
 		)
 		(instances
-			(project ""
+			(project "electronics"
 				(path "/eeb1234c-eae0-4ac6-a30d-2a978d66d889/da888cb1-ed89-4b09-bf89-340f462f0940"
 					(reference "R16")
 					(unit 1)
@@ -4447,7 +4447,7 @@
 			(uuid "106fbc30-1b90-451b-8ebf-60c99ee963ba")
 		)
 		(instances
-			(project ""
+			(project "electronics"
 				(path "/eeb1234c-eae0-4ac6-a30d-2a978d66d889/da888cb1-ed89-4b09-bf89-340f462f0940"
 					(reference "MH1")
 					(unit 1)
@@ -5416,7 +5416,7 @@
 			(uuid "c86cb955-53d5-4091-bd82-4f8825298a03")
 		)
 		(instances
-			(project ""
+			(project "electronics"
 				(path "/eeb1234c-eae0-4ac6-a30d-2a978d66d889/da888cb1-ed89-4b09-bf89-340f462f0940"
 					(reference "R5")
 					(unit 1)
@@ -6196,7 +6196,7 @@
 			(uuid "7bab2da4-d87d-424e-a0bb-7e37753e020b")
 		)
 		(instances
-			(project ""
+			(project "electronics"
 				(path "/eeb1234c-eae0-4ac6-a30d-2a978d66d889/da888cb1-ed89-4b09-bf89-340f462f0940"
 					(reference "Q1")
 					(unit 1)
@@ -6276,7 +6276,7 @@
 			(uuid "944d37b3-1947-46de-b21f-481d81342763")
 		)
 		(instances
-			(project ""
+			(project "electronics"
 				(path "/eeb1234c-eae0-4ac6-a30d-2a978d66d889/da888cb1-ed89-4b09-bf89-340f462f0940"
 					(reference "J4")
 					(unit 1)

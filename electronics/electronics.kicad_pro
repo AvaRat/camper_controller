@@ -609,6 +609,10 @@
     [
       "da888cb1-ed89-4b09-bf89-340f462f0940",
       "high_power"
+    ],
+    [
+      "62ac4720-8956-4507-8c0c-da88eca754a0",
+      "water_sensors_logic"
     ]
   ],
   "text_variables": {}

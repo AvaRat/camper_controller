@@ -918,7 +918,7 @@
 			(uuid "a475d194-0238-44cc-93c2-df5dbea282c9")
 		)
 		(instances
-			(project ""
+			(project "electronics"
 				(path "/eeb1234c-eae0-4ac6-a30d-2a978d66d889/4e10a58b-e97c-411d-a166-d2f84238dc25"
 					(reference "U12")
 					(unit 1)
@@ -999,7 +999,7 @@
 			(uuid "0fe7095b-a51b-4a2d-8e44-101c8c28183a")
 		)
 		(instances
-			(project ""
+			(project "electronics"
 				(path "/eeb1234c-eae0-4ac6-a30d-2a978d66d889/4e10a58b-e97c-411d-a166-d2f84238dc25"
 					(reference "J9")
 					(unit 1)
@@ -1067,7 +1067,7 @@
 			(uuid "48cdc304-e4ce-4441-a08f-447f4dec6b40")
 		)
 		(instances
-			(project ""
+			(project "electronics"
 				(path "/eeb1234c-eae0-4ac6-a30d-2a978d66d889/4e10a58b-e97c-411d-a166-d2f84238dc25"
 					(reference "J7")
 					(unit 1)
@@ -1149,7 +1149,7 @@
 			(uuid "323780ca-9f5f-447e-a99a-3fee5221a69b")
 		)
 		(instances
-			(project ""
+			(project "electronics"
 				(path "/eeb1234c-eae0-4ac6-a30d-2a978d66d889/4e10a58b-e97c-411d-a166-d2f84238dc25"
 					(reference "J11")
 					(unit 1)
