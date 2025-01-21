@@ -173,709 +173,7 @@
 				)
 			)
 		)
-		(symbol "IRF6802SD_1"
-			(pin_names hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "Q3"
-				(at 6.35 1.2701 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "IRF6802SD"
-				(at 6.35 -1.2699 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" "Package_DirectFET:DirectFET_SA"
-				(at 5.08 -1.905 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-						(italic yes)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://www.infineon.com/dgdl/irf6802sdpbf.pdf?fileId=5546d462533600a4015355f0a3021ab2"
-				(at 5.08 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Description" "16A Id, 25V Vds, 4.2mOhm Rds, Dual N-Channel MOSFET, DirectFET SA"
-				(at 0.508 -12.7 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "Dual N-Channel MOSFET"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "DirectFET*SA*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "IRF6802SD_1_0_1"
-				(polyline
-					(pts
-						(xy 0.254 0) (xy -2.54 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.254 1.905) (xy 0.254 -1.905)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 -1.27) (xy 0.762 -2.286)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 0.508) (xy 0.762 -0.508)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 2.286) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 2.54) (xy 2.54 1.778)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 -2.54) (xy 2.54 0) (xy 0.762 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 -1.778) (xy 3.302 -1.778) (xy 3.302 1.778) (xy 0.762 1.778)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.016 0) (xy 2.032 0.381) (xy 2.032 -0.381) (xy 1.016 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.794 0.508) (xy 2.921 0.381) (xy 3.683 0.381) (xy 3.81 0.254)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 3.302 0.381) (xy 2.921 -0.254) (xy 3.683 -0.254) (xy 3.302 0.381)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 1.651 0)
-					(radius 2.794)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 2.54 -1.778)
-					(radius 0.254)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(circle
-					(center 2.54 1.778)
-					(radius 0.254)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-			)
-			(symbol "IRF6802SD_1_1_1"
-				(pin passive line
-					(at 2.54 5.08 270)
-					(length 2.54)
-					(name "D"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -5.08 0 0)
-					(length 2.54)
-					(name "G1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 -5.08 90)
-					(length 2.54)
-					(name "S1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(symbol "IRF6802SD_1_2_1"
-				(pin passive line
-					(at 2.54 5.08 270)
-					(length 2.54)
-					(name "D"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -5.08 0 0)
-					(length 2.54)
-					(name "G2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 -5.08 90)
-					(length 2.54)
-					(name "S2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
-		(symbol "IRF6802SD_2"
-			(pin_names hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "Q4"
-				(at 6.35 1.2701 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "IRF6802SD"
-				(at 6.35 -1.2699 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" "Package_DirectFET:DirectFET_SA"
-				(at 5.08 -1.905 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-						(italic yes)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://www.infineon.com/dgdl/irf6802sdpbf.pdf?fileId=5546d462533600a4015355f0a3021ab2"
-				(at 5.08 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Description" "16A Id, 25V Vds, 4.2mOhm Rds, Dual N-Channel MOSFET, DirectFET SA"
-				(at 0.508 -12.7 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "Dual N-Channel MOSFET"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "DirectFET*SA*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "IRF6802SD_2_0_1"
-				(polyline
-					(pts
-						(xy 0.254 0) (xy -2.54 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.254 1.905) (xy 0.254 -1.905)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 -1.27) (xy 0.762 -2.286)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 0.508) (xy 0.762 -0.508)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 2.286) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 2.54) (xy 2.54 1.778)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 -2.54) (xy 2.54 0) (xy 0.762 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 -1.778) (xy 3.302 -1.778) (xy 3.302 1.778) (xy 0.762 1.778)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.016 0) (xy 2.032 0.381) (xy 2.032 -0.381) (xy 1.016 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.794 0.508) (xy 2.921 0.381) (xy 3.683 0.381) (xy 3.81 0.254)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 3.302 0.381) (xy 2.921 -0.254) (xy 3.683 -0.254) (xy 3.302 0.381)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 1.651 0)
-					(radius 2.794)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 2.54 -1.778)
-					(radius 0.254)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(circle
-					(center 2.54 1.778)
-					(radius 0.254)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-			)
-			(symbol "IRF6802SD_2_1_1"
-				(pin passive line
-					(at 2.54 5.08 270)
-					(length 2.54)
-					(name "D"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -5.08 0 0)
-					(length 2.54)
-					(name "G1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 -5.08 90)
-					(length 2.54)
-					(name "S1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(symbol "IRF6802SD_2_2_1"
-				(pin passive line
-					(at 2.54 5.08 270)
-					(length 2.54)
-					(name "D"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -5.08 0 0)
-					(length 2.54)
-					(name "G2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 -5.08 90)
-					(length 2.54)
-					(name "S2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
-		(symbol "Transistor_FET:IRF6802SD"
+		(symbol "Transistor_FET:DMN2040U"
 			(pin_names hide)
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -889,7 +187,7 @@
 					(justify left)
 				)
 			)
-			(property "Value" "IRF6802SD"
+			(property "Value" "DMN2040U"
 				(at 5.08 0 0)
 				(effects
 					(font
@@ -898,7 +196,7 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" "Package_DirectFET:DirectFET_SA"
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 				(at 5.08 -1.905 0)
 				(effects
 					(font
@@ -909,7 +207,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://www.infineon.com/dgdl/irf6802sdpbf.pdf?fileId=5546d462533600a4015355f0a3021ab2"
+			(property "Datasheet" "https://www.diodes.com/assets/Datasheets/DMN2040U.pdf"
 				(at 5.08 -3.81 0)
 				(effects
 					(font
@@ -919,16 +217,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "16A Id, 25V Vds, 4.2mOhm Rds, Dual N-Channel MOSFET, DirectFET SA"
-				(at 0.508 -12.7 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "Dual N-Channel MOSFET"
+			(property "Description" "20V Vds, 6A Id, N-Channel MOSFET, SOT-23"
 				(at 0 0 0)
 				(effects
 					(font
@@ -937,7 +226,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "DirectFET*SA*"
+			(property "ki_keywords" "N-Channel MOSFET"
 				(at 0 0 0)
 				(effects
 					(font
@@ -946,7 +235,16 @@
 					(hide yes)
 				)
 			)
-			(symbol "IRF6802SD_0_1"
+			(property "ki_fp_filters" "SOT?23*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "DMN2040U_0_1"
 				(polyline
 					(pts
 						(xy 0.254 0) (xy -2.54 0)
@@ -1113,11 +411,11 @@
 					)
 				)
 			)
-			(symbol "IRF6802SD_1_1"
-				(pin passive line
-					(at 2.54 5.08 270)
+			(symbol "DMN2040U_1_1"
+				(pin input line
+					(at -5.08 0 0)
 					(length 2.54)
-					(name "D"
+					(name "G"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1132,10 +430,10 @@
 						)
 					)
 				)
-				(pin input line
-					(at -5.08 0 0)
+				(pin passive line
+					(at 2.54 -5.08 90)
 					(length 2.54)
-					(name "G1"
+					(name "S"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1151,26 +449,6 @@
 					)
 				)
 				(pin passive line
-					(at 2.54 -5.08 90)
-					(length 2.54)
-					(name "S1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(symbol "IRF6802SD_2_1"
-				(pin passive line
 					(at 2.54 5.08 270)
 					(length 2.54)
 					(name "D"
@@ -1180,43 +458,7 @@
 							)
 						)
 					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -5.08 0 0)
-					(length 2.54)
-					(name "G2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 -5.08 90)
-					(length 2.54)
-					(name "S2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1472,17 +714,16 @@
 		)
 	)
 	(symbol
-		(lib_name "IRF6802SD_1")
-		(lib_id "Transistor_FET:IRF6802SD")
+		(lib_id "Transistor_FET:DMN2040U")
 		(at 69.85 81.28 0)
-		(unit 2)
+		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "774a982c-e9fe-42ee-8e5d-eeead68ecef1")
-		(property "Reference" "Q3"
+		(uuid "29b81607-795d-47a3-8b08-d16da3e5e417")
+		(property "Reference" "Q2"
 			(at 76.2 80.0099 0)
 			(effects
 				(font
@@ -1491,7 +732,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "IRF6802SD"
+		(property "Value" "DMN2040U"
 			(at 76.2 82.5499 0)
 			(effects
 				(font
@@ -1500,7 +741,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:Infineon_PG-HSOF-8-1"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 74.93 83.185 0)
 			(effects
 				(font
@@ -1511,7 +752,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.infineon.com/dgdl/irf6802sdpbf.pdf?fileId=5546d462533600a4015355f0a3021ab2"
+		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/DMN2040U.pdf"
 			(at 74.93 85.09 0)
 			(effects
 				(font
@@ -1521,8 +762,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "16A Id, 25V Vds, 4.2mOhm Rds, Dual N-Channel MOSFET, DirectFET SA"
-			(at 70.358 93.98 0)
+		(property "Description" "20V Vds, 6A Id, N-Channel MOSFET, SOT-23"
+			(at 69.85 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1530,121 +771,26 @@
 				(hide yes)
 			)
 		)
-		(pin "2"
-			(uuid "8d5373fb-5f88-4cd0-9530-8e583f1644c9")
-		)
 		(pin "1"
-			(uuid "9198e8f0-d025-4469-8fbd-6eaf098eaac6")
-		)
-		(pin "3"
-			(uuid "4a4d9820-2bd2-4a46-a1d6-b46ce1b99677")
+			(uuid "88ae5fb3-f419-4f24-bb17-2662cadbf6f8")
 		)
 		(pin "2"
-			(uuid "8b446e4e-10b6-4c00-9a26-bbc6169e3a50")
+			(uuid "c98fbabb-ca96-4117-a427-a664978c9c73")
 		)
 		(pin "3"
-			(uuid "3812e466-e650-4ad0-b241-e6dc9a8977ad")
-		)
-		(pin "1"
-			(uuid "9bf30030-6212-403c-9edc-c776a211d06e")
+			(uuid "5b9add8f-a802-47e3-b31f-57a1a4caf35b")
 		)
 		(instances
 			(project "electronics"
 				(path "/eeb1234c-eae0-4ac6-a30d-2a978d66d889/04c402f1-b99a-4823-99a0-0c7312782f29/59aad372-c2d2-429c-8a8d-969e1cac44e0"
-					(reference "Q3")
-					(unit 2)
+					(reference "Q2")
+					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_name "IRF6802SD_2")
-		(lib_id "Transistor_FET:IRF6802SD")
-		(at 68.58 101.6 0)
-		(unit 2)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "afe3aa19-8d6d-481b-ad6f-5e6992199c5b")
-		(property "Reference" "Q4"
-			(at 74.93 100.3299 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "IRF6802SD"
-			(at 74.93 102.8699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:Infineon_PG-HSOF-8-1"
-			(at 73.66 103.505 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.infineon.com/dgdl/irf6802sdpbf.pdf?fileId=5546d462533600a4015355f0a3021ab2"
-			(at 73.66 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "16A Id, 25V Vds, 4.2mOhm Rds, Dual N-Channel MOSFET, DirectFET SA"
-			(at 69.088 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "8d5373fb-5f88-4cd0-9530-8e583f1644c8")
-		)
-		(pin "1"
-			(uuid "f0d57850-4979-4f3e-9b98-064d7339ec5c")
-		)
-		(pin "3"
-			(uuid "0e457765-56ec-4b75-bd1b-30da34f626f8")
-		)
-		(pin "2"
-			(uuid "4acc9ac9-5016-4bc0-b57d-7cd72a1f826d")
-		)
-		(pin "3"
-			(uuid "3812e466-e650-4ad0-b241-e6dc9a8977ac")
-		)
-		(pin "1"
-			(uuid "c70ce1d4-11bb-4d25-9e9a-c95aedde84db")
-		)
-		(instances
-			(project "electronics"
-				(path "/eeb1234c-eae0-4ac6-a30d-2a978d66d889/04c402f1-b99a-4823-99a0-0c7312782f29/59aad372-c2d2-429c-8a8d-969e1cac44e0"
-					(reference "Q4")
-					(unit 2)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Transistor_FET:IRF6802SD")
+		(lib_id "Transistor_FET:DMN2040U")
 		(at 71.12 58.42 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -1652,8 +798,8 @@
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "c0922023-777e-4d44-8e52-506e2dec768a")
-		(property "Reference" "Q2"
+		(uuid "5e0d3953-b637-4add-b3bb-0bc59c14b864")
+		(property "Reference" "Q4"
 			(at 77.47 57.1499 0)
 			(effects
 				(font
@@ -1662,7 +808,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "IRF6802SD"
+		(property "Value" "DMN2040U"
 			(at 77.47 59.6899 0)
 			(effects
 				(font
@@ -1671,7 +817,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:Infineon_PG-HSOF-8-1"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 76.2 60.325 0)
 			(effects
 				(font
@@ -1682,7 +828,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.infineon.com/dgdl/irf6802sdpbf.pdf?fileId=5546d462533600a4015355f0a3021ab2"
+		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/DMN2040U.pdf"
 			(at 76.2 62.23 0)
 			(effects
 				(font
@@ -1692,8 +838,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "16A Id, 25V Vds, 4.2mOhm Rds, Dual N-Channel MOSFET, DirectFET SA"
-			(at 71.628 71.12 0)
+		(property "Description" "20V Vds, 6A Id, N-Channel MOSFET, SOT-23"
+			(at 71.12 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1701,28 +847,95 @@
 				(hide yes)
 			)
 		)
-		(pin "2"
-			(uuid "6bd24361-962c-4d6a-8798-97471ebaf0ee")
-		)
 		(pin "1"
-			(uuid "21f9da7a-bf63-4a29-ba5c-f84ba0e53284")
+			(uuid "76f00681-86d6-468e-9cd7-84f5f13e2edf")
 		)
-		(pin "4"
-			(uuid "459c1a0b-a3e6-48e8-86d7-cb1bef94e0de")
-		)
-		(pin "5"
-			(uuid "acbacac8-97c4-4366-b698-4dbdb0a33870")
+		(pin "2"
+			(uuid "8bafacb7-9525-4f9e-9e95-8d89f9ccc5cd")
 		)
 		(pin "3"
-			(uuid "bcbf1a5d-dc69-4edc-9851-68dc43269fa6")
+			(uuid "f1303c23-c60e-44ca-8148-10480b20d24b")
+		)
+		(instances
+			(project ""
+				(path "/eeb1234c-eae0-4ac6-a30d-2a978d66d889/04c402f1-b99a-4823-99a0-0c7312782f29/59aad372-c2d2-429c-8a8d-969e1cac44e0"
+					(reference "Q4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_FET:DMN2040U")
+		(at 68.58 101.6 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a7067c5a-b027-4a25-acf5-a3b5c4a4fdb0")
+		(property "Reference" "Q3"
+			(at 74.93 100.3299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "DMN2040U"
+			(at 74.93 102.8699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 73.66 103.505 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/DMN2040U.pdf"
+			(at 73.66 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "20V Vds, 6A Id, N-Channel MOSFET, SOT-23"
+			(at 68.58 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
 		)
 		(pin "1"
-			(uuid "e56d95ca-2bc0-4c6c-9a2a-a2261e5eee7d")
+			(uuid "fb3bf3cd-3784-4751-adf8-ff28398d7764")
+		)
+		(pin "2"
+			(uuid "bd4bef26-4dc7-482a-83e7-59103a28e4bb")
+		)
+		(pin "3"
+			(uuid "d633f761-9f02-44f2-a98c-ff714e995e2d")
 		)
 		(instances
 			(project "electronics"
 				(path "/eeb1234c-eae0-4ac6-a30d-2a978d66d889/04c402f1-b99a-4823-99a0-0c7312782f29/59aad372-c2d2-429c-8a8d-969e1cac44e0"
-					(reference "Q2")
+					(reference "Q3")
 					(unit 1)
 				)
 			)

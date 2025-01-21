@@ -5790,10 +5790,6 @@
 		(uuid "32dec51c-e2dd-4593-b42d-b4b4d0cb5098")
 	)
 	(no_connect
-		(at 146.05 60.96)
-		(uuid "57753f6e-8f9f-49a9-92de-468900e428ad")
-	)
-	(no_connect
 		(at 115.57 48.26)
 		(uuid "58b3b633-d793-4d70-8719-56cc7adc60e1")
 	)
@@ -7147,6 +7143,16 @@
 	)
 	(wire
 		(pts
+			(xy 160.02 29.21) (xy 181.61 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6135cd46-ed26-408e-9886-d72bc8665dc5")
+	)
+	(wire
+		(pts
 			(xy 41.91 160.02) (xy 67.31 160.02)
 		)
 		(stroke
@@ -7535,6 +7541,16 @@
 		)
 		(uuid "80ccf90b-1f92-4de8-bc8d-1dd02e08475d")
 	)
+	(wire
+		(pts
+			(xy 181.61 29.21) (xy 181.61 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "824d4d59-385c-4ecb-8608-ec2e564beb81")
+	)
 	(bus
 		(pts
 			(xy 165.1 170.18) (xy 165.1 172.72)
@@ -7664,6 +7680,16 @@
 			(type default)
 		)
 		(uuid "9062b377-5aed-4bad-a2f8-88b7e62549f8")
+	)
+	(wire
+		(pts
+			(xy 181.61 60.96) (xy 146.05 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "90954b15-2efb-4df3-9019-c5d8a2812d0a")
 	)
 	(wire
 		(pts
@@ -14179,6 +14205,92 @@
 				(path "/eeb1234c-eae0-4ac6-a30d-2a978d66d889/04c402f1-b99a-4823-99a0-0c7312782f29"
 					(reference "12V_HP_Out1")
 					(unit 1)
+				)
+			)
+		)
+	)
+	(sheet
+		(at 134.62 17.78)
+		(size 25.4 17.78)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "09962ee3-9b36-4e0b-a0cc-ab650d2c630c")
+		(property "Sheetname" "temp_sensors"
+			(at 134.62 17.0684 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "temp_sensors.kicad_sch"
+			(at 134.62 36.1446 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "1-WIRE" passive
+			(at 160.02 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "2e55f5c5-d033-49c1-8b0d-9081dd75d8ec")
+		)
+		(instances
+			(project "electronics"
+				(path "/eeb1234c-eae0-4ac6-a30d-2a978d66d889/04c402f1-b99a-4823-99a0-0c7312782f29"
+					(page "8")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 158.75 46.99)
+		(size 12.7 8.89)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "217654c7-bb7c-46a4-bcd3-3a68ef9d1e96")
+		(property "Sheetname" "USB"
+			(at 158.75 46.2784 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "USB.kicad_sch"
+			(at 158.75 56.4646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "electronics"
+				(path "/eeb1234c-eae0-4ac6-a30d-2a978d66d889/04c402f1-b99a-4823-99a0-0c7312782f29"
+					(page "9")
 				)
 			)
 		)

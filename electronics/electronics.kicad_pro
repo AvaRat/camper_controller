@@ -681,6 +681,14 @@
     [
       "59aad372-c2d2-429c-8a8d-969e1cac44e0",
       "LED_control"
+    ],
+    [
+      "09962ee3-9b36-4e0b-a0cc-ab650d2c630c",
+      "temp_sensors"
+    ],
+    [
+      "217654c7-bb7c-46a4-bcd3-3a68ef9d1e96",
+      "USB"
     ]
   ],
   "text_variables": {}
