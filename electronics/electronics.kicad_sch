@@ -4,6 +4,12 @@
 	(generator_version "8.0")
 	(uuid "eeb1234c-eae0-4ac6-a30d-2a978d66d889")
 	(paper "A4")
+	(title_block
+		(title "camper_controller")
+		(date "2024-12-30")
+		(rev "0")
+		(company "MK Electronics")
+	)
 	(lib_symbols)
 	(wire
 		(pts
