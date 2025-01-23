@@ -613,6 +613,14 @@
     [
       "62ac4720-8956-4507-8c0c-da88eca754a0",
       "water_sensors_logic"
+    ],
+    [
+      "26b0c1cb-fd1f-4f8c-98fa-d843bb80f47b",
+      "WS_option_1"
+    ],
+    [
+      "ba89dfbd-c949-4d7e-a0ce-7dd3b3dcbbc6",
+      "WS_option_2"
     ]
   ],
   "text_variables": {}
