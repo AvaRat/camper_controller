@@ -615,12 +615,36 @@
       "water_sensors_logic"
     ],
     [
-      "26b0c1cb-fd1f-4f8c-98fa-d843bb80f47b",
-      "WS_option_1"
-    ],
-    [
       "ba89dfbd-c949-4d7e-a0ce-7dd3b3dcbbc6",
       "WS_option_2"
+    ],
+    [
+      "3b4f4bb7-bd1f-4bbe-884d-f3621abf4676",
+      "digital_switching"
+    ],
+    [
+      "bdcb8d75-b5b6-4010-b2e4-ee022288cbbc",
+      "rgb_led_control"
+    ],
+    [
+      "e988bf0b-0303-4560-abbf-9db3a1d13611",
+      "dc_dc_conversion"
+    ],
+    [
+      "10cf4ae7-01f2-4d37-acf1-79de902611a8",
+      "temp_sensors"
+    ],
+    [
+      "b07c78d9-bf9b-4530-b7c9-2098e4c7b5ee",
+      "230VAC"
+    ],
+    [
+      "243d2947-1c53-4fa4-8f11-b9e3676ac427",
+      "CAN"
+    ],
+    [
+      "564cf1e8-c490-44e4-9075-5be226b3fbc3",
+      "analog_ui"
     ]
   ],
   "text_variables": {}

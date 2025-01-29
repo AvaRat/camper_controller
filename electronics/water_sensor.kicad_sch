@@ -144,7 +144,7 @@
 				)
 			)
 		)
-		(symbol "Connector_Generic:Conn_01x06"
+		(symbol "Connector_Generic:Conn_01x05"
 			(pin_names
 				(offset 1.016) hide)
 			(exclude_from_sim no)
@@ -158,8 +158,8 @@
 					)
 				)
 			)
-			(property "Value" "Conn_01x06"
-				(at 0 -10.16 0)
+			(property "Value" "Conn_01x05"
+				(at 0 -7.62 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -184,7 +184,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(property "Description" "Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)"
 				(at 0 0 0)
 				(effects
 					(font
@@ -211,18 +211,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "Conn_01x06_1_1"
-				(rectangle
-					(start -1.27 -7.493)
-					(end 0 -7.747)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
+			(symbol "Conn_01x05_1_1"
 				(rectangle
 					(start -1.27 -4.953)
 					(end 0 -5.207)
@@ -280,7 +269,7 @@
 				)
 				(rectangle
 					(start -1.27 6.35)
-					(end 1.27 -8.89)
+					(end 1.27 -6.35)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -372,24 +361,6 @@
 						)
 					)
 					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 -7.62 0)
-					(length 3.81)
-					(name "Pin_6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -682,6 +653,10 @@
 		(color 0 0 0 0)
 		(uuid "8a4a457a-fcc8-498d-a904-d92df879e138")
 	)
+	(no_connect
+		(at 119.38 76.2)
+		(uuid "d399e59b-8b2f-4fe0-b891-bea402a5e078")
+	)
 	(wire
 		(pts
 			(xy 115.57 92.71) (xy 115.57 88.9)
@@ -791,16 +766,6 @@
 			(type default)
 		)
 		(uuid "a91d5542-620a-4862-929d-28d33a2e2c86")
-	)
-	(wire
-		(pts
-			(xy 111.76 76.2) (xy 119.38 76.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ddcd1ca1-ed5c-48ff-ab2e-cf3c1085b831")
 	)
 	(wire
 		(pts
@@ -927,33 +892,32 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Generic:Conn_01x06")
+		(lib_id "Connector_Generic:Conn_01x05")
 		(at 106.68 83.82 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "1459730e-918e-4d1d-92f7-48af730ace0f")
+		(fields_autoplaced yes)
+		(uuid "7ae056d7-5127-4e4d-aaa3-1cfce5e7a6c2")
 		(property "Reference" "J9"
-			(at 104.14 83.8201 0)
+			(at 106.68 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Value" "water_sensor_conn"
-			(at 104.14 81.2801 0)
+			(at 106.68 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Footprint" "TerminalBlock:TerminalBlock_Xinya_XY308-2.54-6P_1x06_P2.54mm_Horizontal"
+		(property "Footprint" "TerminalBlock:TerminalBlock_Xinya_XY308-2.54-5P_1x05_P2.54mm_Horizontal"
 			(at 106.68 83.82 0)
 			(effects
 				(font
@@ -971,7 +935,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" "Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)"
 			(at 106.68 83.82 0)
 			(effects
 				(font
@@ -980,23 +944,20 @@
 				(hide yes)
 			)
 		)
-		(pin "2"
-			(uuid "bead835e-e09e-4c76-ab86-2d809f8cc928")
-		)
 		(pin "4"
-			(uuid "e7caeb60-9a47-4250-9879-f315170dfef7")
+			(uuid "e4a4f911-77a6-4e28-93d2-c9c175ea81ef")
+		)
+		(pin "2"
+			(uuid "0169a323-62ff-4d09-8967-6d975e643397")
 		)
 		(pin "5"
-			(uuid "dc964d0b-1728-48d6-9ad6-64f81ba72fd3")
-		)
-		(pin "6"
-			(uuid "7df3ca8e-7870-4374-b19c-4aa239840366")
+			(uuid "966beb8b-70fb-4bbe-9b49-8d9997d96e49")
 		)
 		(pin "1"
-			(uuid "ef810568-26d7-4327-8fd1-8f063434e086")
+			(uuid "b440f5a2-2b04-457d-80ce-a167bf1087d9")
 		)
 		(pin "3"
-			(uuid "0fe7095b-a51b-4a2d-8e44-101c8c28183a")
+			(uuid "a553b309-a122-421e-a8b4-1faf13c56b31")
 		)
 		(instances
 			(project "electronics"

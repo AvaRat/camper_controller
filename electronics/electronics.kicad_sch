@@ -43,7 +43,7 @@
 	)
 	(rectangle
 		(start 191.516 78.74)
-		(end 227.076 100.33)
+		(end 250.19 115.57)
 		(stroke
 			(width 0)
 			(type default)
@@ -324,6 +324,44 @@
 			(project "electronics"
 				(path "/eeb1234c-eae0-4ac6-a30d-2a978d66d889"
 					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 200.66 90.17)
+		(size 29.21 19.05)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "564cf1e8-c490-44e4-9075-5be226b3fbc3")
+		(property "Sheetname" "analog_ui"
+			(at 200.66 89.4584 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "analog_ui.kicad_sch"
+			(at 200.66 109.8046 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "electronics"
+				(path "/eeb1234c-eae0-4ac6-a30d-2a978d66d889"
+					(page "14")
 				)
 			)
 		)
