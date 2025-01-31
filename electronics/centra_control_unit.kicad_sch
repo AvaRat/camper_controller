@@ -3350,7 +3350,7 @@
 		(uuid "78797914-ca43-4320-8037-1755ad5880d5")
 	)
 	(no_connect
-		(at 111.76 53.34)
+		(at 115.57 53.34)
 		(uuid "7e304bd2-737b-4e6f-b237-722c74bf0b5a")
 	)
 	(no_connect
@@ -3750,16 +3750,6 @@
 			(type default)
 		)
 		(uuid "39913450-deee-4443-b9a4-6a3c9ed78bb5")
-	)
-	(wire
-		(pts
-			(xy 113.03 53.34) (xy 115.57 53.34)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3c08c148-2734-490f-ab11-8c06f9073fc5")
 	)
 	(wire
 		(pts
@@ -4539,17 +4529,6 @@
 		)
 		(uuid "4245da6d-1471-4c24-b3e4-f68f7e1f6cd1")
 	)
-	(label "V_Bat"
-		(at 30.48 21.59 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "4b118bc8-6999-4783-9940-4100a61177da")
-	)
 	(label "SCL"
 		(at 109.22 71.12 0)
 		(fields_autoplaced yes)
@@ -4683,7 +4662,7 @@
 		(uuid "aa75b16b-b751-464e-ad01-08d6b3b9c870")
 	)
 	(label "strap pin"
-		(at 113.03 53.34 180)
+		(at 115.57 53.34 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4770,6 +4749,28 @@
 		)
 		(uuid "e71f5aa7-0b74-4097-a8e5-69b10d155f54")
 	)
+	(global_label "V_Bat"
+		(shape passive)
+		(at 26.67 21.59 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "9f244102-2158-4abf-99f7-8afed21de77f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 19.5952 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(hierarchical_label "SDA"
 		(shape passive)
 		(at 107.95 68.58 180)
@@ -4781,18 +4782,6 @@
 			(justify right)
 		)
 		(uuid "055e1c90-982e-43a9-a8d5-7bb12ad068c7")
-	)
-	(hierarchical_label "+BATT"
-		(shape input)
-		(at 26.67 21.59 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "75fe16c2-4424-4842-890e-c390bec5485a")
 	)
 	(hierarchical_label "SCL"
 		(shape passive)
@@ -4937,6 +4926,72 @@
 			(project "electronics"
 				(path "/eeb1234c-eae0-4ac6-a30d-2a978d66d889/04c402f1-b99a-4823-99a0-0c7312782f29"
 					(reference "U15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 200.66 41.91 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1ebaf75a-8ad8-4df7-a919-61694e019579")
+		(property "Reference" "#PWR08"
+			(at 200.66 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 200.66 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 200.66 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 200.66 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 200.66 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8c56062e-1706-4c22-936c-9aa2e119da64")
+		)
+		(instances
+			(project "electronics"
+				(path "/eeb1234c-eae0-4ac6-a30d-2a978d66d889/04c402f1-b99a-4823-99a0-0c7312782f29"
+					(reference "#PWR08")
 					(unit 1)
 				)
 			)

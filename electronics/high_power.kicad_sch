@@ -807,102 +807,6 @@
 				)
 			)
 		)
-		(symbol "GND_1"
-			(power)
-			(pin_numbers hide)
-			(pin_names
-				(offset 0) hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "#PWR"
-				(at 0 -6.35 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Value" "GND"
-				(at 0 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "GND_1_0_1"
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "GND_1_1_1"
-				(pin power_in line
-					(at 0 0 270)
-					(length 0)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "HeavyDuty:BusBarConn"
 			(pin_names
 				(offset 0.002)
@@ -2427,6 +2331,16 @@
 	)
 	(wire
 		(pts
+			(xy 116.84 63.5) (xy 147.32 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2121fa0b-2de8-49e9-a1c1-8c76629ec7f6")
+	)
+	(wire
+		(pts
 			(xy 130.81 177.8) (xy 130.81 180.34)
 		)
 		(stroke
@@ -2584,16 +2498,6 @@
 			(type default)
 		)
 		(uuid "505efc3c-8da1-4814-8522-f6fc5696b8e8")
-	)
-	(wire
-		(pts
-			(xy 144.78 63.5) (xy 116.84 63.5)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "62662df3-48c4-4a73-9451-065cc3141288")
 	)
 	(wire
 		(pts
@@ -3742,7 +3646,7 @@
 		(uuid "8f87e241-21c5-4a1e-b0b9-34d946bc7ed7")
 	)
 	(label "V_Bat"
-		(at 142.24 63.5 180)
+		(at 144.78 63.5 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3829,6 +3733,18 @@
 		)
 		(uuid "db99d3b9-8c03-45fd-bb4f-7a77240ecb9b")
 	)
+	(label "HP_Bus"
+		(at 114.3 96.52 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 255 52 64 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "e097c1a0-3d07-4903-bd30-5b87ef665b1f")
+	)
 	(label "RSH5_LO"
 		(at 176.53 138.43 0)
 		(fields_autoplaced yes)
@@ -3850,6 +3766,28 @@
 			(justify left bottom)
 		)
 		(uuid "fc559ff9-29a6-4347-8580-15936f8fad15")
+	)
+	(global_label "V_Bat"
+		(shape passive)
+		(at 147.32 63.5 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "207d9549-94bd-4820-afad-4dd5d7654ef3")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 154.3948 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
 	)
 	(hierarchical_label "SDA"
 		(shape bidirectional)
@@ -3874,18 +3812,6 @@
 			(justify left)
 		)
 		(uuid "bcb29cb1-269e-46d5-aa4b-1442ce2b0333")
-	)
-	(hierarchical_label "+BATT"
-		(shape output)
-		(at 144.78 63.5 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "cda1a86c-6f4e-41fc-a1c3-5cdde973204f")
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
@@ -4827,73 +4753,6 @@
 		)
 	)
 	(symbol
-		(lib_name "GND_1")
-		(lib_id "power:GND")
-		(at 130.81 180.34 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "649496d3-6d56-4bf7-8573-8fc7e03e030d")
-		(property "Reference" "#PWR08"
-			(at 130.81 186.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 130.81 185.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 130.81 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 130.81 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 130.81 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "8e91718b-8314-4fea-993c-694789a9a8c8")
-		)
-		(instances
-			(project "electronics"
-				(path "/eeb1234c-eae0-4ac6-a30d-2a978d66d889/da888cb1-ed89-4b09-bf89-340f462f0940"
-					(reference "#PWR08")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Connector_Generic:Conn_01x01")
 		(at 66.04 140.97 180)
 		(unit 1)
@@ -5363,6 +5222,72 @@
 			(project "electronics"
 				(path "/eeb1234c-eae0-4ac6-a30d-2a978d66d889/da888cb1-ed89-4b09-bf89-340f462f0940"
 					(reference "J23")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND1")
+		(at 130.81 180.34 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "915582cc-01ac-4ef2-a0e5-8712acf2b7d8")
+		(property "Reference" "#PWR07"
+			(at 130.81 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND_HP"
+			(at 130.81 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 130.81 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 130.81 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND1\" , ground"
+			(at 130.81 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5c37ff63-c72e-400f-9267-20d8bc32aa52")
+		)
+		(instances
+			(project "electronics"
+				(path "/eeb1234c-eae0-4ac6-a30d-2a978d66d889/da888cb1-ed89-4b09-bf89-340f462f0940"
+					(reference "#PWR07")
 					(unit 1)
 				)
 			)

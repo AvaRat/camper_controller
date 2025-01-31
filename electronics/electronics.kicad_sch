@@ -13,16 +13,6 @@
 	(lib_symbols)
 	(wire
 		(pts
-			(xy 88.9 54.61) (xy 101.6 54.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a566c041-5c0b-450c-965e-f3e52956c028")
-	)
-	(wire
-		(pts
 			(xy 88.9 63.5) (xy 101.6 63.5)
 		)
 		(stroke
@@ -194,16 +184,6 @@
 				(justify left top)
 			)
 		)
-		(pin "+BATT" input
-			(at 101.6 54.61 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "a2c637e0-b578-4d23-8392-acd431cd06f4")
-		)
 		(pin "SCL" passive
 			(at 101.6 67.31 180)
 			(effects
@@ -223,16 +203,6 @@
 				(justify left)
 			)
 			(uuid "7ed4fee2-7831-4b85-a631-c80db88d92db")
-		)
-		(pin "WS_COM" passive
-			(at 127 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "f1ba32ad-8d2a-4d07-8439-f10cf10902fc")
 		)
 		(instances
 			(project "electronics"
@@ -309,16 +279,6 @@
 				)
 				(justify left top)
 			)
-		)
-		(pin "COM" passive
-			(at 107.95 167.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "69b434df-b10f-4605-96ca-065b779d49b0")
 		)
 		(instances
 			(project "electronics"
@@ -424,16 +384,6 @@
 				(justify right)
 			)
 			(uuid "79f03671-86c1-49f7-9516-d5866b2bffba")
-		)
-		(pin "+BATT" output
-			(at 88.9 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "582c8c36-ca17-404c-905d-56b7d047a53a")
 		)
 		(instances
 			(project "electronics"

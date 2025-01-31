@@ -641,31 +641,9 @@
 			)
 		)
 	)
-	(junction
-		(at 115.57 114.3)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "48126022-194d-4053-97df-563a6c595543")
-	)
-	(junction
-		(at 115.57 88.9)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "8a4a457a-fcc8-498d-a904-d92df879e138")
-	)
 	(no_connect
 		(at 119.38 76.2)
 		(uuid "d399e59b-8b2f-4fe0-b891-bea402a5e078")
-	)
-	(wire
-		(pts
-			(xy 115.57 92.71) (xy 115.57 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "080cbea5-f792-4217-8a28-f1b392a472a9")
 	)
 	(wire
 		(pts
@@ -679,33 +657,13 @@
 	)
 	(wire
 		(pts
-			(xy 113.03 114.3) (xy 115.57 114.3)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "12d68a24-c9e3-4dbb-9fad-fbc27bc9372b")
-	)
-	(wire
-		(pts
-			(xy 115.57 114.3) (xy 119.38 114.3)
+			(xy 113.03 114.3) (xy 121.92 114.3)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "2c85d4c6-280a-44c9-91a1-835c85b560b3")
-	)
-	(wire
-		(pts
-			(xy 115.57 119.38) (xy 115.57 114.3)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5f706b4e-2e0a-4421-bc34-92f70b6fd3f4")
 	)
 	(wire
 		(pts
@@ -719,7 +677,7 @@
 	)
 	(wire
 		(pts
-			(xy 113.03 111.76) (xy 119.38 111.76)
+			(xy 113.03 111.76) (xy 121.92 111.76)
 		)
 		(stroke
 			(width 0)
@@ -739,33 +697,13 @@
 	)
 	(wire
 		(pts
-			(xy 121.92 92.71) (xy 115.57 92.71)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "951c4fe3-6b5d-47cd-b037-4bb23c7c6302")
-	)
-	(wire
-		(pts
-			(xy 111.76 88.9) (xy 115.57 88.9)
+			(xy 111.76 88.9) (xy 119.38 88.9)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "972b5a62-21d3-4d43-98a6-baf708b52e5b")
-	)
-	(wire
-		(pts
-			(xy 115.57 88.9) (xy 119.38 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a91d5542-620a-4862-929d-28d33a2e2c86")
 	)
 	(wire
 		(pts
@@ -777,16 +715,6 @@
 		)
 		(uuid "e446bba1-1ef2-4db3-9798-e92342b93fee")
 	)
-	(wire
-		(pts
-			(xy 120.65 119.38) (xy 115.57 119.38)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fe475cf7-bed0-40f8-87af-b75c3ffb8fa7")
-	)
 	(text "round PCB shape with 6 rods in the middle"
 		(exclude_from_sim no)
 		(at 114.3 97.028 0)
@@ -797,33 +725,9 @@
 		)
 		(uuid "b9e5d6c8-d339-45f4-b75c-f8f23eeaa910")
 	)
-	(hierarchical_label "COM"
-		(shape passive)
-		(at 120.65 119.38 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "1150e4ce-88f4-4037-b2d5-4f18ee07956e")
-	)
-	(hierarchical_label "COM"
-		(shape passive)
-		(at 121.92 92.71 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "85766a0e-527b-4872-88a3-2e35a6fa2150")
-	)
 	(symbol
 		(lib_id "HeavyDuty:water_sesnor_binary")
-		(at 124.46 113.03 0)
+		(at 128.27 113.03 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -832,7 +736,7 @@
 		(fields_autoplaced yes)
 		(uuid "0f27eff5-18e2-47f1-898f-4cb1bfba910f")
 		(property "Reference" "U12"
-			(at 129.54 112.3949 0)
+			(at 133.35 112.3949 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -841,7 +745,7 @@
 			)
 		)
 		(property "Value" "~"
-			(at 129.54 114.3 0)
+			(at 133.35 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -850,7 +754,7 @@
 			)
 		)
 		(property "Footprint" "HeavyDuty:2_water_sensor_rods"
-			(at 124.46 113.03 0)
+			(at 128.27 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -859,7 +763,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 124.46 113.03 0)
+			(at 128.27 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -868,7 +772,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 124.46 113.03 0)
+			(at 128.27 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
