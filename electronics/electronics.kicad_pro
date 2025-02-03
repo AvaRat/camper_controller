@@ -665,13 +665,19 @@
           "group_by": false,
           "label": "lcsc_part",
           "name": "lcsc_part",
-          "show": false
+          "show": true
         },
         {
           "group_by": false,
           "label": "Description",
           "name": "Description",
           "show": false
+        },
+        {
+          "group_by": false,
+          "label": "TME",
+          "name": "TME",
+          "show": true
         }
       ],
       "filter_string": "",

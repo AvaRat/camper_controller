@@ -2772,6 +2772,25 @@
 		)
 		(uuid "540d1620-490f-4dc4-a221-dff73cb8d9fc")
 	)
+	(text_box "Pin2Pin replacement for BTS7006:\nhttps://www.infineon.com/cms/en/product/power/smart-power-switches/high-side-switches/profet-plus-2-12v-automotive-smart-high-side-switch/\n"
+		(exclude_from_sim no)
+		(at 111.76 16.51 0)
+		(size 38.1 44.45)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "8ed8eb8e-e4d3-4252-a21b-2af5ab0c0bd4")
+	)
 	(label "V_Bat"
 		(at 223.52 25.4 0)
 		(fields_autoplaced yes)
@@ -3194,6 +3213,33 @@
 		)
 		(property "Description" "Smart High-Side Power Switch, PROFET, One Channel, 12V, 15A, Rds(on) 4.4mΩ, PG-TSDSO-14-22"
 			(at 201.676 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "TME" ""
+			(at 205.74 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser" "726-BTS70061EPPXUMA1"
+			(at 205.74 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
+			(at 205.74 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3744,6 +3790,24 @@
 			)
 		)
 		(property "Description" "C2927513"
+			(at 267.97 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSCc" "C2927513"
+			(at 267.97 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "TME" ""
 			(at 267.97 90.17 0)
 			(effects
 				(font
