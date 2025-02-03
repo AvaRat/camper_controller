@@ -8182,6 +8182,403 @@
 			)
 		)
 	)
+	(footprint "Package_SO:SO-16_3.9x9.9mm_P1.27mm"
+		(layer "F.Cu")
+		(uuid "78546c68-35b8-467a-a92a-b39604dbd605")
+		(at 103.825 103.075 90)
+		(descr "SO, 16 Pin (https://www.nxp.com/docs/en/package-information/SOT109-1.pdf), generated with kicad-footprint-generator ipc_gullwing_generator.py")
+		(tags "SO SO SOT109-1")
+		(property "Reference" "U16"
+			(at 0 -5.9 90)
+			(layer "F.SilkS")
+			(uuid "d0b8d470-138b-451f-bc6a-a24fcf09ac94")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "ULN2003"
+			(at 0 5.9 90)
+			(layer "F.Fab")
+			(uuid "396098b3-bdef-457f-b963-4d5e97ebfa3e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:SO-16_3.9x9.9mm_P1.27mm"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "484fa745-294c-4ff0-9062-59790580e9e2")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/product-detail/Darlington-Transistor-Arrays_STMicroelectronics-ULN2003D1013TR_C61273.html?s_z=s_Transistors/Thyristors|Darlington%20Transistor%20Arrays"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "eb28823b-8854-47e9-bd25-489b64b1a3b1")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "High Voltage, High Current Darlington Transistor Arrays, SOIC16/SOIC16W/DIP16/TSSOP16"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "86e4af7f-a12f-4cd4-ac88-d08beed97627")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "DIP*W7.62mm* SOIC*3.9x9.9mm*P1.27mm* SSOP*4.4x5.2mm*P0.65mm* TSSOP*4.4x5mm*P0.65mm* SOIC*W*5.3x10.2mm*P1.27mm*")
+		(path "/04c402f1-b99a-4823-99a0-0c7312782f29/62ac4720-8956-4507-8c0c-da88eca754a0/036294ec-307d-46e4-a9c6-7faec5635bde")
+		(sheetname "water_sensors_logic")
+		(sheetfile "water_sensors_logic.kicad_sch")
+		(attr smd)
+		(fp_line
+			(start 0 -5.06)
+			(end 1.95 -5.06)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "94901bcd-36a1-453d-9731-2665441fabd7")
+		)
+		(fp_line
+			(start 0 -5.06)
+			(end -1.95 -5.06)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "dc697563-5534-41b8-bdeb-e3fcabb5fae8")
+		)
+		(fp_line
+			(start 0 5.06)
+			(end 1.95 5.06)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "3c452654-11b9-4bdc-8798-2dd5b12121c0")
+		)
+		(fp_line
+			(start 0 5.06)
+			(end -1.95 5.06)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "568c0254-97e7-40b7-b83c-5d26b53d0d37")
+		)
+		(fp_poly
+			(pts
+				(xy -2.7 -5.005) (xy -2.94 -5.335) (xy -2.46 -5.335) (xy -2.7 -5.005)
+			)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill solid)
+			(layer "F.SilkS")
+			(uuid "a5bbfb91-3c03-47b8-8575-0f1e1db7cfbb")
+		)
+		(fp_line
+			(start 3.7 -5.2)
+			(end -3.7 -5.2)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "c575dc7c-b714-4209-bf5a-f2b6b8674ca5")
+		)
+		(fp_line
+			(start -3.7 -5.2)
+			(end -3.7 5.2)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "6470d7c6-47f3-41fd-a9fc-91bc4122c0fe")
+		)
+		(fp_line
+			(start 3.7 5.2)
+			(end 3.7 -5.2)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "0884e8bb-d87f-400b-aa04-ddc71f337751")
+		)
+		(fp_line
+			(start -3.7 5.2)
+			(end 3.7 5.2)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "dc829c82-344f-4715-9611-97a5fde914af")
+		)
+		(fp_line
+			(start 1.95 -4.95)
+			(end 1.95 4.95)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "a7cc543f-075d-41a2-bcc1-406393315bcd")
+		)
+		(fp_line
+			(start -0.975 -4.95)
+			(end 1.95 -4.95)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "a093b87d-b789-4166-9f69-03415f48915c")
+		)
+		(fp_line
+			(start -1.95 -3.975)
+			(end -0.975 -4.95)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "dec7d64a-f8b6-4d74-965b-841fdffd5890")
+		)
+		(fp_line
+			(start 1.95 4.95)
+			(end -1.95 4.95)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "2555aa46-feab-4def-aed0-07ad78669fbf")
+		)
+		(fp_line
+			(start -1.95 4.95)
+			(end -1.95 -3.975)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "735fede2-bc68-493c-a0e9-54d4bb1df5f9")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(uuid "376609e0-1826-4c66-a455-ece141b78100")
+			(effects
+				(font
+					(size 0.98 0.98)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" smd roundrect
+			(at -2.575 -4.445 90)
+			(size 1.75 0.6)
+			(layers "F.Cu" "F.Paste" "F.Mask")
+			(roundrect_rratio 0.25)
+			(net 147 "/central_control_unit/water_sensors_logic/grey_water_rod")
+			(pinfunction "I1")
+			(pintype "input")
+			(uuid "001e1a54-7fbe-4645-a3ce-d9a10b45ad17")
+		)
+		(pad "2" smd roundrect
+			(at -2.575 -3.175 90)
+			(size 1.75 0.6)
+			(layers "F.Cu" "F.Paste" "F.Mask")
+			(roundrect_rratio 0.25)
+			(net 97 "/central_control_unit/water_sensors_logic/ws_rod_4")
+			(pinfunction "I2")
+			(pintype "input")
+			(uuid "bac2ceba-1e8c-4e4d-b911-90024219b45b")
+		)
+		(pad "3" smd roundrect
+			(at -2.575 -1.905 90)
+			(size 1.75 0.6)
+			(layers "F.Cu" "F.Paste" "F.Mask")
+			(roundrect_rratio 0.25)
+			(net 96 "/central_control_unit/water_sensors_logic/ws_rod_3")
+			(pinfunction "I3")
+			(pintype "input")
+			(uuid "13514dbb-f500-4b88-bbef-16fc00a0b7f0")
+		)
+		(pad "4" smd roundrect
+			(at -2.575 -0.635 90)
+			(size 1.75 0.6)
+			(layers "F.Cu" "F.Paste" "F.Mask")
+			(roundrect_rratio 0.25)
+			(net 100 "/central_control_unit/water_sensors_logic/ws_rod_2")
+			(pinfunction "I4")
+			(pintype "input")
+			(uuid "2686179a-6686-4f5a-b2ee-14d832e86b14")
+		)
+		(pad "5" smd roundrect
+			(at -2.575 0.635 90)
+			(size 1.75 0.6)
+			(layers "F.Cu" "F.Paste" "F.Mask")
+			(roundrect_rratio 0.25)
+			(net 98 "/central_control_unit/water_sensors_logic/ws_rod_1")
+			(pinfunction "I5")
+			(pintype "input")
+			(uuid "e012977b-edbb-4ee8-a623-5296a75409ba")
+		)
+		(pad "6" smd roundrect
+			(at -2.575 1.905 90)
+			(size 1.75 0.6)
+			(layers "F.Cu" "F.Paste" "F.Mask")
+			(roundrect_rratio 0.25)
+			(net 144 "unconnected-(U16-I6-Pad6)")
+			(pinfunction "I6")
+			(pintype "input+no_connect")
+			(uuid "37017781-b6e4-4caa-a9ef-d74dba249ffa")
+		)
+		(pad "7" smd roundrect
+			(at -2.575 3.175 90)
+			(size 1.75 0.6)
+			(layers "F.Cu" "F.Paste" "F.Mask")
+			(roundrect_rratio 0.25)
+			(net 148 "unconnected-(U16-I7-Pad7)")
+			(pinfunction "I7")
+			(pintype "input+no_connect")
+			(uuid "ff414406-b580-4cc6-bc95-a8af84b6c8ae")
+		)
+		(pad "8" smd roundrect
+			(at -2.575 4.445 90)
+			(size 1.75 0.6)
+			(layers "F.Cu" "F.Paste" "F.Mask")
+			(roundrect_rratio 0.25)
+			(net 72 "GND_LP")
+			(pinfunction "GND")
+			(pintype "power_in")
+			(uuid "c15f2bf2-c137-4b63-afee-9947b9d35505")
+		)
+		(pad "9" smd roundrect
+			(at 2.575 4.445 90)
+			(size 1.75 0.6)
+			(layers "F.Cu" "F.Paste" "F.Mask")
+			(roundrect_rratio 0.25)
+			(net 160 "unconnected-(U16-COM-Pad9)")
+			(pinfunction "COM")
+			(pintype "passive+no_connect")
+			(uuid "78532431-edbb-4974-8c28-3bccdd61bbef")
+		)
+		(pad "10" smd roundrect
+			(at 2.575 3.175 90)
+			(size 1.75 0.6)
+			(layers "F.Cu" "F.Paste" "F.Mask")
+			(roundrect_rratio 0.25)
+			(net 145 "unconnected-(U16-O7-Pad10)")
+			(pinfunction "O7")
+			(pintype "open_collector+no_connect")
+			(uuid "3e204d5f-2395-4746-875c-e0d6f9fb94f6")
+		)
+		(pad "11" smd roundrect
+			(at 2.575 1.905 90)
+			(size 1.75 0.6)
+			(layers "F.Cu" "F.Paste" "F.Mask")
+			(roundrect_rratio 0.25)
+			(net 146 "unconnected-(U16-O6-Pad11)")
+			(pinfunction "O6")
+			(pintype "open_collector+no_connect")
+			(uuid "98e5b113-3e5b-411e-b582-b464b49d8bce")
+		)
+		(pad "12" smd roundrect
+			(at 2.575 0.635 90)
+			(size 1.75 0.6)
+			(layers "F.Cu" "F.Paste" "F.Mask")
+			(roundrect_rratio 0.25)
+			(net 143 "/central_control_unit/water_sensors_logic/WS_LVL_25%")
+			(pinfunction "O5")
+			(pintype "open_collector")
+			(uuid "a655cfe6-d0b4-4a0c-a475-0dcdc368e06a")
+		)
+		(pad "13" smd roundrect
+			(at 2.575 -0.635 90)
+			(size 1.75 0.6)
+			(layers "F.Cu" "F.Paste" "F.Mask")
+			(roundrect_rratio 0.25)
+			(net 139 "/central_control_unit/water_sensors_logic/WS_LVL_50%")
+			(pinfunction "O4")
+			(pintype "open_collector")
+			(uuid "9ac6b47c-2d1a-4e15-8a55-fbcaf8e37c95")
+		)
+		(pad "14" smd roundrect
+			(at 2.575 -1.905 90)
+			(size 1.75 0.6)
+			(layers "F.Cu" "F.Paste" "F.Mask")
+			(roundrect_rratio 0.25)
+			(net 142 "/central_control_unit/water_sensors_logic/WS_LVL_75%")
+			(pinfunction "O3")
+			(pintype "open_collector")
+			(uuid "c789d881-201f-4be5-b6e2-ae72261cef89")
+		)
+		(pad "15" smd roundrect
+			(at 2.575 -3.175 90)
+			(size 1.75 0.6)
+			(layers "F.Cu" "F.Paste" "F.Mask")
+			(roundrect_rratio 0.25)
+			(net 141 "/central_control_unit/water_sensors_logic/WS_LVL_100%")
+			(pinfunction "O2")
+			(pintype "open_collector")
+			(uuid "74c87ce5-883c-494f-a062-4a1ea70864e3")
+		)
+		(pad "16" smd roundrect
+			(at 2.575 -4.445 90)
+			(size 1.75 0.6)
+			(layers "F.Cu" "F.Paste" "F.Mask")
+			(roundrect_rratio 0.25)
+			(net 140 "/central_control_unit/water_sensors_logic/GREY_WATER_FULL")
+			(pinfunction "O1")
+			(pintype "open_collector")
+			(uuid "4f1977a4-91ea-4b1c-862d-a5a8af5b8517")
+		)
+		(model "${KICAD8_3DMODEL_DIR}/Package_SO.3dshapes/SO-16_3.9x9.9mm_P1.27mm.wrl"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
 	(footprint "TerminalBlock:TerminalBlock_Xinya_XY308-2.54-2P_1x02_P2.54mm_Horizontal"
 		(layer "F.Cu")
 		(uuid "7b2b7016-020d-4b2a-beaf-f0a36f147ee7")
@@ -15651,7 +16048,7 @@
 		(descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor handsolder")
 		(property "Reference" "R12"
-			(at -3.5 0 360)
+			(at -3.5 0 0)
 			(layer "B.SilkS")
 			(uuid "1d5a95f6-a46a-40c8-9801-6359939e8bc2")
 			(effects
@@ -15663,7 +16060,7 @@
 			)
 		)
 		(property "Value" "10 ohm"
-			(at 0 -1.65 360)
+			(at 0 -1.65 0)
 			(layer "B.Fab")
 			(uuid "7ed8e201-d481-4a38-988a-b2054ef3b243")
 			(effects
@@ -15822,7 +16219,7 @@
 			(uuid "d9340ac9-5c0c-47e2-b7d3-4016717b80fc")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "B.Fab")
 			(uuid "2144c722-122e-4a55-a621-5e277dfb1e20")
 			(effects
@@ -17752,7 +18149,7 @@
 		(descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor handsolder")
 		(property "Reference" "R10"
-			(at -4 -0.5 360)
+			(at -4 -0.5 0)
 			(layer "B.SilkS")
 			(uuid "737ae77c-53a8-4026-94ec-a82e71a0cdaa")
 			(effects
@@ -17764,7 +18161,7 @@
 			)
 		)
 		(property "Value" "10 ohm"
-			(at 0 -1.65 360)
+			(at 0 -1.65 0)
 			(layer "B.Fab")
 			(uuid "5f591b3b-cdd6-4203-b07d-f37ac2b79917")
 			(effects
@@ -17923,7 +18320,7 @@
 			(uuid "024db750-711e-4c26-b01f-72dc97c31775")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "B.Fab")
 			(uuid "98a8fedc-bcaf-47c9-848a-77a2149b30f7")
 			(effects
@@ -20955,7 +21352,7 @@
 		(descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor handsolder")
 		(property "Reference" "R13"
-			(at -3.5 0 360)
+			(at -3.5 0 0)
 			(layer "B.SilkS")
 			(uuid "c163de40-a826-4bb6-a481-f66586465f09")
 			(effects
@@ -20967,7 +21364,7 @@
 			)
 		)
 		(property "Value" "10 ohm"
-			(at 0 -1.65 360)
+			(at 0 -1.65 0)
 			(layer "B.Fab")
 			(uuid "7781f798-88b3-4ca3-b046-4ab650fb8c4d")
 			(effects
@@ -21126,7 +21523,7 @@
 			(uuid "bb29b356-fa29-434f-8688-4e6121eb5881")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "B.Fab")
 			(uuid "d32720fb-92c6-4248-b1ba-36e7108182a7")
 			(effects
@@ -23016,7 +23413,7 @@
 		(descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor handsolder")
 		(property "Reference" "R11"
-			(at -3.5 0.5 360)
+			(at -3.5 0.5 0)
 			(layer "B.SilkS")
 			(uuid "940e4d02-a45f-4817-902b-63dad2aa7800")
 			(effects
@@ -23028,7 +23425,7 @@
 			)
 		)
 		(property "Value" "10 ohm"
-			(at 0 -1.65 360)
+			(at 0 -1.65 0)
 			(layer "B.Fab")
 			(uuid "b057f0a3-a7b2-49df-8ee1-7ca48455d718")
 			(effects
@@ -23187,7 +23584,7 @@
 			(uuid "067af374-b469-4cf7-bc9c-2df6e99f2b81")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "B.Fab")
 			(uuid "9fc050bb-ef47-4b8e-99b5-e56c9968e908")
 			(effects
@@ -23235,7 +23632,7 @@
 		(descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator")
 		(tags "capacitor handsolder")
 		(property "Reference" "C6"
-			(at 1.75 -2.25 360)
+			(at 1.75 -2.25 0)
 			(layer "B.SilkS")
 			(uuid "2b212aaf-db45-44df-bc2b-77ce35d89e80")
 			(effects
@@ -23673,7 +24070,7 @@
 		(descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator")
 		(tags "capacitor handsolder")
 		(property "Reference" "C7"
-			(at 1.25 -2.25 360)
+			(at 1.25 -2.25 0)
 			(layer "B.SilkS")
 			(uuid "06f9775f-299f-4fcf-b342-ecfc94137f4a")
 			(effects
@@ -23874,409 +24271,6 @@
 			(uuid "0e8aa378-91f6-4d40-a4fa-69c5f0b1b922")
 		)
 		(model "${KICAD8_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.wrl"
-			(offset
-				(xyz 0 0 0)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
-		)
-	)
-	(footprint "Package_SO:SO-16_3.9x9.9mm_P1.27mm"
-		(layer "B.Cu")
-		(uuid "78546c68-35b8-467a-a92a-b39604dbd605")
-		(at 103.825 103.075 90)
-		(descr "SO, 16 Pin (https://www.nxp.com/docs/en/package-information/SOT109-1.pdf), generated with kicad-footprint-generator ipc_gullwing_generator.py")
-		(tags "SO SO SOT109-1")
-		(property "Reference" "U16"
-			(at 0 5.9 -90)
-			(layer "B.SilkS")
-			(uuid "d0b8d470-138b-451f-bc6a-a24fcf09ac94")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
-		(property "Value" "ULN2003"
-			(at 0 -5.9 -90)
-			(layer "B.Fab")
-			(uuid "396098b3-bdef-457f-b963-4d5e97ebfa3e")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
-		(property "Footprint" "Package_SO:SO-16_3.9x9.9mm_P1.27mm"
-			(at 0 0 -90)
-			(unlocked yes)
-			(layer "B.Fab")
-			(hide yes)
-			(uuid "484fa745-294c-4ff0-9062-59790580e9e2")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
-		(property "Datasheet" "https://www.lcsc.com/product-detail/Darlington-Transistor-Arrays_STMicroelectronics-ULN2003D1013TR_C61273.html?s_z=s_Transistors/Thyristors|Darlington%20Transistor%20Arrays"
-			(at 0 0 -90)
-			(unlocked yes)
-			(layer "B.Fab")
-			(hide yes)
-			(uuid "eb28823b-8854-47e9-bd25-489b64b1a3b1")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
-		(property "Description" "High Voltage, High Current Darlington Transistor Arrays, SOIC16/SOIC16W/DIP16/TSSOP16"
-			(at 0 0 -90)
-			(unlocked yes)
-			(layer "B.Fab")
-			(hide yes)
-			(uuid "86e4af7f-a12f-4cd4-ac88-d08beed97627")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
-		(property ki_fp_filters "DIP*W7.62mm* SOIC*3.9x9.9mm*P1.27mm* SSOP*4.4x5.2mm*P0.65mm* TSSOP*4.4x5mm*P0.65mm* SOIC*W*5.3x10.2mm*P1.27mm*")
-		(path "/04c402f1-b99a-4823-99a0-0c7312782f29/62ac4720-8956-4507-8c0c-da88eca754a0/036294ec-307d-46e4-a9c6-7faec5635bde")
-		(sheetname "water_sensors_logic")
-		(sheetfile "water_sensors_logic.kicad_sch")
-		(attr smd)
-		(fp_line
-			(start 1.95 -5.06)
-			(end 0 -5.06)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "B.SilkS")
-			(uuid "3c452654-11b9-4bdc-8798-2dd5b12121c0")
-		)
-		(fp_line
-			(start -1.95 -5.06)
-			(end 0 -5.06)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "B.SilkS")
-			(uuid "568c0254-97e7-40b7-b83c-5d26b53d0d37")
-		)
-		(fp_line
-			(start 1.95 5.06)
-			(end 0 5.06)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "B.SilkS")
-			(uuid "94901bcd-36a1-453d-9731-2665441fabd7")
-		)
-		(fp_line
-			(start -1.95 5.06)
-			(end 0 5.06)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "B.SilkS")
-			(uuid "dc697563-5534-41b8-bdeb-e3fcabb5fae8")
-		)
-		(fp_poly
-			(pts
-				(xy -2.7 5.005) (xy -2.94 5.335) (xy -2.46 5.335) (xy -2.7 5.005)
-			)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(fill solid)
-			(layer "B.SilkS")
-			(uuid "a5bbfb91-3c03-47b8-8575-0f1e1db7cfbb")
-		)
-		(fp_line
-			(start 3.7 -5.2)
-			(end -3.7 -5.2)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "B.CrtYd")
-			(uuid "dc829c82-344f-4715-9611-97a5fde914af")
-		)
-		(fp_line
-			(start -3.7 -5.2)
-			(end -3.7 5.2)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "B.CrtYd")
-			(uuid "6470d7c6-47f3-41fd-a9fc-91bc4122c0fe")
-		)
-		(fp_line
-			(start 3.7 5.2)
-			(end 3.7 -5.2)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "B.CrtYd")
-			(uuid "0884e8bb-d87f-400b-aa04-ddc71f337751")
-		)
-		(fp_line
-			(start -3.7 5.2)
-			(end 3.7 5.2)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "B.CrtYd")
-			(uuid "c575dc7c-b714-4209-bf5a-f2b6b8674ca5")
-		)
-		(fp_line
-			(start 1.95 -4.95)
-			(end 1.95 4.95)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "B.Fab")
-			(uuid "a7cc543f-075d-41a2-bcc1-406393315bcd")
-		)
-		(fp_line
-			(start -1.95 -4.95)
-			(end 1.95 -4.95)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "B.Fab")
-			(uuid "2555aa46-feab-4def-aed0-07ad78669fbf")
-		)
-		(fp_line
-			(start -1.95 3.975)
-			(end -1.95 -4.95)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "B.Fab")
-			(uuid "735fede2-bc68-493c-a0e9-54d4bb1df5f9")
-		)
-		(fp_line
-			(start 1.95 4.95)
-			(end -0.975 4.95)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "B.Fab")
-			(uuid "a093b87d-b789-4166-9f69-03415f48915c")
-		)
-		(fp_line
-			(start -0.975 4.95)
-			(end -1.95 3.975)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "B.Fab")
-			(uuid "dec7d64a-f8b6-4d74-965b-841fdffd5890")
-		)
-		(fp_text user "${REFERENCE}"
-			(at 0 0 -90)
-			(layer "B.Fab")
-			(uuid "376609e0-1826-4c66-a455-ece141b78100")
-			(effects
-				(font
-					(size 0.98 0.98)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
-		(pad "1" smd roundrect
-			(at -2.575 4.445 90)
-			(size 1.75 0.6)
-			(layers "B.Cu" "B.Paste" "B.Mask")
-			(roundrect_rratio 0.25)
-			(net 147 "/central_control_unit/water_sensors_logic/grey_water_rod")
-			(pinfunction "I1")
-			(pintype "input")
-			(uuid "001e1a54-7fbe-4645-a3ce-d9a10b45ad17")
-		)
-		(pad "2" smd roundrect
-			(at -2.575 3.175 90)
-			(size 1.75 0.6)
-			(layers "B.Cu" "B.Paste" "B.Mask")
-			(roundrect_rratio 0.25)
-			(net 97 "/central_control_unit/water_sensors_logic/ws_rod_4")
-			(pinfunction "I2")
-			(pintype "input")
-			(uuid "bac2ceba-1e8c-4e4d-b911-90024219b45b")
-		)
-		(pad "3" smd roundrect
-			(at -2.575 1.905 90)
-			(size 1.75 0.6)
-			(layers "B.Cu" "B.Paste" "B.Mask")
-			(roundrect_rratio 0.25)
-			(net 96 "/central_control_unit/water_sensors_logic/ws_rod_3")
-			(pinfunction "I3")
-			(pintype "input")
-			(uuid "13514dbb-f500-4b88-bbef-16fc00a0b7f0")
-		)
-		(pad "4" smd roundrect
-			(at -2.575 0.635 90)
-			(size 1.75 0.6)
-			(layers "B.Cu" "B.Paste" "B.Mask")
-			(roundrect_rratio 0.25)
-			(net 100 "/central_control_unit/water_sensors_logic/ws_rod_2")
-			(pinfunction "I4")
-			(pintype "input")
-			(uuid "2686179a-6686-4f5a-b2ee-14d832e86b14")
-		)
-		(pad "5" smd roundrect
-			(at -2.575 -0.635 90)
-			(size 1.75 0.6)
-			(layers "B.Cu" "B.Paste" "B.Mask")
-			(roundrect_rratio 0.25)
-			(net 98 "/central_control_unit/water_sensors_logic/ws_rod_1")
-			(pinfunction "I5")
-			(pintype "input")
-			(uuid "e012977b-edbb-4ee8-a623-5296a75409ba")
-		)
-		(pad "6" smd roundrect
-			(at -2.575 -1.905 90)
-			(size 1.75 0.6)
-			(layers "B.Cu" "B.Paste" "B.Mask")
-			(roundrect_rratio 0.25)
-			(net 144 "unconnected-(U16-I6-Pad6)")
-			(pinfunction "I6")
-			(pintype "input+no_connect")
-			(uuid "37017781-b6e4-4caa-a9ef-d74dba249ffa")
-		)
-		(pad "7" smd roundrect
-			(at -2.575 -3.175 90)
-			(size 1.75 0.6)
-			(layers "B.Cu" "B.Paste" "B.Mask")
-			(roundrect_rratio 0.25)
-			(net 148 "unconnected-(U16-I7-Pad7)")
-			(pinfunction "I7")
-			(pintype "input+no_connect")
-			(uuid "ff414406-b580-4cc6-bc95-a8af84b6c8ae")
-		)
-		(pad "8" smd roundrect
-			(at -2.575 -4.445 90)
-			(size 1.75 0.6)
-			(layers "B.Cu" "B.Paste" "B.Mask")
-			(roundrect_rratio 0.25)
-			(net 72 "GND_LP")
-			(pinfunction "GND")
-			(pintype "power_in")
-			(uuid "c15f2bf2-c137-4b63-afee-9947b9d35505")
-		)
-		(pad "9" smd roundrect
-			(at 2.575 -4.445 90)
-			(size 1.75 0.6)
-			(layers "B.Cu" "B.Paste" "B.Mask")
-			(roundrect_rratio 0.25)
-			(net 160 "unconnected-(U16-COM-Pad9)")
-			(pinfunction "COM")
-			(pintype "passive+no_connect")
-			(uuid "78532431-edbb-4974-8c28-3bccdd61bbef")
-		)
-		(pad "10" smd roundrect
-			(at 2.575 -3.175 90)
-			(size 1.75 0.6)
-			(layers "B.Cu" "B.Paste" "B.Mask")
-			(roundrect_rratio 0.25)
-			(net 145 "unconnected-(U16-O7-Pad10)")
-			(pinfunction "O7")
-			(pintype "open_collector+no_connect")
-			(uuid "3e204d5f-2395-4746-875c-e0d6f9fb94f6")
-		)
-		(pad "11" smd roundrect
-			(at 2.575 -1.905 90)
-			(size 1.75 0.6)
-			(layers "B.Cu" "B.Paste" "B.Mask")
-			(roundrect_rratio 0.25)
-			(net 146 "unconnected-(U16-O6-Pad11)")
-			(pinfunction "O6")
-			(pintype "open_collector+no_connect")
-			(uuid "98e5b113-3e5b-411e-b582-b464b49d8bce")
-		)
-		(pad "12" smd roundrect
-			(at 2.575 -0.635 90)
-			(size 1.75 0.6)
-			(layers "B.Cu" "B.Paste" "B.Mask")
-			(roundrect_rratio 0.25)
-			(net 143 "/central_control_unit/water_sensors_logic/WS_LVL_25%")
-			(pinfunction "O5")
-			(pintype "open_collector")
-			(uuid "a655cfe6-d0b4-4a0c-a475-0dcdc368e06a")
-		)
-		(pad "13" smd roundrect
-			(at 2.575 0.635 90)
-			(size 1.75 0.6)
-			(layers "B.Cu" "B.Paste" "B.Mask")
-			(roundrect_rratio 0.25)
-			(net 139 "/central_control_unit/water_sensors_logic/WS_LVL_50%")
-			(pinfunction "O4")
-			(pintype "open_collector")
-			(uuid "9ac6b47c-2d1a-4e15-8a55-fbcaf8e37c95")
-		)
-		(pad "14" smd roundrect
-			(at 2.575 1.905 90)
-			(size 1.75 0.6)
-			(layers "B.Cu" "B.Paste" "B.Mask")
-			(roundrect_rratio 0.25)
-			(net 142 "/central_control_unit/water_sensors_logic/WS_LVL_75%")
-			(pinfunction "O3")
-			(pintype "open_collector")
-			(uuid "c789d881-201f-4be5-b6e2-ae72261cef89")
-		)
-		(pad "15" smd roundrect
-			(at 2.575 3.175 90)
-			(size 1.75 0.6)
-			(layers "B.Cu" "B.Paste" "B.Mask")
-			(roundrect_rratio 0.25)
-			(net 141 "/central_control_unit/water_sensors_logic/WS_LVL_100%")
-			(pinfunction "O2")
-			(pintype "open_collector")
-			(uuid "74c87ce5-883c-494f-a062-4a1ea70864e3")
-		)
-		(pad "16" smd roundrect
-			(at 2.575 4.445 90)
-			(size 1.75 0.6)
-			(layers "B.Cu" "B.Paste" "B.Mask")
-			(roundrect_rratio 0.25)
-			(net 140 "/central_control_unit/water_sensors_logic/GREY_WATER_FULL")
-			(pinfunction "O1")
-			(pintype "open_collector")
-			(uuid "4f1977a4-91ea-4b1c-862d-a5a8af5b8517")
-		)
-		(model "${KICAD8_3DMODEL_DIR}/Package_SO.3dshapes/SO-16_3.9x9.9mm_P1.27mm.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -25143,7 +25137,7 @@
 		(descr "SOT, 6 Pin (https://www.jedec.org/sites/default/files/docs/Mo-178c.PDF variant AB), generated with kicad-footprint-generator ipc_gullwing_generator.py")
 		(tags "SOT TO_SOT_SMD")
 		(property "Reference" "U13"
-			(at 0 2.4 360)
+			(at 0 2.4 0)
 			(layer "B.SilkS")
 			(uuid "d16573d5-a228-4c03-a647-54660f753125")
 			(effects
@@ -25155,7 +25149,7 @@
 			)
 		)
 		(property "Value" "CNY17-1"
-			(at 0 -2.4 360)
+			(at 0 -2.4 0)
 			(layer "B.Fab")
 			(uuid "0953619e-cbd6-4121-a93f-919ac10168df")
 			(effects
@@ -25356,7 +25350,7 @@
 			(uuid "7434c782-cf28-480a-b17b-ab855d2276b5")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "B.Fab")
 			(uuid "a93afb56-f323-40dd-8ade-45339a34ef38")
 			(effects
@@ -26536,7 +26530,7 @@
 		(descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor handsolder")
 		(property "Reference" "R7"
-			(at -3 0 360)
+			(at -3 0 0)
 			(layer "B.SilkS")
 			(uuid "a44b8fc4-b63c-46b8-a571-961b42577256")
 			(effects
@@ -26548,7 +26542,7 @@
 			)
 		)
 		(property "Value" "10 ohm"
-			(at 0 -1.65 360)
+			(at 0 -1.65 0)
 			(layer "B.Fab")
 			(uuid "ccd15506-4536-46f6-9574-af1c17ed0ac5")
 			(effects
@@ -26707,7 +26701,7 @@
 			(uuid "acd8f300-fee9-43a9-abe3-8dd9a8cc454c")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "B.Fab")
 			(uuid "7a659f31-248a-4b67-95ac-b332266e777f")
 			(effects
@@ -27457,7 +27451,7 @@
 		(descr "SOD-123")
 		(tags "SOD-123")
 		(property "Reference" "D2"
-			(at 0 2 360)
+			(at 0 2 0)
 			(layer "B.SilkS")
 			(uuid "6d9868c4-0089-4235-b8e8-e2005bcbe5a2")
 			(effects
@@ -27469,7 +27463,7 @@
 			)
 		)
 		(property "Value" "1N4148W"
-			(at 0 -2.1 360)
+			(at 0 -2.1 0)
 			(layer "B.Fab")
 			(uuid "8fa9520c-12d3-4c70-b98d-2f35a1b88e28")
 			(effects
@@ -27736,7 +27730,7 @@
 			(uuid "5375543c-12ed-44be-bc0e-6f09c1fa2f34")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 2 360)
+			(at 0 2 0)
 			(layer "B.Fab")
 			(uuid "e8fa6500-b88f-497b-9e09-580b522807fc")
 			(effects
@@ -30252,7 +30246,7 @@
 		(descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor handsolder")
 		(property "Reference" "R9"
-			(at -3 0 360)
+			(at -3 0 0)
 			(layer "B.SilkS")
 			(uuid "0541738e-8b04-40dd-babc-9cab9339b46b")
 			(effects
@@ -30264,7 +30258,7 @@
 			)
 		)
 		(property "Value" "10 ohm"
-			(at 0 -1.65 360)
+			(at 0 -1.65 0)
 			(layer "B.Fab")
 			(uuid "ec43c2b4-1fa7-43fb-a05d-a248dfa07921")
 			(effects
@@ -30423,7 +30417,7 @@
 			(uuid "98f29a9e-7c52-4852-8a7b-acbd575424a1")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "B.Fab")
 			(uuid "3a138654-e1e1-4f5e-9f01-dffccb8b7c6a")
 			(effects
@@ -30690,7 +30684,7 @@
 		(descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator")
 		(tags "capacitor handsolder")
 		(property "Reference" "C5"
-			(at 0 -2 360)
+			(at 0 -2 0)
 			(layer "B.SilkS")
 			(uuid "02a85f50-916c-49d8-aa44-5c3dbf2348fd")
 			(effects

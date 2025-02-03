@@ -6570,4 +6570,42 @@
 			)
 		)
 	)
+	(sheet
+		(at 139.7 109.22)
+		(size 25.4 17.78)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "f2e77c35-d3ea-41ef-a084-58a24e4bcd34")
+		(property "Sheetname" "blown_fuse_detection"
+			(at 139.7 108.5084 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "blown_fuse_detection.kicad_sch"
+			(at 139.7 127.5846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "electronics"
+				(path "/eeb1234c-eae0-4ac6-a30d-2a978d66d889/da888cb1-ed89-4b09-bf89-340f462f0940"
+					(page "15")
+				)
+			)
+		)
+	)
 )

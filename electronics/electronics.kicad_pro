@@ -775,6 +775,10 @@
     [
       "564cf1e8-c490-44e4-9075-5be226b3fbc3",
       "analog_ui"
+    ],
+    [
+      "f2e77c35-d3ea-41ef-a084-58a24e4bcd34",
+      "blown_fuse_detection"
     ]
   ],
   "text_variables": {}
