@@ -29,7 +29,10 @@
 #include "esp_adc/adc_oneshot.h"
 #include "esp_adc/adc_cali.h"
 #include "esp_adc/adc_cali_scheme.h"
+#include "esp_timer_cxx.hpp"
+#include <bits/stdc++.h>
 
+#include "analog_ui.h"
 
 #include <ws.hpp>
 
@@ -260,6 +263,46 @@ extern "C" void app_main(void)
     esp_pthread_set_cfg(&cfg);
     //std::thread thread_2(hss_test_thread);
     std::thread thread_2(hss_test_thread);
+
+
+  // Analog UI
+  ButtonConfig_t btn_heater = {GPIO_NUM_5, "heater"};
+  ButtonConfig_t btn_mains = {GPIO_NUM_18, "mains"};
+  ButtonConfig_t btn_water = {GPIO_NUM_19, "water"};
+  AnalogUiButtonsConfig_t buttons_config = {btn_heater, btn_mains, btn_water};
+
+  AnalogUiConfig_t analog_ui_config = {
+      .update_frequency = 20, 
+      .led_strip_gpio=GPIO_NUM_4,
+      .buttons_config = buttons_config,
+      .water_lvl_leds = {0,1,2,3},
+      .normal_leds = vector<uint16_t>(4)
+  };
+  iota(analog_ui_config.normal_leds.begin(), analog_ui_config.normal_leds.end(), 4);
+  /*
+  TEST BEGIN
+  */
+  AnalogUI ui(analog_ui_config);
+
+  ui.init_hardware();
+
+  // Create a thread on core 1.
+  // auto cfg = create_config("Led Strip Thread", 1, 3 * 1024, 5);
+  // esp_pthread_set_cfg(&cfg);
+  // std::thread thread_2(ui.loop);
+  //ui.loop();
+
+  ESP_LOGI(TAG, "Setting up timer to trigger UI update every 10ms\n");
+  function<void()> ui_update = [&]() { ui.update();};
+  idf::esp_timer::ESPTimer timer(ui_update);
+  timer.start_periodic(chrono::milliseconds(10));
+  //ui.test_fun();   
+  for(auto led : ui.led_driver.leds){
+      led->set_brightness(2);
+      led->set_color(Color::red());
+      led->flash(2000);
+      this_thread::sleep_for(std::chrono::milliseconds(200));
+  }  
 
     // Let the main task do something too
     while (true) {
