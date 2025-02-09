@@ -3685,7 +3685,6 @@
 	)
 	(label "V_Bat"
 		(at 223.52 25.4 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3696,7 +3695,6 @@
 	)
 	(label "V_Bat"
 		(at 205.74 123.19 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3707,7 +3705,6 @@
 	)
 	(label "V_Bat"
 		(at 205.74 99.06 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3718,7 +3715,6 @@
 	)
 	(label "V_Bat"
 		(at 209.55 54.61 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3729,7 +3725,6 @@
 	)
 	(label "V_Bat"
 		(at 204.47 77.47 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3740,7 +3735,6 @@
 	)
 	(label "V_Bat"
 		(at 209.55 34.29 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3774,7 +3768,6 @@
 	(hierarchical_label "CH5_DIAG"
 		(shape output)
 		(at 171.45 130.81 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3786,7 +3779,6 @@
 	(hierarchical_label "CH2_IN"
 		(shape input)
 		(at 170.18 60.96 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3798,7 +3790,6 @@
 	(hierarchical_label "CH3_DEN"
 		(shape input)
 		(at 170.18 86.36 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3810,7 +3801,6 @@
 	(hierarchical_label "CH4_IN"
 		(shape input)
 		(at 170.18 102.87 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3822,7 +3812,6 @@
 	(hierarchical_label "CH5_DEN"
 		(shape input)
 		(at 170.18 128.27 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3834,7 +3823,6 @@
 	(hierarchical_label "CH1_DEN"
 		(shape input)
 		(at 170.18 44.45 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3846,7 +3834,6 @@
 	(hierarchical_label "CH1_IN"
 		(shape input)
 		(at 170.18 41.91 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3858,7 +3845,6 @@
 	(hierarchical_label "CH3_IN"
 		(shape input)
 		(at 170.18 83.82 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3870,7 +3856,6 @@
 	(hierarchical_label "CH5_IN"
 		(shape input)
 		(at 170.18 125.73 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3882,7 +3867,6 @@
 	(hierarchical_label "CH2_DIAG"
 		(shape output)
 		(at 170.18 66.04 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3894,7 +3878,6 @@
 	(hierarchical_label "CH4_DEN"
 		(shape input)
 		(at 170.18 105.41 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3906,7 +3889,6 @@
 	(hierarchical_label "CH2_DEN"
 		(shape input)
 		(at 170.18 63.5 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3918,7 +3900,6 @@
 	(hierarchical_label "CH1_DIAG"
 		(shape output)
 		(at 170.18 46.99 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3930,7 +3911,6 @@
 	(hierarchical_label "CH3_DIAG"
 		(shape output)
 		(at 170.18 88.9 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3942,7 +3922,6 @@
 	(hierarchical_label "CH4_DIAG"
 		(shape output)
 		(at 170.18 107.95 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)

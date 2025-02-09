@@ -779,6 +779,10 @@
     [
       "f2e77c35-d3ea-41ef-a084-58a24e4bcd34",
       "blown_fuse_detection"
+    ],
+    [
+      "81dde6dd-8c83-40dc-951b-9ede78abec7e",
+      "analog_ui_control"
     ]
   ],
   "text_variables": {}

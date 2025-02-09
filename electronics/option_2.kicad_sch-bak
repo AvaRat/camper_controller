@@ -2144,6 +2144,7 @@
 	)
 	(label "ws_rod_3"
 		(at 166.37 115.57 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2154,6 +2155,7 @@
 	)
 	(label "ws_rod_2"
 		(at 166.37 113.03 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2164,6 +2166,7 @@
 	)
 	(label "ws_rod_5"
 		(at 166.37 120.65 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2174,6 +2177,7 @@
 	)
 	(label "ws_rod_4"
 		(at 166.37 118.11 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2184,6 +2188,7 @@
 	)
 	(label "ws_rod_0"
 		(at 166.37 107.95 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2194,6 +2199,7 @@
 	)
 	(label "probe_0"
 		(at 181.61 59.69 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2204,6 +2210,7 @@
 	)
 	(label "probe_1"
 		(at 72.39 52.07 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2214,6 +2221,7 @@
 	)
 	(label "ws_rod_1"
 		(at 166.37 110.49 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2225,6 +2233,7 @@
 	(hierarchical_label "ws_analog_out"
 		(shape output)
 		(at 242.57 101.6 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2236,6 +2245,7 @@
 	(hierarchical_label "WS_INPUT_3V3"
 		(shape input)
 		(at 242.57 99.06 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2247,6 +2257,7 @@
 	(hierarchical_label "WS_GND"
 		(shape input)
 		(at 242.57 104.14 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)

@@ -1198,7 +1198,6 @@
 	(hierarchical_label "12V_IN"
 		(shape input)
 		(at 52.07 74.93 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)

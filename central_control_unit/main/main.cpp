@@ -31,9 +31,10 @@
 #include "esp_adc/adc_cali_scheme.h"
 #include "esp_timer_cxx.hpp"
 #include <bits/stdc++.h>
+#include "esp_timer_cxx.hpp"
 
 #include "analog_ui.h"
-
+#include "temp_sensor.h"
 #include <ws.hpp>
 
 //#include "hss-esp.hpp"
@@ -44,6 +45,7 @@ static const char *TAG = "main";
 using namespace std;
 using namespace std::chrono;
 using namespace idf;
+using namespace idf::esp_timer;
 
 using namespace hss;
 
@@ -245,24 +247,20 @@ esp_pthread_cfg_t create_config(const char *name, int core_id, int stack, int pr
 
 extern "C" void app_main(void)
 {
+    // this_thread::sleep_for(std::chrono::seconds(4));
+    // TempSensorDriver temp_sensors(GPIO_NUM_0);
 
+    // ESP_LOGI(TAG, "Setting up timer to read temperature update every 1000 ms\n");
+    // function<void()> temp_update = [&]() { temp_sensors.read();};
+    // ESPTimer timer(temp_update);
+    // timer.start_periodic(chrono::milliseconds(5000));
 
-    // Create a thread using default values that can run on any core
-    auto cfg = esp_pthread_get_default_config();
-    esp_pthread_set_cfg(&cfg);
-    std::thread any_core(thread_func_any_core);
 
     // Create a thread on core 0 that spawns another thread, they will both have the same name etc.
-    cfg = create_config("Thread 1", 0, 3 * 1024, 5);
+    auto cfg = create_config("Thread 1", 0, 3 * 1024, 5);
     cfg.inherit_cfg = true;
     esp_pthread_set_cfg(&cfg);
     std::thread thread_1(spawn_another_thread);
-
-    // Create a thread on core 1.
-    cfg = create_config("HSS Thread 2", 1, 3 * 2048, 5);
-    esp_pthread_set_cfg(&cfg);
-    //std::thread thread_2(hss_test_thread);
-    std::thread thread_2(hss_test_thread);
 
 
   // Analog UI
@@ -273,7 +271,7 @@ extern "C" void app_main(void)
 
   AnalogUiConfig_t analog_ui_config = {
       .update_frequency = 20, 
-      .led_strip_gpio=GPIO_NUM_4,
+      .led_strip_gpio=GPIO_NUM_2,
       .buttons_config = buttons_config,
       .water_lvl_leds = {0,1,2,3},
       .normal_leds = vector<uint16_t>(4)
@@ -294,14 +292,16 @@ extern "C" void app_main(void)
 
   ESP_LOGI(TAG, "Setting up timer to trigger UI update every 10ms\n");
   function<void()> ui_update = [&]() { ui.update();};
-  idf::esp_timer::ESPTimer timer(ui_update);
-  timer.start_periodic(chrono::milliseconds(10));
+  idf::esp_timer::ESPTimer ui_timer(ui_update);
+  ui_timer.start_periodic(chrono::milliseconds(10));
+
   //ui.test_fun();   
   for(auto led : ui.led_driver.leds){
-      led->set_brightness(2);
-      led->set_color(Color::red());
-      led->flash(2000);
-      this_thread::sleep_for(std::chrono::milliseconds(200));
+    ESP_LOGI(TAG, "LED setup");
+    led->set_brightness(10);
+    led->set_color(Color::red());
+    led->flash(2000);
+    this_thread::sleep_for(std::chrono::milliseconds(100));
   }  
 
     // Let the main task do something too

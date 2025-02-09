@@ -726,7 +726,6 @@
 	(hierarchical_label "1-WIRE"
 		(shape passive)
 		(at 55.88 68.58 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)

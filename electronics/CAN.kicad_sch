@@ -814,7 +814,6 @@
 	)
 	(label "CAN_L"
 		(at 121.92 69.85 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -825,7 +824,6 @@
 	)
 	(label "CAN_H"
 		(at 121.92 67.31 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -837,7 +835,6 @@
 	(hierarchical_label "CAN_SLEEP"
 		(shape input)
 		(at 82.55 73.66 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -849,7 +846,6 @@
 	(hierarchical_label "CAN_RX"
 		(shape bidirectional)
 		(at 82.55 66.04 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -861,7 +857,6 @@
 	(hierarchical_label "CAN_TX"
 		(shape bidirectional)
 		(at 82.55 63.5 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)

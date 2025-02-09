@@ -4465,7 +4465,6 @@
 	)
 	(label "ch3_diag"
 		(at 226.06 119.38 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4476,7 +4475,6 @@
 	)
 	(label "LED_B"
 		(at 146.05 63.5 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4487,7 +4485,6 @@
 	)
 	(label "DAC_1"
 		(at 115.57 96.52 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4498,7 +4495,6 @@
 	)
 	(label "strap pin"
 		(at 147.32 91.44 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4509,7 +4505,6 @@
 	)
 	(label "strap pin"
 		(at 147.32 93.98 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4520,7 +4515,6 @@
 	)
 	(label "ch4_diag"
 		(at 148.59 96.52 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4531,7 +4525,6 @@
 	)
 	(label "SCL"
 		(at 109.22 71.12 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4542,7 +4535,6 @@
 	)
 	(label "DAC_2"
 		(at 115.57 99.06 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4553,7 +4545,6 @@
 	)
 	(label "ch5_diag"
 		(at 148.59 99.06 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4564,7 +4555,6 @@
 	)
 	(label "ch2_diag"
 		(at 226.06 116.84 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4575,7 +4565,6 @@
 	)
 	(label "SDA"
 		(at 177.8 49.53 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4586,7 +4575,6 @@
 	)
 	(label "ch1_diag"
 		(at 148.59 83.82 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4597,7 +4585,6 @@
 	)
 	(label "LED_B"
 		(at 27.94 163.83 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4608,7 +4595,6 @@
 	)
 	(label "SDA"
 		(at 109.22 68.58 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4619,7 +4605,6 @@
 	)
 	(label "ch3_diag"
 		(at 148.59 88.9 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4630,7 +4615,6 @@
 	)
 	(label "LED_G"
 		(at 146.05 66.04 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4641,7 +4625,6 @@
 	)
 	(label "LED_R"
 		(at 27.94 168.91 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4652,7 +4635,6 @@
 	)
 	(label "SCL"
 		(at 177.8 52.07 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4663,7 +4645,6 @@
 	)
 	(label "strap pin"
 		(at 115.57 53.34 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4674,7 +4655,6 @@
 	)
 	(label "ch4_diag"
 		(at 226.06 121.92 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4685,7 +4665,6 @@
 	)
 	(label "LED_R"
 		(at 146.05 68.58 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4696,7 +4675,6 @@
 	)
 	(label "12V_MCU"
 		(at 49.53 21.59 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4707,7 +4685,6 @@
 	)
 	(label "ch1_diag"
 		(at 226.06 114.3 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4718,7 +4695,6 @@
 	)
 	(label "ch2_diag"
 		(at 148.59 86.36 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4729,7 +4705,6 @@
 	)
 	(label "ch5_diag"
 		(at 226.06 124.46 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4740,7 +4715,6 @@
 	)
 	(label "LED_G"
 		(at 27.94 166.37 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4774,7 +4748,6 @@
 	(hierarchical_label "SDA"
 		(shape passive)
 		(at 107.95 68.58 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4786,7 +4759,6 @@
 	(hierarchical_label "SCL"
 		(shape passive)
 		(at 107.95 71.12 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6453,6 +6425,44 @@
 			(project "electronics"
 				(path "/eeb1234c-eae0-4ac6-a30d-2a978d66d889/04c402f1-b99a-4823-99a0-0c7312782f29"
 					(page "6")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 101.6 152.4)
+		(size 25.4 25.4)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "81dde6dd-8c83-40dc-951b-9ede78abec7e")
+		(property "Sheetname" "analog_ui_control"
+			(at 101.6 151.6884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "analog_ui_control.kicad_sch"
+			(at 101.6 178.3846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "electronics"
+				(path "/eeb1234c-eae0-4ac6-a30d-2a978d66d889/04c402f1-b99a-4823-99a0-0c7312782f29"
+					(page "16")
 				)
 			)
 		)

@@ -93,7 +93,7 @@ LedIndicator::LedIndicator(led_driver_call_t driver_call):
     brightness(0), 
     led_driver_call(driver_call)
 {
-    function<void()> toggle = [&]() {toggle();};
+    function<void()> toggle = [&]() {this->toggle();};
     flash_timer = new idf::esp_timer::ESPTimer(toggle);
 }
 

@@ -1007,7 +1007,6 @@
 	(hierarchical_label "LED_R"
 		(shape input)
 		(at 64.77 50.8 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1019,7 +1018,6 @@
 	(hierarchical_label "LED_B"
 		(shape input)
 		(at 71.12 100.33 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1031,7 +1029,6 @@
 	(hierarchical_label "LED_G"
 		(shape input)
 		(at 69.85 73.66 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
