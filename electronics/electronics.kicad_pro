@@ -751,10 +751,6 @@
       "water_sensors_logic"
     ],
     [
-      "ba89dfbd-c949-4d7e-a0ce-7dd3b3dcbbc6",
-      "WS_option_2"
-    ],
-    [
       "3b4f4bb7-bd1f-4bbe-884d-f3621abf4676",
       "digital_switching"
     ],
@@ -781,6 +777,10 @@
     [
       "564cf1e8-c490-44e4-9075-5be226b3fbc3",
       "analog_ui"
+    ],
+    [
+      "9fc8b009-fe28-42f5-8e66-6f7a1fc600b5",
+      "analog_ui_control"
     ]
   ],
   "text_variables": {}
