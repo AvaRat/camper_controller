@@ -37,8 +37,13 @@
 #include "temp_sensor.h"
 #include <ws.hpp>
 
+#include <bitset>
+
 //#include "hss-esp.hpp"
 #include "hss-esp-expander.hpp"
+#include "button_gpio.h"
+#include "iot_button.h"
+#include "esp_sleep.h"
 
 static const char *TAG = "main";
 
@@ -56,11 +61,44 @@ const auto sec2 = milliseconds(2000);
 
 //#include <driver/i2c_master.h>
 
-#define I2C_MASTER_SCL_IO           SCL_GPIO(22)      /*!< GPIO number used for I2C master clock */
-#define I2C_MASTER_SDA_IO           SDA_GPIO(21)      /*!< GPIO number used for I2C master data  */
+#define I2C_MASTER_SCL_IO           SCL_GPIO(21)      /*!< GPIO number used for I2C master clock */
+#define I2C_MASTER_SDA_IO           SDA_GPIO(22)      /*!< GPIO number used for I2C master data  */
+
+#define BUTTON_PIN 34
+#define BUTTON_ACTIVE_LEVEL     0
 
 
+static void button_event_cb(void *arg, void *data)
+{
+    ESP_LOGI(TAG, "BTN pressed");
+    LedStripDriver *driver = (LedStripDriver*) data;
+    for (auto led: driver->leds){
+        led->toggle();
+    }
 
+}
+
+class Buttons{
+    public: 
+    Buttons(LedStripDriver *led_driver){
+        button_config_t btn_cfg = {0};
+        button_gpio_config_t gpio_cfg = {
+            .gpio_num = BUTTON_PIN,
+            .active_level = BUTTON_ACTIVE_LEVEL,
+            .enable_power_save = false,
+            .disable_pull = true,
+        };
+    
+        button_handle_t btn;
+        esp_err_t ret = iot_button_new_gpio_device(&btn_cfg, &gpio_cfg, &btn);
+        assert(ret == ESP_OK);
+    
+        ret = iot_button_register_cb(btn, BUTTON_PRESS_DOWN, NULL, button_event_cb, led_driver);
+    }
+
+    private:
+    vector<button_handle_t> buttons;
+};
 
 void adc_init(adc_oneshot_unit_handle_t *handle, adc_channel_t adc_channel)
 {
@@ -78,6 +116,26 @@ void adc_init(adc_oneshot_unit_handle_t *handle, adc_channel_t adc_channel)
         .bitwidth = ADC_BITWIDTH_DEFAULT,
     };
     ESP_ERROR_CHECK(adc_oneshot_config_channel(*handle, adc_channel, &config));
+}
+
+
+void test_rmt_multi_ch(){
+
+    const GPIO_Output led_en(GPIONum(32));
+    led_en.set_high();
+
+}
+
+
+
+void test_water_sensor(){
+    const GPIOInput pin(GPIONum(34));
+    pin.set_pull_mode(GPIOPullMode::PULLDOWN());
+
+    while(1){
+        cout << "pin read: " << (int)pin.get_level() << endl;
+        this_thread::sleep_for(std::chrono::seconds(2));
+    }
 }
 
 void test_mux()
@@ -100,13 +158,25 @@ void test_mux()
 
     Cd74HCMux mux( io_expander, IO_EXPANDER_PIN_NUM_0, IO_EXPANDER_PIN_NUM_1, IO_EXPANDER_PIN_NUM_2, IO_EXPANDER_PIN_NUM_3);   
 
+    esp_io_expander_pin_num_t pin = IO_EXPANDER_PIN_NUM_6;
+
+    ESP_ERROR_CHECK(esp_io_expander_set_dir(io_expander, pin, IO_EXPANDER_INPUT));
+
+
+
+
     while(1)
     {
-        for (uint8_t i = 0; i < 16; ++i) 
-        {
-            mux.enable_channel(i);      
-            this_thread::sleep_for(sec2); 
-        }
+        uint32_t pin_lvl = 99;
+        ESP_ERROR_CHECK(esp_io_expander_get_level(io_expander, pin, &pin_lvl));
+
+        std::bitset<32> x(pin_lvl);
+
+        //mux.enable_channel(i); 
+        cout << x << endl;     
+        ESP_LOGI(TAG, "ch5: %d", int(x[6]));
+        this_thread::sleep_for(chrono::seconds(2)); 
+
     }
 }
 
@@ -235,6 +305,16 @@ void thread_func_any_core()
     }
 }
 
+void spawn_temp_thread(){
+
+    TempSensorDriver temp_sensors(GPIO_NUM_33);
+
+    ESP_LOGI(TAG, "Setting up timer to read temperature update every 1000 ms\n");
+    function<void()> temp_update = [&]() { temp_sensors.read();};
+    ESPTimer timer(temp_update);
+    timer.start_periodic(chrono::milliseconds(5000));
+}
+
 esp_pthread_cfg_t create_config(const char *name, int core_id, int stack, int prio)
 {
     auto cfg = esp_pthread_get_default_config();
@@ -247,20 +327,20 @@ esp_pthread_cfg_t create_config(const char *name, int core_id, int stack, int pr
 
 extern "C" void app_main(void)
 {
-    // this_thread::sleep_for(std::chrono::seconds(4));
-    // TempSensorDriver temp_sensors(GPIO_NUM_0);
 
-    // ESP_LOGI(TAG, "Setting up timer to read temperature update every 1000 ms\n");
-    // function<void()> temp_update = [&]() { temp_sensors.read();};
-    // ESPTimer timer(temp_update);
-    // timer.start_periodic(chrono::milliseconds(5000));
+
+
+    test_rmt_multi_ch();
+
+    // this_thread::sleep_for(std::chrono::seconds(4));
+
 
 
     // Create a thread on core 0 that spawns another thread, they will both have the same name etc.
-    auto cfg = create_config("Thread 1", 0, 3 * 1024, 5);
+    auto cfg = create_config("Thread Temp Sens", 0, 3 * 1024, 5);
     cfg.inherit_cfg = true;
     esp_pthread_set_cfg(&cfg);
-    std::thread thread_1(spawn_another_thread);
+    std::thread thread_1(spawn_temp_thread);
 
 
   // Analog UI
@@ -271,10 +351,10 @@ extern "C" void app_main(void)
 
   AnalogUiConfig_t analog_ui_config = {
       .update_frequency = 20, 
-      .led_strip_gpio=GPIO_NUM_2,
+      .led_strip_gpio=GPIO_NUM_15,
       .buttons_config = buttons_config,
       .water_lvl_leds = {0,1,2,3},
-      .normal_leds = vector<uint16_t>(4)
+      .normal_leds = vector<uint16_t>(175)
   };
   iota(analog_ui_config.normal_leds.begin(), analog_ui_config.normal_leds.end(), 4);
   /*
@@ -284,33 +364,41 @@ extern "C" void app_main(void)
 
   ui.init_hardware();
 
+
+  
   // Create a thread on core 1.
-  // auto cfg = create_config("Led Strip Thread", 1, 3 * 1024, 5);
-  // esp_pthread_set_cfg(&cfg);
-  // std::thread thread_2(ui.loop);
+  cfg = create_config("Buttons Thread", 1, 3 * 1024, 5);
+  esp_pthread_set_cfg(&cfg);
+  Buttons btns({&ui.led_driver});
+
+  //std::thread thread_2(button_init);
   //ui.loop();
 
+
+
+  for(auto led: ui.led_driver.leds){
+    led->set_brightness(100);
+    led->set_color(Color::white());
+    led->on();
+    //this_thread::sleep_for(chrono::milliseconds(20));
+  }
   ESP_LOGI(TAG, "Setting up timer to trigger UI update every 10ms\n");
   function<void()> ui_update = [&]() { ui.update();};
   idf::esp_timer::ESPTimer ui_timer(ui_update);
-  ui_timer.start_periodic(chrono::milliseconds(10));
-
+  ui_timer.start_periodic(chrono::milliseconds(100));
   //ui.test_fun();   
-  for(auto led : ui.led_driver.leds){
-    ESP_LOGI(TAG, "LED setup");
-    led->set_brightness(10);
-    led->set_color(Color::red());
-    led->flash(2000);
-    this_thread::sleep_for(std::chrono::milliseconds(100));
-  }  
+//   for(auto i=0; i<5; i++){
+//     auto led = ui.led_driver.leds[i];
+//     ESP_LOGI(TAG, "LED setup");
+//     led->set_brightness(10);
+//     led->set_color(Color::red());
+//     led->flash(2000);
+//     this_thread::sleep_for(std::chrono::milliseconds(100));
+//   }  
 
     // Let the main task do something too
     while (true) {
-        std::stringstream ss;
-        ss << "core id: " << xPortGetCoreID()
-           << ", prio: " << uxTaskPriorityGet(nullptr)
-           << ", minimum free stack: " << uxTaskGetStackHighWaterMark(nullptr) << " bytes.";
-        ESP_LOGI(pcTaskGetName(nullptr), "%s", ss.str().c_str());
+        cout << ".\n";
         std::this_thread::sleep_for(sleep_time);
     }
 }
