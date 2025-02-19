@@ -747,16 +747,12 @@
       "high_power"
     ],
     [
-      "62ac4720-8956-4507-8c0c-da88eca754a0",
+      "93f09cea-bb35-4346-86ce-66f42e9dc63e",
       "water_sensors_logic"
     ],
     [
       "3b4f4bb7-bd1f-4bbe-884d-f3621abf4676",
       "digital_switching"
-    ],
-    [
-      "bdcb8d75-b5b6-4010-b2e4-ee022288cbbc",
-      "rgb_led_control"
     ],
     [
       "e988bf0b-0303-4560-abbf-9db3a1d13611",
@@ -775,12 +771,20 @@
       "CAN"
     ],
     [
+      "a6a65456-f9af-47c2-9797-83191f030e3b",
+      "lightning"
+    ],
+    [
       "564cf1e8-c490-44e4-9075-5be226b3fbc3",
       "analog_ui"
     ],
     [
       "9fc8b009-fe28-42f5-8e66-6f7a1fc600b5",
       "analog_ui_control"
+    ],
+    [
+      "d66663c9-39c7-4331-8c96-b7baa638276d",
+      "alternative_PMOS_enable"
     ]
   ],
   "text_variables": {}

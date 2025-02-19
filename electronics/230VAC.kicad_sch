@@ -2525,7 +2525,6 @@
 	)
 	(label "N_230VAC"
 		(at 67.31 71.12 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2536,7 +2535,6 @@
 	)
 	(label "P_230VAC"
 		(at 67.31 68.58 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2547,7 +2545,6 @@
 	)
 	(label "V_Bat"
 		(at 110.49 96.52 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2559,7 +2556,6 @@
 	(hierarchical_label "AC_DETECT"
 		(shape output)
 		(at 134.62 68.58 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2571,7 +2567,6 @@
 	(hierarchical_label "RELAY_IN"
 		(shape input)
 		(at 57.15 107.95 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3273,7 +3268,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 119.38 66.548 90)
 			(effects
 				(font
@@ -3343,7 +3338,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 123.19 71.12 0)
 			(effects
 				(font
@@ -3410,7 +3405,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 68.58 109.728 90)
 			(effects
 				(font
@@ -3462,7 +3457,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d9d3a48a-003b-4c85-960f-ef5065ab42c1")
-		(property "Reference" "#PWR045"
+		(property "Reference" "#PWR0101"
 			(at 115.57 63.5 0)
 			(effects
 				(font
@@ -3512,7 +3507,7 @@
 		(instances
 			(project "electronics"
 				(path "/eeb1234c-eae0-4ac6-a30d-2a978d66d889/04c402f1-b99a-4823-99a0-0c7312782f29/b07c78d9-bf9b-4530-b7c9-2098e4c7b5ee"
-					(reference "#PWR045")
+					(reference "#PWR0101")
 					(unit 1)
 				)
 			)
