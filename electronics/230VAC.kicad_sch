@@ -2525,6 +2525,7 @@
 	)
 	(label "N_230VAC"
 		(at 67.31 71.12 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2535,6 +2536,7 @@
 	)
 	(label "P_230VAC"
 		(at 67.31 68.58 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2545,6 +2547,7 @@
 	)
 	(label "V_Bat"
 		(at 110.49 96.52 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2556,6 +2559,7 @@
 	(hierarchical_label "AC_DETECT"
 		(shape output)
 		(at 134.62 68.58 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2567,6 +2571,7 @@
 	(hierarchical_label "RELAY_IN"
 		(shape input)
 		(at 57.15 107.95 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
