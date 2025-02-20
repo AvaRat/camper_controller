@@ -5,6 +5,7 @@
 
 using namespace std;
 
+
 #define ID_SLAVE_DATA 0x010
 class CcuDataModel{
     uint8_t data[8]; 
