@@ -163,8 +163,6 @@ void test_mux()
     ESP_ERROR_CHECK(esp_io_expander_set_dir(io_expander, pin, IO_EXPANDER_INPUT));
 
 
-
-
     while(1)
     {
         uint32_t pin_lvl = 99;
@@ -258,12 +256,10 @@ void hss_test_thread(){
     }
 }
 
-
 const auto sleep_time = seconds
 {
     10
 };
-
 
 
 void print_thread_info(const char *extra = nullptr)
