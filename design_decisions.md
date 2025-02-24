@@ -22,6 +22,6 @@ A simple sensor based on 4 metal probes is perfectly enough. This was already te
 
 ## User Interface
 Initially I wanted to do some user interface on linux OS with a SBC like RPI zero. This hovewer will increase the cost of a whole system rather significantly ($20 for a just a board without display) and the energy usage. Currently I'm exploring aa ESP32-S3 based display module like this one [crowpanel 7inch](https://www.elecrow.com/crowpanel-advance-7-0-hmi-esp32-ai-display-800x480-artificial-intelligent-ips-touch-screen-support-meshtastic-and-arduino-lvgl-micropython.html)
-The cost for a whole module is $20-$30 which is great. Simple UI app was created for such module and you can find it here [7_inch lcd LVGL](Software/touch_screen_ui/7-inch-lcd-esp32-s3/README.md)
+The cost for a whole module is $20-$30 which is great. Simple UI app was created for such module and you can find it here [7_inch lcd LVGL app](Software/touch_screen_ui/7-inch-lcd-esp32-s3/main/main.c)
 
 
