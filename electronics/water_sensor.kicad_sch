@@ -890,7 +890,7 @@
 				)
 			)
 		)
-		(property "Value" "Conn_01x02"
+		(property "Value" "grey_water_conn"
 			(at 107.95 107.95 0)
 			(effects
 				(font

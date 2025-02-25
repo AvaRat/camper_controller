@@ -36,6 +36,7 @@
 #include "analog_ui.h"
 #include "temp_sensor.h"
 #include "water_sensor.h"
+#include "can_communication.h"
 
 #include <bitset>
 
@@ -399,6 +400,8 @@ void old_main(){
 
 extern "C" void app_main(void)
 {
+
+    init_can();
 
     WaterSensor ws();
         /*
