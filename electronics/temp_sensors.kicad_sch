@@ -1365,7 +1365,6 @@
 	)
 	(label "temp_sens_gnd"
 		(at 69.85 74.93 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1376,7 +1375,6 @@
 	)
 	(label "temp_sens_gnd"
 		(at 63.5 96.52 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1387,7 +1385,6 @@
 	)
 	(label "temp_sens_gnd"
 		(at 71.12 55.88 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1399,7 +1396,6 @@
 	(hierarchical_label "TempSens_En"
 		(shape passive)
 		(at 33.02 109.22 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1411,7 +1407,6 @@
 	(hierarchical_label "1-WIRE"
 		(shape passive)
 		(at 55.88 68.58 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1792,7 +1787,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:TO-252-2"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 66.04 104.14 0)
 			(effects
 				(font
@@ -2136,7 +2131,7 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
-		(on_board yes)
+		(on_board no)
 		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "b241682b-b1f2-438e-9798-740216129ae1")

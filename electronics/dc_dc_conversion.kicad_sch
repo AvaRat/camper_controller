@@ -2275,16 +2275,6 @@
 	)
 	(wire
 		(pts
-			(xy 49.53 38.1) (xy 49.53 52.07)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a44cc874-dd8d-4956-814e-e3ee38490652")
-	)
-	(wire
-		(pts
 			(xy 86.36 71.12) (xy 86.36 73.66)
 		)
 		(stroke
@@ -2454,7 +2444,6 @@
 	)
 	(label "vbat"
 		(at 49.53 38.1 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2465,7 +2454,6 @@
 	)
 	(label "vin"
 		(at 69.85 71.12 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2476,7 +2464,6 @@
 	)
 	(label "vbat"
 		(at 86.36 71.12 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2487,7 +2474,6 @@
 	)
 	(label "USB_VBUS"
 		(at 44.45 29.21 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2498,7 +2484,6 @@
 	)
 	(label "USB_VBUS"
 		(at 153.67 22.86 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2509,7 +2494,6 @@
 	)
 	(label "vbat"
 		(at 123.19 38.1 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2520,7 +2504,6 @@
 	)
 	(label "USB_VBUS"
 		(at 50.8 92.71 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2532,7 +2515,6 @@
 	(hierarchical_label "V_Batt"
 		(shape input)
 		(at 41.91 38.1 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2544,7 +2526,6 @@
 	(hierarchical_label "USB_VBUS"
 		(shape input)
 		(at 41.91 29.21 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3844,72 +3825,6 @@
 			(project "electronics"
 				(path "/eeb1234c-eae0-4ac6-a30d-2a978d66d889/04c402f1-b99a-4823-99a0-0c7312782f29/e988bf0b-0303-4560-abbf-9db3a1d13611"
 					(reference "Q2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND1")
-		(at 49.53 52.07 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "95b37496-aa07-4530-a3ad-c818260f5e14")
-		(property "Reference" "#PWR057"
-			(at 49.53 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND_HP"
-			(at 49.53 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 49.53 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 49.53 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND1\" , ground"
-			(at 49.53 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "6d3cf863-291a-49fb-8f36-f4952ed7050d")
-		)
-		(instances
-			(project "electronics"
-				(path "/eeb1234c-eae0-4ac6-a30d-2a978d66d889/04c402f1-b99a-4823-99a0-0c7312782f29/e988bf0b-0303-4560-abbf-9db3a1d13611"
-					(reference "#PWR057")
 					(unit 1)
 				)
 			)
