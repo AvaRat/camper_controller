@@ -3,7 +3,7 @@
 
 ## Overview
 The project aims to create a usable system that can be mounted in a campervan, trailer, 4x4 overland vehicle or even small boat. It might be usefull in setups where 12V installation is present.
-High level system design is presented in [CamperVan Control Unit system design.pdf]("CamperVan Control Unit system design.pdf") .
+High level system design is presented in [system design doc](<CamperVan Control Unit system design.pdf>) .
 
 
 ## How to interpret this repo
