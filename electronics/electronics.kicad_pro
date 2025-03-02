@@ -131,7 +131,7 @@
         "min_track_width": 0.1,
         "min_via_annular_width": 0.254,
         "min_via_diameter": 0.5,
-        "solder_mask_to_copper_clearance": 0.005,
+        "solder_mask_to_copper_clearance": 0.0,
         "use_height_for_length_calcs": true
       },
       "teardrop_options": [
@@ -561,6 +561,10 @@
       {
         "netclass": "230VAC",
         "pattern": "/central_control_unit/230VAC/P_230VAC"
+      },
+      {
+        "netclass": "low_power_nets",
+        "pattern": "/central_control_unit/USB_V*"
       }
     ]
   },
@@ -633,14 +637,14 @@
         },
         {
           "group_by": false,
-          "label": "Exclude from Board",
-          "name": "${EXCLUDE_FROM_BOARD}",
+          "label": "#",
+          "name": "${ITEM_NUMBER}",
           "show": false
         },
         {
           "group_by": false,
-          "label": "Exclude from Simulation",
-          "name": "${EXCLUDE_FROM_SIM}",
+          "label": "LCSC_part",
+          "name": "LCSC_part",
           "show": false
         },
         {
@@ -665,7 +669,7 @@
           "group_by": false,
           "label": "lcsc_part",
           "name": "lcsc_part",
-          "show": false
+          "show": true
         },
         {
           "group_by": false,
@@ -677,103 +681,7 @@
           "group_by": false,
           "label": "TME",
           "name": "TME",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "LCSCc",
-          "name": "LCSCc",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "JLC",
-          "name": "JLC",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Mouser",
-          "name": "Mouser",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "LCSC",
-          "name": "LCSC",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Mrf_part",
-          "name": "Mrf_part",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "mouser",
-          "name": "mouser",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "lcsc",
-          "name": "lcsc",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Manufcaturer",
-          "name": "Manufcaturer",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Manufacturer",
-          "name": "Manufacturer",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Mfr Part",
-          "name": "Mfr Part",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "MFG Part Nr",
-          "name": "MFG Part Nr",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Mfr Part ",
-          "name": "Mfr Part ",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "MFG part nr",
-          "name": "MFG part nr",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Exclude from BOM",
-          "name": "${EXCLUDE_FROM_BOM}",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "#",
-          "name": "${ITEM_NUMBER}",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "LCSC_part",
-          "name": "LCSC_part",
-          "show": false
+          "show": true
         }
       ],
       "filter_string": "",

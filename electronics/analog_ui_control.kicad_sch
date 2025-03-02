@@ -1071,6 +1071,7 @@
 	)
 	(label "LED_DATA_IN"
 		(at 62.23 40.64 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1081,6 +1082,7 @@
 	)
 	(label "BTN_3_IN"
 		(at 62.23 48.26 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1091,6 +1093,7 @@
 	)
 	(label "BTN_2_IN"
 		(at 62.23 45.72 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1101,6 +1104,7 @@
 	)
 	(label "GND_UI"
 		(at 49.53 38.1 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1111,6 +1115,7 @@
 	)
 	(label "+5V_UI"
 		(at 93.98 67.31 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1121,6 +1126,7 @@
 	)
 	(label "BTN_1_IN"
 		(at 62.23 43.18 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1131,6 +1137,7 @@
 	)
 	(label "BTN_5_IN"
 		(at 62.23 53.34 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1141,6 +1148,7 @@
 	)
 	(label "+5V_UI"
 		(at 48.26 35.56 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1151,6 +1159,7 @@
 	)
 	(label "BTN_4_IN"
 		(at 62.23 50.8 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1162,6 +1171,7 @@
 	(hierarchical_label "BTN5"
 		(shape bidirectional)
 		(at 39.37 53.34 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1173,6 +1183,7 @@
 	(hierarchical_label "RMT_LED"
 		(shape input)
 		(at 39.37 40.64 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1184,6 +1195,7 @@
 	(hierarchical_label "BTN1"
 		(shape bidirectional)
 		(at 39.37 43.18 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1195,6 +1207,7 @@
 	(hierarchical_label "BTN4"
 		(shape bidirectional)
 		(at 39.37 50.8 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1206,6 +1219,7 @@
 	(hierarchical_label "BTN3"
 		(shape bidirectional)
 		(at 39.37 48.26 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1217,6 +1231,7 @@
 	(hierarchical_label "BTN2"
 		(shape bidirectional)
 		(at 39.37 45.72 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)

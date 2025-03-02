@@ -2217,12 +2217,6 @@
 		(uuid "367cac5d-3648-4575-8bbd-edd3f16f0f08")
 	)
 	(junction
-		(at 120.65 111.76)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "4a5d1d92-4323-4cb1-8ec2-736889fd8bc4")
-	)
-	(junction
 		(at 114.3 104.14)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2257,12 +2251,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7cf99951-4a92-45ea-9852-597a4c54a553")
-	)
-	(junction
-		(at 120.65 104.14)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "7db27d7d-06e5-48cf-8f55-f75cdac6f012")
 	)
 	(junction
 		(at 114.3 111.76)
@@ -2385,16 +2373,6 @@
 			(type default)
 		)
 		(uuid "23e9f823-c218-42a4-b5a3-31a8c682aacc")
-	)
-	(wire
-		(pts
-			(xy 114.3 111.76) (xy 120.65 111.76)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "26469b18-3498-4d47-9aa5-46cfbb760cb9")
 	)
 	(wire
 		(pts
@@ -2558,7 +2536,7 @@
 	)
 	(wire
 		(pts
-			(xy 120.65 111.76) (xy 133.35 111.76)
+			(xy 114.3 111.76) (xy 133.35 111.76)
 		)
 		(stroke
 			(width 0)
@@ -2718,7 +2696,7 @@
 	)
 	(wire
 		(pts
-			(xy 114.3 104.14) (xy 120.65 104.14)
+			(xy 114.3 104.14) (xy 133.35 104.14)
 		)
 		(stroke
 			(width 0)
@@ -2885,16 +2863,6 @@
 			(type default)
 		)
 		(uuid "d49d6c92-e29a-4dc2-b7de-feed9125ab56")
-	)
-	(wire
-		(pts
-			(xy 120.65 104.14) (xy 133.35 104.14)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d5a00641-8245-4a54-9f01-82aabe052996")
 	)
 	(wire
 		(pts
@@ -3068,6 +3036,7 @@
 	)
 	(label "LED_CH1"
 		(at 125.73 55.88 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3078,6 +3047,7 @@
 	)
 	(label "LED_CH4"
 		(at 152.4 137.16 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3088,6 +3058,7 @@
 	)
 	(label "LED_CH1"
 		(at 146.05 91.44 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3098,6 +3069,7 @@
 	)
 	(label "LED_CH2"
 		(at 125.73 58.42 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3108,6 +3080,7 @@
 	)
 	(label "LED_CH3"
 		(at 152.4 121.92 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3118,6 +3091,7 @@
 	)
 	(label "LED_CH3"
 		(at 125.73 60.96 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3128,6 +3102,7 @@
 	)
 	(label "LED_CH2"
 		(at 152.4 106.68 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3138,6 +3113,7 @@
 	)
 	(label "LED_CH4"
 		(at 125.73 63.5 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3149,6 +3125,7 @@
 	(hierarchical_label "LED_CH3_IN"
 		(shape input)
 		(at 81.28 60.96 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3160,6 +3137,7 @@
 	(hierarchical_label "LED_CH1_IN"
 		(shape input)
 		(at 81.28 55.88 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3171,6 +3149,7 @@
 	(hierarchical_label "LED_CH4_IN"
 		(shape input)
 		(at 81.28 63.5 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3182,6 +3161,7 @@
 	(hierarchical_label "LED_CH2_IN"
 		(shape input)
 		(at 81.28 58.42 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3193,6 +3173,7 @@
 	(hierarchical_label "LED_EN"
 		(shape input)
 		(at 27.94 139.7 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5054,75 +5035,6 @@
 			(project "electronics"
 				(path "/eeb1234c-eae0-4ac6-a30d-2a978d66d889/04c402f1-b99a-4823-99a0-0c7312782f29/a6a65456-f9af-47c2-9797-83191f030e3b"
 					(reference "J26")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Polarized")
-		(at 120.65 107.95 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp yes)
-		(uuid "ff08a8c8-cbe7-41b1-8033-6ef295850724")
-		(property "Reference" "C13"
-			(at 118.872 114.554 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "C_Polarized"
-			(at 118.364 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm"
-			(at 121.6152 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 120.65 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Polarized capacitor"
-			(at 120.65 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "ff216126-e46c-446f-8d5f-6ec8a4dc3ae1")
-		)
-		(pin "1"
-			(uuid "edf05df0-3e52-4248-9089-28ed32f76440")
-		)
-		(instances
-			(project "electronics"
-				(path "/eeb1234c-eae0-4ac6-a30d-2a978d66d889/04c402f1-b99a-4823-99a0-0c7312782f29/a6a65456-f9af-47c2-9797-83191f030e3b"
-					(reference "C13")
 					(unit 1)
 				)
 			)

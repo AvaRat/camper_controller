@@ -2025,6 +2025,7 @@
 	)
 	(label "LED_DATA_IN"
 		(at 167.64 114.3 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2035,6 +2036,7 @@
 	)
 	(label "BTN_5_IN"
 		(at 167.64 127 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2045,6 +2047,7 @@
 	)
 	(label "+5V_UI"
 		(at 45.72 67.31 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2055,6 +2058,7 @@
 	)
 	(label "+5V_UI"
 		(at 179.07 33.02 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2065,6 +2069,7 @@
 	)
 	(label "GND_UI"
 		(at 133.35 90.17 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2075,6 +2080,7 @@
 	)
 	(label "GND_UI"
 		(at 167.64 111.76 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2085,6 +2091,7 @@
 	)
 	(label "+5V_UI"
 		(at 161.29 33.02 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2095,6 +2102,7 @@
 	)
 	(label "GND_UI"
 		(at 125.73 55.88 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2105,6 +2113,7 @@
 	)
 	(label "+5V_UI"
 		(at 115.57 67.31 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2115,6 +2124,7 @@
 	)
 	(label "GND_UI"
 		(at 186.69 90.17 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2125,6 +2135,7 @@
 	)
 	(label "BTN_4_IN"
 		(at 167.64 124.46 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2135,6 +2146,7 @@
 	)
 	(label "+5V_UI"
 		(at 44.45 33.02 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2145,6 +2157,7 @@
 	)
 	(label "GND_UI"
 		(at 81.28 90.17 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2155,6 +2168,7 @@
 	)
 	(label "BTN_1_IN"
 		(at 167.64 116.84 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2165,6 +2179,7 @@
 	)
 	(label "BTN_2_IN"
 		(at 147.32 111.76 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2175,6 +2190,7 @@
 	)
 	(label "GND_UI"
 		(at 88.9 118.11 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2185,6 +2201,7 @@
 	)
 	(label "GND_UI"
 		(at 80.01 55.88 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2195,6 +2212,7 @@
 	)
 	(label "BTN_4_IN"
 		(at 147.32 132.08 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2205,6 +2223,7 @@
 	)
 	(label "GND_UI"
 		(at 128.27 121.92 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2215,6 +2234,7 @@
 	)
 	(label "+5V_UI"
 		(at 168.91 67.31 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2225,6 +2245,7 @@
 	)
 	(label "+5V_UI"
 		(at 80.01 33.02 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2235,6 +2256,7 @@
 	)
 	(label "BTN_3_IN"
 		(at 167.64 121.92 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2245,6 +2267,7 @@
 	)
 	(label "BTN_1_IN"
 		(at 147.32 100.33 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2255,6 +2278,7 @@
 	)
 	(label "GND_UI"
 		(at 44.45 55.88 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2265,6 +2289,7 @@
 	)
 	(label "BTN_2_IN"
 		(at 167.64 119.38 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2275,6 +2300,7 @@
 	)
 	(label "+5V_UI"
 		(at 167.64 109.22 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2285,6 +2311,7 @@
 	)
 	(label "GND_UI"
 		(at 161.29 55.88 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2295,6 +2322,7 @@
 	)
 	(label "GND_UI"
 		(at 97.79 55.88 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2305,6 +2333,7 @@
 	)
 	(label "+5V_UI"
 		(at 186.69 67.31 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2315,6 +2344,7 @@
 	)
 	(label "BTN_5_IN"
 		(at 147.32 142.24 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2325,6 +2355,7 @@
 	)
 	(label "+5V_UI"
 		(at 143.51 33.02 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2335,6 +2366,7 @@
 	)
 	(label "BTN_3_IN"
 		(at 147.32 121.92 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2345,6 +2377,7 @@
 	)
 	(label "+5V_UI"
 		(at 151.13 67.31 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2355,6 +2388,7 @@
 	)
 	(label "GND_UI"
 		(at 62.23 55.88 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2365,6 +2399,7 @@
 	)
 	(label "GND_UI"
 		(at 31.75 119.38 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2375,6 +2410,7 @@
 	)
 	(label "GND_UI"
 		(at 179.07 55.88 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2385,6 +2421,7 @@
 	)
 	(label "GND_UI"
 		(at 168.91 90.17 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2395,6 +2432,7 @@
 	)
 	(label "GND_UI"
 		(at 143.51 55.88 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2405,6 +2443,7 @@
 	)
 	(label "GND_UI"
 		(at 115.57 90.17 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2415,6 +2454,7 @@
 	)
 	(label "+5V_UI"
 		(at 125.73 33.02 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2425,6 +2465,7 @@
 	)
 	(label "+5V_UI"
 		(at 62.23 33.02 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2435,6 +2476,7 @@
 	)
 	(label "GND_UI"
 		(at 151.13 90.17 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2445,6 +2487,7 @@
 	)
 	(label "+5V_UI"
 		(at 81.28 67.31 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2455,6 +2498,7 @@
 	)
 	(label "+5V_UI"
 		(at 63.5 101.6 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2465,6 +2509,7 @@
 	)
 	(label "GND_UI"
 		(at 45.72 90.17 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2475,6 +2520,7 @@
 	)
 	(label "LED_DATA_IN"
 		(at 15.24 44.45 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2485,6 +2531,7 @@
 	)
 	(label "+5V_UI"
 		(at 97.79 33.02 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2495,6 +2542,7 @@
 	)
 	(label "+5V_UI"
 		(at 133.35 67.31 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)

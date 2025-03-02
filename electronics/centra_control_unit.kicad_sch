@@ -501,151 +501,6 @@
 				)
 			)
 		)
-		(symbol "Device:D_Schottky"
-			(pin_numbers hide)
-			(pin_names
-				(offset 1.016) hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "D"
-				(at 0 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "D_Schottky"
-				(at 0 -2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Schottky diode"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "diode Schottky"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "D_Schottky_0_1"
-				(polyline
-					(pts
-						(xy 1.27 0) (xy -1.27 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.905 0.635) (xy -1.905 1.27) (xy -1.27 1.27) (xy -1.27 -1.27) (xy -0.635 -1.27) (xy -0.635 -0.635)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "D_Schottky_1_1"
-				(pin passive line
-					(at -3.81 0 0)
-					(length 2.54)
-					(name "K"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 3.81 0 180)
-					(length 2.54)
-					(name "A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "Device:R"
 			(pin_numbers hide)
 			(pin_names
@@ -3209,10 +3064,6 @@
 		(uuid "fd401902-1d99-4d7e-bcef-651d7b3121b1")
 	)
 	(no_connect
-		(at 177.8 53.34)
-		(uuid "23c68927-daa7-4808-84f2-da2a64b331ad")
-	)
-	(no_connect
 		(at 261.62 73.66)
 		(uuid "2bda9342-6a9f-4b0c-b392-c935b2a5b5ea")
 	)
@@ -3227,10 +3078,6 @@
 	(no_connect
 		(at 86.36 58.42)
 		(uuid "a8bbe84f-2be5-4623-8001-0210d9d1f654")
-	)
-	(no_connect
-		(at 177.8 55.88)
-		(uuid "aec18726-bbaa-435c-adb1-847385ce488c")
 	)
 	(no_connect
 		(at 261.62 68.58)
@@ -3484,13 +3331,13 @@
 	)
 	(wire
 		(pts
-			(xy 208.28 151.13) (xy 218.44 151.13)
+			(xy 177.8 55.88) (xy 181.61 55.88)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "46097c19-3e76-44d3-9d1e-b04456c75b59")
+		(uuid "46ca262d-d4cf-4571-a8d2-2c5ca1cf5b68")
 	)
 	(wire
 		(pts
@@ -3821,6 +3668,16 @@
 			(type default)
 		)
 		(uuid "9a2416b9-3437-4013-882e-d1468cb4ab2b")
+	)
+	(wire
+		(pts
+			(xy 177.8 53.34) (xy 181.61 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9ba025a9-f471-49a6-8b09-465bb4297089")
 	)
 	(wire
 		(pts
@@ -4254,6 +4111,7 @@
 	)
 	(label "SCL"
 		(at 73.66 116.84 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4264,6 +4122,7 @@
 	)
 	(label "ch4_in"
 		(at 182.88 101.6 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4272,18 +4131,9 @@
 		)
 		(uuid "011e0815-bf3f-443d-83ea-b5e589b93989")
 	)
-	(label "USB_VBUS"
-		(at 208.28 151.13 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "096c36a9-735c-44be-877f-4e656981b20b")
-	)
 	(label "USB_D-"
 		(at 181.61 63.5 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4294,6 +4144,7 @@
 	)
 	(label "WS_LVL_75"
 		(at 102.87 24.13 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4304,6 +4155,7 @@
 	)
 	(label "ch5_den"
 		(at 182.88 104.14 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4314,6 +4166,7 @@
 	)
 	(label "btn_2"
 		(at 53.34 163.83 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4322,18 +4175,9 @@
 		)
 		(uuid "10d8475d-d247-4cea-8333-d72916916e72")
 	)
-	(label "can_term_r_dip_1"
-		(at 265.43 58.42 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "10ec4d68-4082-4a67-963e-69734e1a9b50")
-	)
 	(label "ch1_in"
 		(at 181.61 86.36 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4344,6 +4188,7 @@
 	)
 	(label "USB_VIN"
 		(at 226.06 151.13 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4354,6 +4199,7 @@
 	)
 	(label "can_term_r_dip_1"
 		(at 53.34 85.09 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4364,6 +4210,7 @@
 	)
 	(label "ch2_den"
 		(at 181.61 83.82 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4374,6 +4221,7 @@
 	)
 	(label "USB_D+"
 		(at 181.61 60.96 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4384,6 +4232,7 @@
 	)
 	(label "WS_LVL_100"
 		(at 265.43 43.18 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4392,18 +4241,9 @@
 		)
 		(uuid "302102f1-2b32-4e23-aad3-3cb0ff7d0ad2")
 	)
-	(label "USB_VBUS"
-		(at 26.67 35.56 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "30704e4b-efef-4059-8096-aceb469956d6")
-	)
 	(label "USB_D+"
 		(at 232.41 135.89 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4412,18 +4252,9 @@
 		)
 		(uuid "31c55f64-4840-465f-bda9-4c76bb6ad066")
 	)
-	(label "can_term_r_dip_2"
-		(at 265.43 60.96 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "36cbd14d-cc0a-402e-b31a-0d1570a23e7b")
-	)
 	(label "1-Wire"
 		(at 54.61 104.14 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4434,6 +4265,7 @@
 	)
 	(label "btn_3"
 		(at 74.93 71.12 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4444,6 +4276,7 @@
 	)
 	(label "LED_CH1"
 		(at 180.34 17.78 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4454,6 +4287,7 @@
 	)
 	(label "SDA"
 		(at 218.44 35.56 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4464,6 +4298,7 @@
 	)
 	(label "LED_CH4"
 		(at 73.66 121.92 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4474,6 +4309,7 @@
 	)
 	(label "btn_4"
 		(at 74.93 68.58 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4484,6 +4320,7 @@
 	)
 	(label "LED_CH4"
 		(at 180.34 25.4 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4494,6 +4331,7 @@
 	)
 	(label "ch3_den"
 		(at 182.88 93.98 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4504,6 +4342,7 @@
 	)
 	(label "can_term_r_dip_2"
 		(at 162.56 162.56 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4514,6 +4353,7 @@
 	)
 	(label "ch5_diag"
 		(at 181.61 81.28 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4524,6 +4364,7 @@
 	)
 	(label "LED_CH3"
 		(at 73.66 119.38 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4534,6 +4375,7 @@
 	)
 	(label "ch5_in"
 		(at 182.8673 106.9334 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4544,6 +4386,7 @@
 	)
 	(label "ch1_diag"
 		(at 181.61 71.12 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4554,6 +4397,7 @@
 	)
 	(label "can_sleep"
 		(at 53.34 82.55 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4564,6 +4408,7 @@
 	)
 	(label "relay_out"
 		(at 54.61 54.61 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4574,6 +4419,7 @@
 	)
 	(label "btn_1"
 		(at 53.34 161.29 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4584,6 +4430,7 @@
 	)
 	(label "btn_5"
 		(at 53.34 171.45 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4594,6 +4441,7 @@
 	)
 	(label "led_en"
 		(at 143.51 22.86 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4604,6 +4452,7 @@
 	)
 	(label "can_tx"
 		(at 53.34 77.47 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4614,6 +4463,7 @@
 	)
 	(label "ch3_diag"
 		(at 181.61 76.2 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4624,6 +4474,7 @@
 	)
 	(label "ch2_in"
 		(at 182.88 91.44 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4632,8 +4483,20 @@
 		)
 		(uuid "7e975493-9ff2-45ec-a7c7-c8bcf7d59bb7")
 	)
+	(label "temp_sensor_enable"
+		(at 265.43 58.42 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "7e97805a-61b3-47bb-8716-eedc649050ee")
+	)
 	(label "SCL"
 		(at 218.44 38.1 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4644,6 +4507,7 @@
 	)
 	(label "relay_out"
 		(at 265.43 35.56 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4654,6 +4518,7 @@
 	)
 	(label "can_rx"
 		(at 53.34 80.01 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4664,6 +4529,7 @@
 	)
 	(label "SDA"
 		(at 73.66 114.3 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4672,8 +4538,20 @@
 		)
 		(uuid "8e7f8770-4b26-4b8b-ba17-e83c2858ac21")
 	)
+	(label "analog_ui_rmt_led"
+		(at 181.61 55.88 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "90ab5df4-b96d-4153-abd4-f050f4d534ea")
+	)
 	(label "temp_sensor_enable"
 		(at 54.61 106.68 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4684,6 +4562,7 @@
 	)
 	(label "ESP_EN"
 		(at 105.41 173.99 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4694,6 +4573,7 @@
 	)
 	(label "GREY_FULL"
 		(at 102.87 29.21 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4704,6 +4584,7 @@
 	)
 	(label "IO_0"
 		(at 127 173.99 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4714,6 +4595,7 @@
 	)
 	(label "WS_LVL_100"
 		(at 102.87 26.67 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4724,6 +4606,7 @@
 	)
 	(label "ac_detect"
 		(at 265.43 38.1 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4734,6 +4617,7 @@
 	)
 	(label "LED_CH2"
 		(at 180.34 20.32 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4744,6 +4628,7 @@
 	)
 	(label "btn_2"
 		(at 74.93 73.66 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4754,6 +4639,7 @@
 	)
 	(label "can_term_r_dip_2"
 		(at 53.34 87.63 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4762,8 +4648,20 @@
 		)
 		(uuid "b3e87afe-4406-439a-bde0-03527c591a3f")
 	)
+	(label "USB_VIN"
+		(at 26.67 35.56 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b61863ed-865f-4760-a396-ce2b2f32af22")
+	)
 	(label "can_tx"
 		(at 182.88 119.38 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4774,6 +4672,7 @@
 	)
 	(label "WS_LVL_75"
 		(at 265.43 45.72 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4784,6 +4683,7 @@
 	)
 	(label "GREY_FULL"
 		(at 265.43 40.64 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4794,6 +4694,7 @@
 	)
 	(label "can_rx"
 		(at 182.88 116.84 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4804,6 +4705,7 @@
 	)
 	(label "ch3_in"
 		(at 182.88 96.52 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4814,6 +4716,7 @@
 	)
 	(label "WS_LVL_25"
 		(at 265.43 50.8 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4824,6 +4727,7 @@
 	)
 	(label "ch1_den"
 		(at 181.61 88.9 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4834,6 +4738,7 @@
 	)
 	(label "btn_3"
 		(at 53.34 166.37 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4844,6 +4749,7 @@
 	)
 	(label "ch2_diag"
 		(at 181.61 73.66 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4854,6 +4760,7 @@
 	)
 	(label "ESP_EN"
 		(at 76.2 53.34 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4862,8 +4769,20 @@
 		)
 		(uuid "c1a23155-0b7f-4429-a52e-74b7959e690f")
 	)
+	(label "btn_1"
+		(at 181.61 53.34 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c4a1c9f4-16f9-47f8-ba32-11c4753508b7")
+	)
 	(label "LED_CH2"
 		(at 182.88 124.46 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4874,6 +4793,7 @@
 	)
 	(label "LED_CH1"
 		(at 73.66 124.46 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4884,6 +4804,7 @@
 	)
 	(label "ch4_diag"
 		(at 181.61 78.74 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4894,6 +4815,7 @@
 	)
 	(label "btn_5"
 		(at 74.93 66.04 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4904,6 +4826,7 @@
 	)
 	(label "btn_4"
 		(at 53.34 168.91 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4914,6 +4837,7 @@
 	)
 	(label "USB_D-"
 		(at 232.41 133.35 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4924,6 +4848,7 @@
 	)
 	(label "1-Wire"
 		(at 182.88 114.3 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4934,6 +4859,7 @@
 	)
 	(label "analog_ui_rmt_led"
 		(at 53.34 158.75 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4944,6 +4870,7 @@
 	)
 	(label "ac_detect"
 		(at 54.61 57.15 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4954,6 +4881,7 @@
 	)
 	(label "LED_CH3"
 		(at 180.34 22.86 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4964,6 +4892,7 @@
 	)
 	(label "ch4_den"
 		(at 182.88 99.06 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4974,6 +4903,7 @@
 	)
 	(label "can_sleep"
 		(at 265.43 53.34 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4984,6 +4914,7 @@
 	)
 	(label "WS_LVL_50"
 		(at 265.43 48.26 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4994,6 +4925,7 @@
 	)
 	(label "IO_0"
 		(at 181.61 68.58 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5004,6 +4936,7 @@
 	)
 	(label "WS_LVL_50"
 		(at 102.87 21.59 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5014,6 +4947,7 @@
 	)
 	(label "WS_LVL_25"
 		(at 102.87 19.05 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5024,6 +4958,7 @@
 	)
 	(label "can_term_r_dip_1"
 		(at 129.54 162.56 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5034,6 +4969,7 @@
 	)
 	(label "led_en"
 		(at 261.62 63.5 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5045,6 +4981,7 @@
 	(hierarchical_label "SCL"
 		(shape bidirectional)
 		(at 73.66 116.84 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5056,6 +4993,7 @@
 	(hierarchical_label "SDA"
 		(shape bidirectional)
 		(at 73.66 114.3 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5254,74 +5192,6 @@
 			(project "electronics"
 				(path "/eeb1234c-eae0-4ac6-a30d-2a978d66d889/04c402f1-b99a-4823-99a0-0c7312782f29"
 					(reference "#PWR068")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:D_Schottky")
-		(at 222.25 151.13 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "48b8de9c-d33f-482b-8518-105c8c37824c")
-		(property "Reference" "D15"
-			(at 221.9325 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "D_Schottky"
-			(at 221.9325 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Diode_SMD:D_SMA"
-			(at 222.25 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 222.25 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Schottky diode"
-			(at 222.25 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "875eaed8-5521-4035-810c-2fcfb5acac2d")
-		)
-		(pin "2"
-			(uuid "94db59af-1387-4a91-876d-831c72c59634")
-		)
-		(instances
-			(project "electronics"
-				(path "/eeb1234c-eae0-4ac6-a30d-2a978d66d889/04c402f1-b99a-4823-99a0-0c7312782f29"
-					(reference "D15")
 					(unit 1)
 				)
 			)
@@ -7611,7 +7481,7 @@
 			)
 			(uuid "0dcff03b-f1b2-4b9f-b366-f59fdf8e40e4")
 		)
-		(pin "USB_VBUS" input
+		(pin "USB_VIN" input
 			(at 38.1 35.56 180)
 			(effects
 				(font
@@ -7619,7 +7489,7 @@
 				)
 				(justify left)
 			)
-			(uuid "135f4aa2-7312-4d97-9464-d25941e74509")
+			(uuid "1afaad2d-ad4e-4d3f-bb5d-699c2082bbda")
 		)
 		(instances
 			(project "electronics"
